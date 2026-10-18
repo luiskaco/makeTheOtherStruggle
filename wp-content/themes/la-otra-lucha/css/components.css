@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Componentes Reutilizables (Botones, Títulos Script, Cajas de Texto, Citas)
+   ========================================================================== */
+
+.text-pink {
+  color: var(--color-primary);
+}
+
+/* Palabras manuscritas en fuente Blackrush con subrayado de pincel */
+.script-inline {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-script);
+  font-weight: 400;
+  text-transform: lowercase;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+.script-inline__stroke {
+  display: block;
+  width: 100%;
+  height: 0.45rem;
+  margin-top: -0.05rem;
+}
+
+/* Botones tipo Píldora (CTAs — Poppins SemiBold 600) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.72rem 1.75rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.22;
+  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--purple {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn--purple:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.btn--white {
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+}
+
+.btn--white:hover {
+  background-color: var(--color-bg-cream);
+  color: var(--color-primary);
+}
+
+.btn--pink {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--pink:hover {
+  background-color: var(--color-primary-hover, #d45b82);
+  color: var(--color-white);
+}
+
+.btn--outline-purple {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
+}
+
+.btn--outline-purple:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn--sm {
+  padding: 0.45rem 1.15rem;
+  font-size: 0.72rem;
+}
+
+.btn--nav {
+  padding: 0.62rem 1.45rem;
+  font-size: 0.84rem;
+}
+
+.btn--hero {
+  min-width: 9.75rem;
+  min-height: 4.1rem;
+  padding: 0.65rem 1.35rem;
+  font-size: 0.76rem;
+}
+
+/* Caja con borde continuo fino redondeado (Poppins Light 300 + palabras resaltadas Poppins Medium 500) */
+.outlined-callout {
+  border: 1px solid var(--color-border-box);
+  border-radius: 0.9rem;
+  padding: clamp(1.15rem, 2vw, 1.5rem) clamp(1.35rem, 2.5vw, 2rem);
+  background-color: var(--color-bg-white);
+  text-align: center;
+  color: var(--color-text);
+  font-size: 0.84rem;
+  font-weight: var(--fw-light);
+  line-height: 1.52;
+}
+
+.outlined-callout strong {
+  color: var(--color-heading);
+  font-weight: var(--fw-medium);
+}
+
+/* Bloque de cita con comillas grandes texturizadas (Sección 7 y Footer 10.png) */
+.quote-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.6rem;
+}
+
+.quote-showcase__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1rem, 2.5vw, 2.25rem);
+  width: min(100%, 63rem);
+  margin-inline: auto;
+}
+
+.quote-showcase__mark-img {
+  display: none;
+  width: clamp(4.2rem, 6.2vw, 5.95rem);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.quote-showcase__text {
+  font-family: var(--font-body);
+  font-size: clamp(1.15rem, 1.85vw + 0.45rem, 1.72rem);
+  font-weight: var(--fw-light);
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  max-width: 38ch;
+  margin-inline: auto;
+}
+
+.quote-showcase__text strong {
+  font-weight: var(--fw-semibold);
+}
+
+.quote-showcase__text em {
+  font-style: italic;
+  font-weight: var(--fw-semibold);
+}
+
+.quote-showcase__text--bold {
+  font-weight: var(--fw-semibold);
+}
+
+@media (min-width: 48rem) {
+  .quote-showcase__mark-img {
+    display: block;
+  }
+}
+
+/* Animación de entrada controlada por IntersectionObserver */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 620ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+    transform 620ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll--left {
+  transform: translateX(-24px);
+}
+
+.reveal-on-scroll--right {
+  transform: translateX(24px);
+}
+
+.reveal-on-scroll--scale {
+  transform: translateY(18px) scale(0.97);
+}
+
+.reveal-on-scroll--visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Botón flotante "Volver arriba" (.back-to-top)
+   ========================================================================== */
+.back-to-top {
+  position: fixed;
+  right: clamp(1rem, 2.5vw, 2rem);
+  bottom: clamp(1.1rem, 2.5vw, 2rem);
+  z-index: 999;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.12rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2.5px solid var(--color-white);
+  box-shadow: 0 10px 26px rgba(115, 88, 159, 0.38);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition:
+    opacity var(--transition-base),
+    transform var(--transition-base),
+    background-color var(--transition-fast),
+    visibility var(--transition-base);
+}
+
+.back-to-top--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-3px);
+}
+
+.back-to-top:active {
+  transform: translateY(0);
+}
+
+.back-to-top__icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.back-to-top__label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+

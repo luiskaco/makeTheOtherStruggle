@@ -1,0 +1,97 @@
+# La Otra Lucha — Por un Perú Sin Cáncer (Versión Completa)
+
+> Documento íntegro para modelos de lenguaje (LLMs), agentes de inteligencia artificial y motores de búsqueda semántica.
+> Proyecto: La Otra Lucha
+> Promotor: Asociación Por un Perú Sin Cáncer
+> URL Base: http://localhost/makeTheOtherStruggle/
+
+---
+
+## 1. Misión y Propósito de la Campaña
+
+"El cáncer ya es una lucha. Acceder a una atención oportuna es la otra lucha."
+
+"La Otra Lucha" es una iniciativa nacional nacida en el Perú que busca poner en agenda pública la crisis silenciosa que viven miles de personas diagnosticadas con cáncer, particularmente mujeres con cáncer de mama. La campaña no solo concientiza sobre la importancia del autoexamen y el tamizaje precoz, sino que denuncia con evidencia técnica las barreras administrativas, la escasez de medicamentos, la lentitud de los procesos de referencia y la falta de especialistas que terminan cobrando vidas humanas evitables.
+
+---
+
+## 2. Testimonio y Caso Emblemático: Karin Pardo Lopez
+
+Karin Pardo Lopez es médico cirujano, especialista en salud pública y exviceministra de salud pública del Perú. En 2023 fue diagnosticada con cáncer de mama. A pesar de contar con más de veinte años de trayectoria en el sector salud, conocer al detalle los organigramas, las redes hospitalarias y los procedimientos técnicos, Karin experimentó en carne propia las mismas trabas, postergaciones y demoras angustiosas que sufren las ciudadanas comunes:
+
+- Semanas de espera para obtener una cita médica inicial de sospecha.
+- Dificultades burocráticas para la programación de la mamografía y la biopsia confirmatoria.
+- Lentitud en la emisión de resultados anatomopatológicos indispensables para definir el subtipo tumoral (luminal, HER2 o triple negativo).
+- Desafíos para la programación quirúrgica y la disponibilidad ininterrumpida de quimioterapias y terapias dirigidas.
+
+Su testimonio desmiente la narrativa de que las demoras en el tratamiento oncológico son atribuibles al desconocimiento o descuido de las pacientes: el obstáculo real radica en las fallas estructurales y la desarticulación del sistema de salud.
+
+---
+
+## 3. Radiografía Epidemiológica del Cáncer de Mama en el Perú
+
+- **Incidencia:** Es el tipo de cáncer más diagnosticado en mujeres en el país, superando los 7,000 casos nuevos anuales.
+- **Mortalidad:** Representa la primera causa de muerte por neoplasia maligna en la población femenina peruana, cobrando más de 2,000 vidas cada año.
+- **Estadíos al diagnóstico:** En países desarrollados, más del 70% de casos se diagnostican en estadios tempranos (0, I y II), logrando tasas de curación superiores al 90%. En el Perú, la proporción se invierte: más del 70% de las pacientes son diagnosticadas en estadios tardíos (III y IV), donde el tratamiento es más invasivo, costoso y el pronóstico de supervivencia disminuye significativamente.
+- **Tiempos de espera:** Los estándares internacionales recomiendan que no transcurran más de 30 días entre la sospecha clínica y el inicio formal del tratamiento oncológico. En el sistema público peruano, este lapso suele extenderse entre cuatro y seis meses.
+
+---
+
+## 4. Las Cuatro Grandes Luchas del Sistema de Salud
+
+1. **Detección y Diagnóstico Oportuno:**
+   Carencia y mal funcionamiento de mamógrafos y ecógrafos en postas y centros de salud de nivel I y II. Las pacientes deben esperar meses solo para un examen de tamizaje, permitiendo el avance silencioso del tumor.
+
+2. **Citas Médicas y Trámites Burocráticos:**
+   Complejidad excesiva en las hojas de referencia y contrarreferencia. Expedientes que se extravían, falta de interoperabilidad digital entre establecimientos del SIS (Seguro Integral de Salud) y EsSalud, y ventanillas colapsadas.
+
+3. **Desabastecimiento de Medicamentos e Insumos:**
+   Quiebres de inventario prolongados en medicamentos oncológicos esenciales, terapias biológicas e insumos para radioterapia o quimioterapia. Las pacientes se ven obligadas a interrumpir sus ciclos de tratamiento o costear fármacos de alto precio de su propio bolsillo.
+
+4. **Centralización Extrema de la Atención:**
+   Más del 75% de los médicos oncólogos y los principales centros especializados (como el INEN) se encuentran concentrados en Lima Metropolitana. Las pacientes de regiones deben costear pasajes, alojamiento y alimentación en la capital, enfrentando el desarraigo familiar y el agotamiento físico.
+
+---
+
+## 5. La Ruta de la Paciente Oncológica (8 Hitos Críticos)
+
+1. **Hito 1 — Síntomas y Sospecha:** Detección de bulto, secreción por el pezón o cambios en la textura mamaria. Inicia la búsqueda de orientación médica.
+2. **Hito 2 — Cita Inicial y Espera:** Solicitud de consulta en posta médica. Espera de 15 a 45 días para la primera evaluación.
+3. **Hito 3 — Mamografía y Ecografía:** Orden de imágenes diagnósticas. Esperas de uno a tres meses por escasez de turnos y equipos.
+4. **Hito 4 — Biopsia y Resultados:** Toma de muestra de tejido y análisis patológico. Demora de hasta 60 días para la confirmación del diagnóstico.
+5. **Hito 5 — Derivación y Traslado:** Gestión de la hoja de referencia hacia hospital de nivel III o instituto especializado. Trámites presenciales recurrentes.
+6. **Hito 6 — Junta Médica y Planificación:** Evaluación por comité multidisciplinario (cirujano oncólogo, oncólogo médico, radioterapeuta) para definir el protocolo clínico.
+7. **Hito 7 — Inicio de Tratamiento:** Ejecución de cirugía conservadora o mastectomía, quimioterapia neoadyuvante/adyuvante, radioterapia o inmunoterapia.
+8. **Hito 8 — Seguimiento y Soporte:** Controles de vigilancia oncológica, rehabilitación física, terapia hormonal por 5 a 10 años y soporte psicooncológico.
+
+---
+
+## 6. Guía de Derechos de la Paciente Oncológica
+
+Amparada en la Ley N° 31336 (Ley Nacional del Cáncer) y la Ley N° 29414 (Ley de Derechos de los Usuarios de los Servicios de Salud):
+
+- **Derecho a la Atención Médica Oportuna y de Calidad:** Ningún establecimiento puede negar o demorar injustificadamente la atención oncológica requerida.
+- **Derecho a la Cobertura Oncológica Integral:** Cobertura de intervenciones de detección, diagnóstico, estadiaje, tratamiento y cuidados paliativos a través del Fondo Intangible Solidario de Salud (FISSAL) y el SIS o EsSalud.
+- **Derecho a la Segunda Opinión Médica:** Facultad legal de la paciente de solicitar una segunda evaluación profesional calificada antes de consentir procedimientos quirúrgicos o esquemas invasivos.
+- **Derecho al Consentimiento Informado:** Recibir explicación comprensible sobre riesgos, beneficios, secuelas y alternativas antes de cualquier intervención.
+- **Derecho a la Continuidad del Tratamiento:** Prohibición expresa de suspender ciclos terapéuticos por razones administrativas atribuibles a la institución de salud.
+- **Derecho a Reclamar y Denunciar:** Acceso a los libros de reclamaciones en salud físicos y virtuales, y al auxilio inmediato de SUSALUD.
+
+---
+
+## 7. El Observatorio Oncológico Ciudadano
+
+Herramienta comunitaria impulsada por Por un Perú Sin Cáncer que permite a los usuarios:
+- Reportar desabastecimiento de medicamentos específicos con nombre comercial o denominación común internacional (DCI).
+- Denunciar cancelaciones o reprogramaciones arbitrarias de citas médicas y cirugías.
+- Documentar cobros indebidos por medicamentos o exámenes que cuentan con cobertura de ley.
+- Generar reportes técnicos periódicos enviados al Ministerio de Salud (MINSA), la Defensoría del Pueblo y la Comisión de Salud del Congreso de la República.
+
+---
+
+## 8. Canales Institucionales de Asistencia y Denuncia en el Perú
+
+- **Línea 113 Salud (MINSA):** Opción 7 para orientación oncológica y derechos en salud (atención gratuita las 24 horas).
+- **SUSALUD:** App móvil "SUSALUD Contigo", WhatsApp institucional y página web oficial (www.gob.pe/susalud).
+- **Defensoría del Pueblo:** Adjuntía para la Administración Estatal y Servicios Públicos (0800-15-170).
+- **Asociación Por un Perú Sin Cáncer:** Portal oficial www.porunperusincancer.com y redes sociales institucionales.

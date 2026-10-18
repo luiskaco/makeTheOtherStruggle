@@ -1,0 +1,54 @@
+# =============================================================================
+# WordPress Core & Configuration (Hardening de seguridad)
+# =============================================================================
+wp-admin/
+wp-includes/
+wp-config.php
+wp-config-sample.php
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+license.txt
+readme.html
+index.php
+
+# =============================================================================
+# WordPress Dynamic Content & Default Themes
+# =============================================================================
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/languages/
+wp-content/plugins/*
+!wp-content/plugins/index.php
+wp-content/themes/twentytwenty*
+wp-content/themes/index.php
+
+# =============================================================================
+# Operating System & IDEs
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# =============================================================================
+# Temporary, Caches & Environments
+# =============================================================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+*.log
+.env
+.env.*

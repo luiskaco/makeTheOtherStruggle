@@ -1,0 +1,48 @@
+# La Otra Lucha — Por un Perú Sin Cáncer
+
+> Iniciativa nacional ciudadana y de salud pública en el Perú que visibiliza las barreras estructurales, demoras burocráticas y desabastecimiento en la ruta de atención del cáncer de mama, articulando el testimonio de Karin Pardo, el Observatorio Oncológico y la Guía de Derechos de la Paciente.
+
+## Resumen Ejecutivo
+
+El cáncer de mama es la neoplasia más frecuente y la principal causa de muerte por cáncer en mujeres en el Perú. Aunque el diagnóstico temprano eleva la tasa de supervivencia por encima del 90%, más del 70% de las pacientes peruanas son diagnosticadas en estadios avanzados (III y IV) debido a prolongadas listas de espera, centralización hospitalaria y trámites administrativos.
+
+La campaña "La Otra Lucha", impulsada por la asociación Por un Perú Sin Cáncer, postula que enfrentar la enfermedad oncológica ya es una lucha de enorme exigencia física y emocional, pero acceder a una atención médica oportuna y digna en el sistema de salud peruano se ha convertido en "la otra lucha" que ningún paciente debería atravesar solo.
+
+## Secciones y Contenidos Clave
+
+- [Inicio / Manifiesto](http://localhost/makeTheOtherStruggle/#inicio): Presentación de la iniciativa nacional impulsada por Por un Perú Sin Cáncer. Planteamiento de la problemática del acceso oportuno al tratamiento oncológico.
+- [Historia de Karin Pardo](http://localhost/makeTheOtherStruggle/#historia-karin): Testimonio de Karin Pardo Lopez, paciente con cáncer de mama y exviceministra de salud pública, quien relata cómo incluso con conocimiento exhaustivo de la gestión sanitaria pública, el sistema impone meses de espera entre la sospecha, la biopsia y el inicio del tratamiento.
+- [La Realidad del Cáncer de Mama en Perú](http://localhost/makeTheOtherStruggle/#realidad-cancer): Radiografía estadística del sistema de salud:
+  - Neoplasia número uno en incidencia y mortalidad femenina en el Perú.
+  - Siete de cada diez pacientes llegan en etapas avanzadas de la enfermedad.
+  - La brecha temporal promedio entre el primer síntoma y el primer tratamiento supera los cuatro a seis meses en el sector público.
+- [Las 4 Grandes Luchas](http://localhost/makeTheOtherStruggle/#las-cuatro-luchas):
+  1. **Detección Tardía:** Déficit de mamógrafos operativos en el primer nivel de atención y demora de meses para citas de tamizaje.
+  2. **Citas y Burocracia:** Trámites de referencia y contrarreferencia complejos, pérdida de expedientes y demoras en autorizaciones del SIS y EsSalud.
+  3. **Desabastecimiento de Medicamentos:** Quiebres de stock recurrentes en quimioterapias, terapias dirigidas, hormonoterapias e insumos quirúrgicos.
+  4. **Falta de Descentralización:** Más del 75% de médicos oncólogos concentrados en Lima, forzando a familias de regiones a desplazarse en condiciones de vulnerabilidad económica.
+- [La Ruta de la Paciente Oncológica](http://localhost/makeTheOtherStruggle/#la-investigacion): Mapeo cronológico de los 8 hitos críticos de atención:
+  1. *Síntomas y Detección:* Aparición de nódulos, cambios en la piel o secreciones.
+  2. *Consulta Médica Inicial:* Obtención de cita en posta o centro de salud de nivel I.
+  3. *Mamografía y Ecografía:* Derivación a centros de mayor complejidad con esperas prolongadas.
+  4. *Biopsia y Diagnóstico Definitivo:* Análisis anatomopatológico esencial para tipificar el tumor.
+  5. *Derivación y Traslado:* Burocracia de hojas de referencia hacia institutos especializados (INEN / IREN / Hospitales Nacionales).
+  6. *Junta Médica Multidisciplinaria:* Determinación del plan terapéutico personalizado.
+  7. *Tratamiento Oncológico:* Cirugía, quimioterapia, radioterapia e inmunoterapia.
+  8. *Seguimiento y Continuidad:* Controles periódicos de remisión y cuidados de soporte continuo.
+- [Guía de Derechos de la Paciente](http://localhost/makeTheOtherStruggle/#conoce-tus-derechos): Compendio informativo basado en la Ley Nacional del Cáncer (Ley N° 31336):
+  - Derecho a la atención médica prioritaria y oportuna.
+  - Derecho a una segunda opinión médica calificada.
+  - Derecho a la cobertura integral del tratamiento oncológico.
+  - Derecho a información clara y transparente sobre el diagnóstico y alternativas terapéuticas.
+  - Derecho a presentar quejas y denuncias sin represalias ni suspensión del servicio.
+- [Observatorio Oncológico y Acción](http://localhost/makeTheOtherStruggle/#evidencia-a-la-accion): Plataforma ciudadana para el registro y reporte de barreras de atención, falta de citas o medicamentos desabastecidos, canalizadas hacia SUSALUD y la Defensoría del Pueblo.
+- [Acompañamiento y Bienestar](http://localhost/makeTheOtherStruggle/#acompanamiento): Recursos de soporte emocional, orientación psicológica para la paciente y su entorno familiar, voluntariado y llamado a la acción ciudadana.
+
+## Marco Jurídico y Entidades de Contacto
+
+- **Ley N° 31336 (Ley Nacional del Cáncer):** Garantiza la cobertura universal, gratuita y prioritaria de los servicios oncológicos.
+- **Decreto Supremo N° 004-2022-SA:** Reglamento de la Ley Nacional del Cáncer.
+- **SUSALUD (Superintendencia Nacional de Salud):** Línea gratuita 113 (opción 7) para denuncias de vulneración de derechos en salud.
+- **Por un Perú Sin Cáncer:** Organización civil sin fines de lucro dedicada a la erradicación del cáncer en el Perú mediante educación, prevención e incidencia en políticas públicas.
+- **URL Oficial:** http://localhost/makeTheOtherStruggle/

@@ -1,0 +1,91 @@
+# 08 — Historial de Versiones (`CHANGELOG`)
+
+Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
+
+## [1.1.0] — 2026-10-18
+
+### Added
+- **Provisión de SEO Técnico Rank Math vía Base de Datos (`scripts/seed-rank-math-seo.php`):** Carga desatendida de metadatos SEO en `wp_postmeta` (post ID 7) y `wp_options` (`rank-math-options-titles`):
+  - Title tag optimizado a 51 caracteres (`La Otra Lucha | Atención del Cáncer de Mama en Perú`).
+  - Meta description optimizada a 161 caracteres.
+  - Focus keyword primaria y secundarias (`la otra lucha, cáncer de mama perú, ruta de atención oncológica`).
+  - Open Graph y Twitter Cards (`summary_large_image`) con imagen oficial de 1200x630px registrada como attachment en medios (`og-la-otra-lucha.jpg`, ID 9).
+  - Schema JSON-LD completo (`Organization`, `WebSite`, `WebPage`, `Article`, `Person`).
+  - Activación pública del frontend mediante `rank_math_registration_skip = 1` y `blog_public = 1`.
+- **Paquete Oficial de Favicons Multirresolución:**
+  - Isotipo vectorial `favicon.svg` con el lazo dual bicoloreado (rosado y morado con cruce 3D) sobre contenedor squircle institucional.
+  - Exportación de formatos PNG de alta definición (`favicon-16x16.png`, `favicon-32x32.png`, `favicon-48x48.png`, `apple-touch-icon.png` 180x180 y `site-icon-512x512.png`).
+  - Generación de contenedor binario `favicon.ico` (frames 16, 32 y 48) ubicado tanto en `assets/img/` como en la raíz pública del sitio.
+  - Enlazado de etiquetas en `header.php` y provisión de `site_icon` en `wp_options` de WordPress (Attachment ID 10).
+- **Archivos Estándar de Producción y Jerarquía WordPress:**
+  - Creación de plantillas completas de WordPress: `page.php` (páginas estándar), `404.php` (error personalizado accesible), `single.php` (entradas individuales con metadatos), `archive.php` (archivos de categorías/fechas con paginación) y `search.php` (resultados de búsqueda con estado vacío y formulario amigable).
+  - Integración de metadatos de aplicación: `site.webmanifest` y `manifest.json` (PWA con colores oficiales `#73589f`), `browserconfig.xml` (mosaicos de Windows) y enlaces en `header.php`.
+  - Estándares institucionales y de seguridad: `.well-known/security.txt` (RFC 9116) y `humans.txt` (créditos a Por un Perú Sin Cáncer).
+  - Documentación del tema `readme.txt` y catálogo de internacionalización `languages/la-otra-lucha.pot`.
+  - Hardening del CMS en `.htaccess` (headers `X-Frame-Options: SAMEORIGIN`, `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `Options -Indexes`, bloqueo de `xmlrpc.php`, `wp-config.php`, `.git`) y `DISALLOW_FILE_EDIT = true` en `wp-config.php`.
+- **Auditoría y Certificación de Codificación UTF-8:**
+  - Comprobación a nivel de byte de todos los recursos SEO (`llms.txt`, `llms-full.txt`, `robots.txt`, `humans.txt`, `site.webmanifest`, `manifest.json`, `browserconfig.xml`, `.well-known/security.txt` y `header.php`): 100% UTF-8 válido, sin Byte Order Mark (BOM) y sin patrones de mojibake.
+  - Validación de metadatos SEO en base de datos MySQL (tablas `wp_postmeta` y `wp_options` en `utf8mb4`): caracteres acentuados (`á`, `é`, `í`, `ó`, `ú`, `ñ`) preservados correctamente.
+  - Refuerzo en `.htaccess` mediante `AddDefaultCharset UTF-8` y `AddCharset UTF-8` para forzar cabeceras HTTP `Content-Type: text/plain; charset=utf-8` y `application/manifest+json; charset=utf-8`.
+- **Páginas Legales Oficiales y Auto-Provisión (`terminos-y-condiciones` & `politicas-de-privacidad`):**
+  - Redacción rigurosa de 'Políticas de Privacidad' bajo la Ley N° 29733 (Protección de Datos Personales de Perú), D.S. 003-2013-JUS, derechos ARCO (acceso, rectificación, cancelación, oposición con plazos de ley), autoridad de control (MINJUS-ANPDP) y correo `contacto@porunperusincancer.com`.
+  - Redacción rigurosa de 'Términos y Condiciones' bajo la Ley N° 29571 (Código del Consumidor), descargo estricto de responsabilidad médica (información no diagnóstica ni terapéutica que no reemplaza a un oncólogo colegiado), propiedad intelectual y fuero judicial de Lima, Perú.
+  - Creación desatendida en base de datos (`scripts/seed-legal-pages.php`) e integración permanente en `functions.php` (`la_otra_lucha_provision_legal_pages` en el hook `after_switch_theme`).
+  - Configuración automática de `wp_page_for_privacy_policy` en `wp_options`.
+  - Actualización de enlaces del pie de página (`footer.php`) con URLs canónicas limpias (`/terminos-y-condiciones/` y `/politicas-de-privacidad/`).
+  - Calibración de `permalink_structure` a `/%postname%/` con regeneración de reglas de reescritura de Apache.
+  - Renderizado editorial y maquetación responsive verificados con Chrome DevTools.
+
+
+### Changed
+- **Layout Responsivo Sección Karin Pardo:** Posicionado del titular rosa `.karin-story__quote` al costado derecho de la imagen de Karin en pantallas móviles (`< 62rem`), manteniendo la foto en tamaño completo sobre el fondo rosado y el texto biográfico fluyendo debajo con legibilidad óptima.
+
+## [1.0.0] — 2026-10-18
+
+### Added
+- **Theme Oficial de WordPress (`wp-content/themes/la-otra-lucha/`):** Paquete completo clásico/híbrido modular y actualizable con metadatos oficiales en `style.css` (v1.0.0, Text Domain `la-otra-lucha`).
+- **Auto-Aprovisionamiento de Página Frontal (Self-Provisioning):** En el hook `after_switch_theme`, el tema crea automáticamente la página estática "La Otra Lucha" y la asigna como portada (`show_on_front = page`, `page_on_front = $page_id`), refrescando los permalinks de forma desatendida.
+- **Miniatura Oficial del Theme (`screenshot.png`):** Generada en alta resolución (1200x900px, PNG de 32-bit) con la identidad visual oficial, fotografía calada del Hero, paleta de colores y resumen de funcionalidades para el panel de Temas de WordPress.
+- **Arquitectura Modular `template-parts/`:** División de las secciones en 8 componentes PHP independientes (`section-hero.php`, `section-karin.php`, `section-reality.php`, `section-four-fights.php`, `section-patient-route.php`, `section-quote-banner.php`, `section-rights.php` y `section-action-trio.php`) orquestados desde `front-page.php`.
+- **Helper con Fallback Dinámico (`lol_get_field()`):** Permite personalización mediante Advanced Custom Fields (ACF) si el plugin está activo, preservando el 100% de los datos y fidelidad visual de la maquetación estática por defecto si ACF no está instalado.
+- **Carga de ES Modules en WordPress:** Encolado secuencial de hojas CSS y filtro `script_loader_tag` para servir `js/main.js` nativamente como `type="module"`.
+- **Hardening CMS:** Supresión de `wp_generator`, enlaces WLW/RSD y desactivación de XML-RPC conforme a `.agents/rules/cms.md`.
+
+## [0.3.0] — 2026-10-18
+
+### Added
+- Integración del paquete oficial de recursos (`RECURSOS/SVG`, `PNG`, `WEBP`), fuentes completas (`Blackrush.ttf` y familia `Poppins-*.ttf`) e imágenes caladas por capas (`hero-calado.png`, `karin-calada.png` y `karin-cintas.png`).
+- Botón flotante de volver arriba (`#back-to-top` en `index.html`, `css/components.css` y `js/modules/navigation.js`) que aparece al descender el scroll y retorna suavemente al inicio.
+- Animación de entrada al hacer scroll (`.reveal-on-scroll` con variantes `--left`, `--right`, `--scale` y retrasos escalonados `--reveal-delay`) aplicada a los 69 elementos de las 10 secciones del landing en `js/modules/animations.js` y `css/components.css`.
+
+### Changed
+- Orden vertical coherente (`1 → 7`) en las opciones del menú principal (`#main-nav`) y del pie de página (`.site-footer__nav`), con compensación dinámica de `--header-height` según el alto real del header fijo y scroll-spy unificado para las 7 secciones.
+- Diseño móvil refinado con grillas `2x2` (`.stats-grid`, `.pillars-bar__list`, `.road-four__list`, `.road-eight__list`, `.rights-cards`) y pie de página centrado.
+- Conexión geométrica y encuadre dentro del contenedor de `1200px` en **Las 4 luchas** (`Recurso 19.svg` unido al borde inferior izquierdo de `.four-fights__callout`, pasos `1–4` encuadrados sin desborde lateral y `padding` vertical simétrico).
+- Conexión geométrica y encuadre dentro del contenedor de `1200px` en **La ruta de la paciente** (`Recurso 5.svg` con los pasos `1–8` encuadrados y `padding` superior/inferior de `~85–90px` respecto a las franjas moradas).
+- Escala proporcional (`2.22em–2.85em`) para las 7 palabras en fuente `Blackrush` y extracción del vector pincelado original (`#brush-stroke` desde `logo-otra-lucha.svg`) posicionado con `position: absolute` en títulos y nodos de ruta para evitar inflación de ancho.
+- Reemplazo de logos, íconos de derechos (`Recurso 8` a `12`), comillas texturizadas (`quote-open.svg` y `quote-close.svg` sin duplicados en `bg-footer-ribbons.svg`), redes sociales (`Recurso 16` a `18`) y fondos de cintas (`bg-quote-banner.svg`, `bg-footer-ribbons.svg`).
+
+## [0.2.1] — 2026-10-18
+
+### Changed
+- Aplicada la paleta de colores oficial confirmada por Diseño en `css/variables.css`: Blanco (`#ffffff`), Gris (`#646160`), Rosado (`#e46f94`), Rosado suave (`#e77fa0`) y Morado (`#73589f`).
+- Aplicada la jerarquía tipográfica oficial del diseñador en `css/variables.css`, `css/reset.css`, `css/components.css` y `css/sections.css`:
+  - **Títulos:** `Veneer TwoRegular` y `Blackrush`.
+  - **Subtítulos:** `Poppins SemiBold` (`600`).
+  - **Textos:** `Poppins Light` (`300`), palabras resaltadas (`<strong>`) en `Poppins Medium` (`500`) y cursivas (`<em>`) en `Poppins SemiBold Italic` (`600 italic`).
+
+## [0.2.0] — 2026-10-17
+
+### Added
+- Extracción directa desde `diseno/LANDING.pdf` de las fuentes originales `Blackrush.ttf` (`Obj 39`) y `Veneer-Two.otf` (`Obj 31` empaquetado con `fontTools`) en `scripts/extract-pdf-assets.py` y carga mediante `@font-face` en `css/variables.css`.
+
+### Changed
+- Ajuste del contenedor principal a `1200px` (`--container-max: 1200px`) y fidelidad visual 1:1 en las 10 secciones contra `diseno/1.png`–`10.png`.
+
+## [0.1.0] — 2026-10-17
+
+### Added
+- Documentación fundacional completa del proyecto en `/docs` (`01_PROJECT_PRD.md` a `10_RUNBOOK.md` y glosario `CONTEXT.md`) y configuración de proyecto en `AGENTS.md`.
+- Script reproducible `scripts/extract-pdf-assets.py` para extraer las fotografías originales en alta resolución (`hero-mujeres.png` y `karin-pardo.jpg`) directamente desde `diseno/LANDING.pdf`.
+- Maquetación completa One-Page en `index.html`, estilos BEM en `css/` y módulos ES6 en `js/`.
