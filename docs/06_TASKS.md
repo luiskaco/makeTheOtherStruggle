@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Creadas y aprovisionadas en WordPress las páginas legales enlazadas en el footer: 'Términos y Condiciones' (ID 11, `/terminos-y-condiciones/`) y 'Políticas de Privacidad' (ID 12, `/politicas-de-privacidad/`). Redacción conforme a la normativa peruana vigente (Ley N° 29733 de Protección de Datos Personales, D.S. 003-2013-JUS, derechos ARCO, Ley N° 29571 del Consumidor y descargo de responsabilidad médica). Auto-provisión implementada en `functions.php` (`after_switch_theme`) y script `scripts/seed-legal-pages.php`. Enlaces del footer actualizados a URLs canónicas limpias. Estructura de permalinks calibrada a `/%postname%/` con regeneración de reglas de reescritura. Verificado visualmente y con DOM inspection en Chrome DevTools.
+- **Dónde quedó:** Sincronizado exitosamente con el repositorio remoto de GitHub (`origin/main`). Se enviaron el tema oficial de WordPress (`wp-content/themes/la-otra-lucha/`), la suite completa de documentación (`docs/`), configuración de agentes y reglas (`.agents/`, `AGENTS.md`), especificaciones de SEO para IA (`llms.txt`, `llms-full.txt`) y `.gitignore` de protección del CMS.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
