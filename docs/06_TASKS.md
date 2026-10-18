@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Sincronizado exitosamente con el repositorio remoto de GitHub (`origin/main`). Se enviaron el tema oficial de WordPress (`wp-content/themes/la-otra-lucha/`), la suite completa de documentación (`docs/`), configuración de agentes y reglas (`.agents/`, `AGENTS.md`), especificaciones de SEO para IA (`llms.txt`, `llms-full.txt`) y `.gitignore` de protección del CMS.
+- **Dónde quedó:** Implementada navegación bidireccional y retorno dinámico a la página principal desde páginas interiores (`terminos-y-condiciones`, `politicas-de-privacidad`, etc.). El logo institucional en `header.php` y `footer.php` ahora evalúa `is_front_page()` para enlazar a `home_url('/')` en páginas internas y `#inicio` en la portada. Los 7 enlaces del menú y el CTA adoptan prefijos absolutos fuera de la portada para dirigir a las secciones del landing. Se añadieron botones de retorno accesibles tipo píldora (`.btn-back-home`) en la cabecera y pie de `page.php`, con estilos en `css/sections.css` y micro-animación en hover. Verificado en vivo en Chrome DevTools y sincronizado con GitHub.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -40,6 +40,7 @@
 - [x] **T-23:** Creación de archivos estándar de producción web y WordPress: plantillas completas de jerarquía (`page.php`, `404.php`, `single.php`, `archive.php`, `search.php`), documentación oficial del tema (`readme.txt`), catálogo de traducción Gettext (`languages/la-otra-lucha.pot`), metadatos PWA y mosaicos (`site.webmanifest`, `manifest.json`, `browserconfig.xml`), estándares institucionales (`.well-known/security.txt`, `humans.txt`), y hardening de seguridad en `.htaccess` y `wp-config.php` (`DISALLOW_FILE_EDIT`, bloqueo de `xmlrpc.php`, `wp-config.php`, `.git` y headers `X-Frame-Options: SAMEORIGIN`, `X-Content-Type-Options: nosniff`).
 - [x] **T-24:** Auditoría y certificación de codificación UTF-8 en archivos y metadatos SEO (`scripts/check-utf8-seo.py`): validación de integridad UTF-8 sin BOM en `llms.txt`, `llms-full.txt`, `robots.txt`, `humans.txt`, `site.webmanifest`, `manifest.json` y `header.php`; verificación de almacenamiento sin mojibake en MySQL (`wp_postmeta` de Rank Math en `utf8mb4`); y refuerzo de directivas `AddDefaultCharset UTF-8` y `AddCharset UTF-8` en `.htaccess` para entrega HTTP consistente.
 - [x] **T-25:** Creación y provisión de las páginas legales del footer: 'Términos y Condiciones' y 'Políticas de Privacidad' conforme a la Ley N° 29733 (Perú) y lineamientos de prelaunch-compliance-audit, auto-provisión en WordPress, actualización de enlaces dinámicos en `footer.php` y verificación de renderizado en Chrome DevTools.
+- [x] **T-26:** Implementación de navegación de retorno bidireccional desde páginas internas (`page.php`, `terminos-y-condiciones`, `politicas-de-privacidad`): lógica dinámica con `is_front_page()` en `header.php` y `footer.php` para apuntar el logo a `home_url('/')` y las opciones del menú/CTA a sus anclas absolutas, adición de componentes de miga de pan (`.btn-back-home`) y botón al pie del artículo en `page.php`, con estilos en `css/sections.css` y validación en Chrome DevTools.
 
 ---
 

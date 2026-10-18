@@ -38,6 +38,7 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
 
 
 ### Changed
+- **Navegación de Retorno Bidireccional:** Integración de enlaces dinámicos en el header y footer para permitir retornar a la portada desde páginas interiores (`terminos-y-condiciones`, `politicas-de-privacidad`, `404.php`, etc.), botones de miga de pan superior (`.btn-back-home`) y botón al pie del artículo en `page.php` con micro-animaciones hover.
 - **Layout Responsivo Sección Karin Pardo:** Posicionado del titular rosa `.karin-story__quote` al costado derecho de la imagen de Karin en pantallas móviles (`< 62rem`), manteniendo la foto en tamaño completo sobre el fondo rosado y el texto biográfico fluyendo debajo con legibilidad óptima.
 
 ## [1.0.0] — 2026-10-18

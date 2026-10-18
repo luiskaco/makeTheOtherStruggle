@@ -45,10 +45,16 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
     </div>
 
+<?php
+$is_front          = is_front_page();
+$home_url          = home_url( '/' );
+$logo_footer_href  = $is_front ? '#inicio' : esc_url( $home_url );
+$nav_footer_prefix = $is_front ? '' : esc_url( $home_url );
+?>
     <div class="container site-footer__main">
       <!-- Columna 1: Logos Institucionales en blanco (Recurso 15.svg + Recurso 14.svg) -->
       <div class="site-footer__brands">
-        <a href="#inicio" class="brand-logos" aria-label="Por un Perú Sin Cáncer — La Otra Lucha, volver arriba">
+        <a href="<?php echo $logo_footer_href; ?>" class="brand-logos" aria-label="Por un Perú Sin Cáncer — La Otra Lucha, volver arriba">
           <img
             src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/logo-pupsc-white.svg' ); ?>"
             alt="Por un Perú Sin Cáncer"
@@ -69,13 +75,13 @@ if ( ! defined( 'ABSPATH' ) ) {
       <!-- Columna 2: Mapa de Secciones -->
       <nav class="site-footer__nav" aria-label="Enlaces de secciones en el pie de página">
         <ul class="site-footer__nav-list">
-          <li><a href="#historia-karin" class="site-footer__nav-link">La historia de <strong>KARIN PARDO</strong></a></li>
-          <li><a href="#realidad-cancer" class="site-footer__nav-link">La realidad del cáncer de mama</a></li>
-          <li><a href="#las-cuatro-luchas" class="site-footer__nav-link">La ruta de la paciente</a></li>
-          <li><a href="#la-investigacion" class="site-footer__nav-link">La investigación</a></li>
-          <li><a href="#conoce-tus-derechos" class="site-footer__nav-link">Conoce tus derechos</a></li>
-          <li><a href="#evidencia-a-la-accion" class="site-footer__nav-link">De la evidencia a la acción</a></li>
-          <li><a href="#acompanamiento" class="site-footer__nav-link">Acompañamiento y bienestar</a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#historia-karin' ); ?>" class="site-footer__nav-link">La historia de <strong>KARIN PARDO</strong></a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#realidad-cancer' ); ?>" class="site-footer__nav-link">La realidad del cáncer de mama</a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#las-cuatro-luchas' ); ?>" class="site-footer__nav-link">La ruta de la paciente</a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#la-investigacion' ); ?>" class="site-footer__nav-link">La investigación</a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#conoce-tus-derechos' ); ?>" class="site-footer__nav-link">Conoce tus derechos</a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#evidencia-a-la-accion' ); ?>" class="site-footer__nav-link">De la evidencia a la acción</a></li>
+          <li><a href="<?php echo esc_url( $nav_footer_prefix . '#acompanamiento' ); ?>" class="site-footer__nav-link">Acompañamiento y bienestar</a></li>
         </ul>
       </nav>
 

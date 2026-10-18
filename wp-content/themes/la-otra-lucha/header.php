@@ -33,11 +33,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
   
 
+<?php
+$is_front   = is_front_page();
+$home_url   = home_url( '/' );
+$logo_href  = $is_front ? '#inicio' : esc_url( $home_url );
+$nav_prefix = $is_front ? '' : esc_url( $home_url );
+?>
   <a href="#contenido-principal" class="skip-link"><?php esc_html_e( 'Saltar al contenido principal', 'la-otra-lucha' ); ?></a>
 
   <header class="site-header" data-wp-part="header">
     <div class="container site-header__top">
-      <a href="#inicio" class="brand-logos" aria-label="Por un Perú Sin Cáncer — La Otra Lucha, ir al inicio">
+      <a href="<?php echo $logo_href; ?>" class="brand-logos" aria-label="Por un Perú Sin Cáncer — La Otra Lucha, ir al inicio">
         <img
           src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/logo-pupsc.svg' ); ?>"
           alt="Por un Perú Sin Cáncer"
@@ -71,30 +77,30 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="container site-nav__inner">
         <ul class="site-nav__list">
           <li class="site-nav__item">
-            <a href="#historia-karin" class="site-nav__link">La historia de<br /><strong>KARIN PARDO</strong></a>
+            <a href="<?php echo esc_url( $nav_prefix . '#historia-karin' ); ?>" class="site-nav__link">La historia de<br /><strong>KARIN PARDO</strong></a>
           </li>
           <li class="site-nav__item">
-            <a href="#realidad-cancer" class="site-nav__link">La realidad del<br />cáncer de mama</a>
+            <a href="<?php echo esc_url( $nav_prefix . '#realidad-cancer' ); ?>" class="site-nav__link">La realidad del<br />cáncer de mama</a>
           </li>
           <li class="site-nav__item">
-            <a href="#las-cuatro-luchas" class="site-nav__link">La ruta de<br />la paciente</a>
+            <a href="<?php echo esc_url( $nav_prefix . '#las-cuatro-luchas' ); ?>" class="site-nav__link">La ruta de<br />la paciente</a>
           </li>
           <li class="site-nav__item">
-            <a href="#la-investigacion" class="site-nav__link">La investigación</a>
+            <a href="<?php echo esc_url( $nav_prefix . '#la-investigacion' ); ?>" class="site-nav__link">La investigación</a>
           </li>
           <li class="site-nav__item">
-            <a href="#conoce-tus-derechos" class="site-nav__link">Conoce tus<br />derechos</a>
+            <a href="<?php echo esc_url( $nav_prefix . '#conoce-tus-derechos' ); ?>" class="site-nav__link">Conoce tus<br />derechos</a>
           </li>
           <li class="site-nav__item">
-            <a href="#evidencia-a-la-accion" class="site-nav__link">De la evidencia<br />a la acción</a>
+            <a href="<?php echo esc_url( $nav_prefix . '#evidencia-a-la-accion' ); ?>" class="site-nav__link">De la evidencia<br />a la acción</a>
           </li>
           <li class="site-nav__item">
-            <a href="#acompanamiento" class="site-nav__link">Acompañamiento<br />y bienestar</a>
+            <a href="<?php echo esc_url( $nav_prefix . '#acompanamiento' ); ?>" class="site-nav__link">Acompañamiento<br />y bienestar</a>
           </li>
         </ul>
 
         <div class="site-nav__cta-wrap">
-          <a href="#conoce-tus-derechos" class="btn btn--purple btn--nav" data-acf-field="header_cta">
+          <a href="<?php echo esc_url( $nav_prefix . '#conoce-tus-derechos' ); ?>" class="btn btn--purple btn--nav" data-acf-field="header_cta">
             INFÓRMATE Y EXIGE
           </a>
         </div>
