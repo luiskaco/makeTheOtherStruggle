@@ -72,40 +72,40 @@ $nav_prefix = $is_front ? '' : esc_url( $home_url );
         <span class="site-header__toggle-bar" aria-hidden="true"></span>
       </button>
     </div>
-
-    <nav id="main-nav" class="site-nav" aria-label="Navegación principal">
-      <div class="container site-nav__inner">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#historia-karin' ); ?>" class="site-nav__link">La historia de<br /><strong>KARIN PARDO</strong></a>
-          </li>
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#realidad-cancer' ); ?>" class="site-nav__link">La realidad del<br />cáncer de mama</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#las-cuatro-luchas' ); ?>" class="site-nav__link">La ruta de<br />la paciente</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#la-investigacion' ); ?>" class="site-nav__link">La investigación</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#conoce-tus-derechos' ); ?>" class="site-nav__link">Conoce tus<br />derechos</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#evidencia-a-la-accion' ); ?>" class="site-nav__link">De la evidencia<br />a la acción</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="<?php echo esc_url( $nav_prefix . '#acompanamiento' ); ?>" class="site-nav__link">Acompañamiento<br />y bienestar</a>
-          </li>
-        </ul>
-
-        <div class="site-nav__cta-wrap">
-          <a href="<?php echo esc_url( $nav_prefix . '#conoce-tus-derechos' ); ?>" class="btn btn--purple btn--nav" data-acf-field="header_cta">
-            INFÓRMATE Y EXIGE
-          </a>
-        </div>
-      </div>
-    </nav>
   </header>
+
+  <nav id="main-nav" class="site-nav" aria-label="Navegación principal">
+    <div class="container site-nav__inner">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#historia-karin' ); ?>" class="site-nav__link">La historia de<br /><strong>KARIN PARDO</strong></a>
+        </li>
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#realidad-cancer' ); ?>" class="site-nav__link">La realidad del<br />cáncer de mama</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#las-cuatro-luchas' ); ?>" class="site-nav__link">La ruta de<br />la paciente</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#la-investigacion' ); ?>" class="site-nav__link">La investigación</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#conoce-tus-derechos' ); ?>" class="site-nav__link">Conoce tus<br />derechos</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#evidencia-a-la-accion' ); ?>" class="site-nav__link">De la evidencia<br />a la acción</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="<?php echo esc_url( $nav_prefix . '#acompanamiento' ); ?>" class="site-nav__link">Acompañamiento<br />y bienestar</a>
+        </li>
+      </ul>
+
+      <div class="site-nav__cta-wrap">
+        <a href="<?php echo esc_url( $nav_prefix . '#conoce-tus-derechos' ); ?>" class="btn btn--purple btn--nav" data-acf-field="header_cta">
+          INFÓRMATE Y EXIGE
+        </a>
+      </div>
+    </div>
+  </nav>
 
   <main id="contenido-principal" class="page-ribbons-bg">

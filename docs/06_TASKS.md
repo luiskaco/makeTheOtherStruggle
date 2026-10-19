@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Calibrada la alineación responsiva de la cabecera superior (`.site-header__top`): en dispositivos móviles y tablets (< 1100px) los logos se mantienen alineados a la izquierda y el botón hamburguesa a la derecha (`space-between`), mientras que en pantallas desktop (>= 1100px) se mantienen centrados en el medio exacto. Verificado con Chrome DevTools en móvil (375px), tablet (768px) y desktop (1440px). Versión 1.2.2 sincronizada.
+- **Dónde quedó:** Desacoplada la fijación sticky de la cabecera: la sección de logos (`.site-header`) ahora tiene flujo natural y desaparece con el scroll, mientras que únicamente la barra rosa de navegación (`.site-nav`) se mantiene fija (`position: sticky; top: 0; z-index: 100`) en pantallas desktop. Se actualizó `body` con `overflow-x: clip`, se recalibraron los offsets de scroll y scroll-spy en `navigation.js`, y se verificó con Chrome DevTools. Versión 1.2.3 sincronizada.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -47,6 +47,7 @@
 - [x] **T-30:** Implementación de suite de seguridad y hardening integral para WordPress conforme a `.agents/rules/cms.md` y `security.md`: claves/salts únicos en `wp-config.php`, headers de protección y bloqueo de inyecciones/enumeración en `.htaccess`, y supresión de fingerprinting/REST API users en `functions.php`.
 - [x] **T-31:** Centrado de logos institucionales en la cabecera superior (`.site-header__top`): alineación horizontal en el centro de la pantalla tanto en desktop como en móvil mediante flexbox y posicionamiento flotante del botón hamburguesa, garantizando espaciado y balance visual simétrico.
 - [x] **T-32:** Ajuste responsivo de alineación de logos en cabecera superior (`.site-header__top`): alineación a la izquierda (`space-between` con el botón menú) en móvil y tablet (< 1100px / 68.75rem), manteniendo el centrado simétrico exclusivamente en pantallas desktop (>= 1100px).
+- [x] **T-33:** Desacople de fijación sticky entre cabecera de logos y barra de navegación: convertir la sección de logos (`.site-header`) en flujo estático natural para que suba y desaparezca al hacer scroll, manteniendo únicamente el menú rosa (`.site-nav`) fijado en sticky (`top: 0`) en desktop, adaptando `overflow-x: clip` en `body` y recalibrando compensaciones de scroll suave y scroll-spy en `navigation.js`.
 
 ---
 

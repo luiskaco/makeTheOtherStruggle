@@ -2,6 +2,12 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.2.3] — 2026-10-19
+
+### Changed
+- **Desacople Sticky de Cabecera y Navegación:** La sección de logos institucionales (`.site-header`) pasa a flujo estático natural para desplazarse y ocultarse con el scroll, manteniendo únicamente la barra de navegación rosa (`.site-nav`) fijada en la parte superior (`position: sticky; top: 0; z-index: 100`) en pantallas desktop, reduciendo el área ocupada y mejorando la superficie de lectura del contenido.
+- **Soporte y Compensación de Scroll:** Actualización de `body` a `overflow-x: clip` en `reset.css` para compatibilidad de fijación sticky y recalibración de offsets dinámicos de anclas y scroll-spy en `navigation.js`.
+
 ## [1.2.2] — 2026-10-19
 
 ### Changed

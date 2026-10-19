@@ -13,18 +13,18 @@ export function initNavigation() {
   const navLinks = Array.from(document.querySelectorAll('.site-nav__link'));
   const backToTopBtn = document.querySelector('#back-to-top');
 
-  // 1. Sincronizar dinámicamente `--header-height` para que ningún título quede tapado por el header
+  // 1. Sincronizar dinámicamente `--header-height` según la barra de navegación fija en desktop
   const syncHeaderHeight = () => {
-    if (!header) return;
-    const offset = header.offsetHeight + 12;
+    const isDesktop = window.innerWidth >= 1100;
+    const offset = isDesktop && navContainer && navContainer.offsetHeight ? navContainer.offsetHeight + 12 : 0;
     document.documentElement.style.setProperty('--header-height', `${offset}px`);
   };
 
   syncHeaderHeight();
   window.addEventListener('resize', syncHeaderHeight, { passive: true });
-  if (header && 'ResizeObserver' in window) {
-    const headerObserver = new ResizeObserver(syncHeaderHeight);
-    headerObserver.observe(header);
+  if (navContainer && 'ResizeObserver' in window) {
+    const navObserver = new ResizeObserver(syncHeaderHeight);
+    navObserver.observe(navContainer);
   }
 
   // 2. Menú móvil accesible
@@ -82,10 +82,11 @@ export function initNavigation() {
         return;
       }
 
-      const headerOffset = header ? header.offsetHeight + 10 : 174;
+      const isDesktop = window.innerWidth >= 1100;
+      const navOffset = isDesktop && navContainer ? navContainer.offsetHeight + 10 : 16;
       const targetTop = Math.max(
         0,
-        targetEl.getBoundingClientRect().top + window.scrollY - headerOffset
+        targetEl.getBoundingClientRect().top + window.scrollY - navOffset
       );
 
       window.scrollTo({ top: targetTop, behavior: 'smooth' });
@@ -117,8 +118,9 @@ export function initNavigation() {
 
     if (!navTargets.length) return;
 
-    const headerOffset = header ? header.offsetHeight + 48 : 210;
-    const probeLine = scrollY + headerOffset;
+    const isDesktop = window.innerWidth >= 1100;
+    const navOffset = isDesktop && navContainer ? navContainer.offsetHeight + 24 : 32;
+    const probeLine = scrollY + navOffset;
 
     let activeItem = null;
     for (const item of navTargets) {

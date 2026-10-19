@@ -23,9 +23,6 @@
    Header Institucional + Barra de Navegación (Fiel a diseno/1.png)
    -------------------------------------------------------------------------- */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   background-color: var(--color-bg-white);
 }
 
@@ -153,8 +150,12 @@
   }
 
   .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     max-height: none;
     overflow: visible;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
   }
 
   .site-nav__inner {
