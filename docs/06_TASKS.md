@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Creada e integrada la nueva sección del Estudio del Observatorio (`template-parts/section-patient-study.php`) ubicada encima de `section-quote-banner.php`. Presenta la tarjeta con degradado suave y cintas vectoriales, la píldora superior, el titular en dos líneas, subtítulo institucional, estadísticas de 59,5% (dificultades en exámenes) y 60,6% (retrasos en inicio de tratamiento) con iconografía SVG personalizada, cita de reflexión y botón CTA que enlaza a `https://observatoriodecancer.com/resultado-la-ruta-del-paciente/`. Estilos responsivos en `css/sections.css`, integración con ACF y versionado v1.3.0.
+- **Dónde quedó:** Reubicada la sección del Estudio del Observatorio (`template-parts/section-patient-study.php`) para situarse inmediatamente después del banner morado de testimonios (`section-quote-banner.php`) y antes de la sección de Derechos (`section-rights.php`) en `front-page.php`. Verificado en el DOM renderizado y responsivo.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -49,6 +49,7 @@
 - [x] **T-32:** Ajuste responsivo de alineación de logos en cabecera superior (`.site-header__top`): alineación a la izquierda (`space-between` con el botón menú) en móvil y tablet (< 1100px / 68.75rem), manteniendo el centrado simétrico exclusivamente en pantallas desktop (>= 1100px).
 - [x] **T-33:** Desacople de fijación sticky entre cabecera de logos y barra de navegación: convertir la sección de logos (`.site-header`) en flujo estático natural para que suba y desaparezca al hacer scroll, manteniendo únicamente el menú rosa (`.site-nav`) fijado en sticky (`top: 0`) en desktop, adaptando `overflow-x: clip` en `body` y recalibrando compensaciones de scroll suave y scroll-spy en `navigation.js`.
 - [x] **T-34:** Creación de nueva sección 'La Ruta de la Paciente con Cáncer de Mama - Estudio del Observatorio' (`template-parts/section-patient-study.php`): tarjeta con degradado e iconografía estadística (59,5% en exámenes y 60,6% en inicio de tratamiento), botón CTA con enlace al informe oficial del Observatorio Oncológico, posicionamiento encima de `section-quote-banner.php` y estilos responsivos en `css/sections.css`.
+- [x] **T-35:** Reubicación de la sección Estudio del Observatorio: mover `template-parts/section-patient-study.php` para posicionarse debajo del banner morado (`section-quote-banner.php`) y antes de la Guía de Derechos (`section-rights.php`) en `front-page.php`.
 
 ---
 
