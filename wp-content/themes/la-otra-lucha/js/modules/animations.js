@@ -5,7 +5,11 @@
  * - Respeta prefers-reduced-motion: reduce
  */
 
-function formatStatNumber(value, useComma) {
+function formatStatNumber(value, useComma, decimals = 0) {
+  if (decimals > 0) {
+    const fixed = value.toFixed(decimals);
+    return useComma ? fixed.replace('.', ',') : fixed;
+  }
   const rounded = Math.round(value);
   if (!useComma) {
     return String(rounded);
@@ -17,6 +21,7 @@ function animateCounter(element) {
   const target = Number(element.dataset.countTarget || 0);
   const suffix = element.dataset.countSuffix || '';
   const useComma = element.dataset.countComma === 'true';
+  const decimals = Number(element.dataset.countDecimals || 0);
   const durationMs = 1400;
   const startTime = performance.now();
 
@@ -26,12 +31,12 @@ function animateCounter(element) {
     // Ease-out cubic
     const eased = 1 - Math.pow(1 - progress, 3);
     const currentValue = target * eased;
-    element.textContent = `${formatStatNumber(currentValue, useComma)}${suffix}`;
+    element.textContent = `${formatStatNumber(currentValue, useComma, decimals)}${suffix}`;
 
     if (progress < 1) {
       requestAnimationFrame(step);
     } else {
-      element.textContent = `${formatStatNumber(target, useComma)}${suffix}`;
+      element.textContent = `${formatStatNumber(target, useComma, decimals)}${suffix}`;
     }
   };
 
@@ -53,6 +58,7 @@ export function initAnimations() {
     { selector: '.patient-route__title, .patient-route__subtitle, .patient-route__header .outlined-callout', stepMs: 95 },
     { selector: '.road-eight__item', stepMs: 75 },
     { selector: '.quote-banner .quote-showcase__row, .quote-banner .btn', stepMs: 110 },
+    { selector: '.patient-study__title, .patient-study__subtitle, .patient-study__desc, .patient-study__stats, .patient-study__tagline, .patient-study__cta-wrap', stepMs: 100 },
     { selector: '.rights-guide__eyebrow, .rights-guide__title', stepMs: 90 },
     { selector: '.rights-cards .rights-card', stepMs: 95, variant: 'reveal-on-scroll--scale' },
     { selector: '.action-trio .action-card', stepMs: 120 },

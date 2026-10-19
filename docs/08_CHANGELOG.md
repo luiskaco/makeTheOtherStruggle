@@ -6,11 +6,11 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
 
 ### Added
 - **Sección 'La Ruta de la Paciente con Cáncer de Mama - Estudio del Observatorio' (`section-patient-study.php`):**
-  - Implementación de tarjeta destacada con fondo en degradado suave y cintas vectoriales SVG decorativas en ambos laterales.
-  - Píldora institucional `"UN ESTUDIO PIONERO EN EL PERÚ"`, titular y bajada explicativa sobre barreras y demoras en el sistema de salud.
-  - Grilla de 2 estadísticas clave con iconografía SVG personalizada y separador vertical (`59,5%` dificultades en exámenes y `60,6%` retrasos en inicio de tratamiento).
+  - Integración fluida y editorial con la interfaz sin contenedor encajonado ni bordes rígidos, eliminando la burbuja superior para armonizar la lectura con el resto de la página.
+  - Fondo degradado suave rosado con formas de cinta fluidas difuminadas en los extremos.
+  - Grilla de 2 estadísticas clave con iconografía SVG personalizada, separador vertical y conteo numérico animado fluido (`59,5%` y `60,6%`) con soporte para decimales en `animations.js`.
   - Cita de reflexión `"La ruta hacia el tratamiento también importa."` y botón CTA guinda interactivo con enlace externo seguro a `https://observatoriodecancer.com/resultado-la-ruta-del-paciente/`.
-  - Integración en `front-page.php` ubicada estratégicamente debajo de la sección de testimonios `section-quote-banner.php` y antes de `section-rights.php`.
+  - Integración de animaciones de entrada progresiva (`reveal-on-scroll`) para todos los elementos del bloque.
   - Soporte para campos de Advanced Custom Fields (ACF) mediante el helper resiliente `lol_get_field()`.
 
 ## [1.2.3] — 2026-10-19
