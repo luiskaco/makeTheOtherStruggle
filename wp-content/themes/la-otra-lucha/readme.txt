@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.2.3
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.3.0 =
+* Nueva sección: Estudio del Observatorio Oncológico sobre la Ruta de la Paciente con Cáncer de Mama (tarjeta interactiva con estadísticas 59,5% y 60,6%, botón CTA oficial hacia observatoriodecancer.com).
+
 = 1.2.3 =
 * Desacople sticky: la sección superior de logos (.site-header) fluye de forma natural y desaparece con el scroll, manteniendo exclusivamente la barra de navegación (.site-nav) fijada en sticky (top: 0) en desktop.
 

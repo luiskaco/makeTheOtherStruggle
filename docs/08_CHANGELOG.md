@@ -2,6 +2,17 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.3.0] — 2026-10-19
+
+### Added
+- **Sección 'La Ruta de la Paciente con Cáncer de Mama - Estudio del Observatorio' (`section-patient-study.php`):**
+  - Implementación de tarjeta destacada con fondo en degradado suave y cintas vectoriales SVG decorativas en ambos laterales.
+  - Píldora institucional `"UN ESTUDIO PIONERO EN EL PERÚ"`, titular y bajada explicativa sobre barreras y demoras en el sistema de salud.
+  - Grilla de 2 estadísticas clave con iconografía SVG personalizada y separador vertical (`59,5%` dificultades en exámenes y `60,6%` retrasos en inicio de tratamiento).
+  - Cita de reflexión `"La ruta hacia el tratamiento también importa."` y botón CTA guinda interactivo con enlace externo seguro a `https://observatoriodecancer.com/resultado-la-ruta-del-paciente/`.
+  - Integración en `front-page.php` ubicada estratégicamente encima de la sección `section-quote-banner.php`.
+  - Soporte para campos de Advanced Custom Fields (ACF) mediante el helper resiliente `lol_get_field()`.
+
 ## [1.2.3] — 2026-10-19
 
 ### Changed

@@ -192,7 +192,7 @@ archivos markdown planos.
 
 - **Qué es:** Theme oficial de WordPress para **La Otra Lucha** (*Por un Perú Sin Cáncer*), iniciativa para visibilizar las barreras en la ruta de atención de pacientes con cáncer de mama en el Perú, el caso de Karin Pardo, la Guía de Derechos y el Observatorio Oncológico.
 - **Stack real:**
-  - **Fase 2 (Activa):** WordPress 6.x + PHP 8.3 (Theme Clásico/Híbrido modular en `wp-content/themes/la-otra-lucha/` v1.2.3 con `template-parts/`, suite completa de jerarquía de plantillas, CSS puro, Vanilla JS ES Modules, auto-provisión de página frontal en `after_switch_theme`, suite PWA, favicons vectoriales y SEO para IA con `llms.txt`).
+  - **Fase 2 (Activa):** WordPress 6.x + PHP 8.3 (Theme Clásico/Híbrido modular en `wp-content/themes/la-otra-lucha/` v1.3.0 con `template-parts/`, suite completa de jerarquía de plantillas, CSS puro, Vanilla JS ES Modules, auto-provisión de página frontal en `after_switch_theme`, suite PWA, favicons vectoriales y SEO para IA con `llms.txt`).
 - **Comandos y Entorno:**
   - **Servidor local (Laragon):** `http://localhost/makeTheOtherStruggle/`
   - **Admin WordPress:** `http://localhost/makeTheOtherStruggle/wp-admin/`

@@ -60,13 +60,32 @@ erDiagram
 | `fights_steps` | `repeater` (4 ítems) | `step_number` (`1`..`4`), `step_label` (*La lucha por conseguir atención*, etc.) |
 | `fights_pillars` | `repeater` (4 ítems) | *Cada etapa importa*, *Cada etapa demora*, *Cada etapa merece ser investigada*, *Cada barrera debe poder visibilizarse* |
 
-### 2.5. `group_patient_route` (Sección 5 y 6: La Ruta de la Paciente + Observatorio)
+### 2.5. `group_patient_route` (Sección 5: La Ruta de la Paciente)
 | Campo (`name`) | Tipo ACF | Subcampos / Valor |
 |---|---|---|
 | `route_heading` | `text` | `LA RUTA DE LA PACIENTE CON CÁNCER DE MAMA` |
 | `route_Subheading` | `text` | `¿QUÉ BUSCAMOS CONOCER?` |
 | `route_intro_box` | `wysiwyg` | `No queremos saber únicamente si una paciente consiguió atención...` |
 | `route_items` | `repeater` (8 ítems) | `item_number` (`1`..`8`), `item_text` |
+
+### 2.6. `group_patient_study` (Sección 6: Estudio del Observatorio — Nueva)
+| Campo (`name`) | Tipo ACF | Valor por defecto |
+|---|---|---|
+| `study_pill` | `text` | `UN ESTUDIO PIONERO EN EL PERÚ` |
+| `study_title` | `textarea` | `LA RUTA DE LA PACIENTE CON CÁNCER DE MAMA` |
+| `study_subtitle` | `text` | `Un estudio de Por Un Perú Sin Cáncer, a través de su Observatorio Oncológico.` |
+| `study_desc` | `textarea` | `Por primera vez, una investigación recoge las experiencias de las pacientes...` |
+| `study_stat1_num` | `text` | `59,5%` |
+| `study_stat1_text` | `text` | `reportó dificultades para realizarse exámenes.` |
+| `study_stat2_num` | `text` | `60,6%` |
+| `study_stat2_text` | `text` | `reportó retrasos en el inicio del tratamiento.` |
+| `study_tagline` | `text` | `La ruta hacia el tratamiento también importa.` |
+| `study_cta_text` | `text` | `CONOCE LOS RESULTADOS DEL ESTUDIO` |
+| `study_cta_url` | `url` | `https://observatoriodecancer.com/resultado-la-ruta-del-paciente/` |
+
+### 2.7. `group_quote_banner` (Sección 7: Banner Morado Observatorio)
+| Campo (`name`) | Tipo ACF | Subcampos / Valor |
+|---|---|---|
 | `observatory_quote` | `text` | `ESCUCHAR A LAS PACIENTES ES EL PRIMER PASO PARA COMPRENDER QUÉ DEBE CAMBIAR` |
 | `observatory_cta` | `link` | `CONOCE EL OBSERVATORIO ONCOLÓGICO` |
 
