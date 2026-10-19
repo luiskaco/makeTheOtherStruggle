@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Implementada la suite integral de seguridad y hardening para WordPress: generación de 8 claves criptográficas y salts únicos en `wp-config.php`, directivas de bloqueo de inyecciones maliciosas, escaneo de autores y ejecución en `wp-includes` en `.htaccess`, headers de seguridad (`Permissions-Policy`, `X-XSS-Protection`, etc.), y bloqueo de fingerprinting, XML-RPC, errores de login y enumeración de usuarios en REST API en `functions.php`.
+- **Dónde quedó:** Centrados los logos institucionales (*Por un Perú Sin Cáncer* y *La Otra Lucha*) en el medio exacto de la cabecera superior (`.site-header__top`) en desktop y móvil mediante flexbox y posicionamiento flotante relativo para el menú hamburguesa móvil, verificado visualmente al 100% con Chrome DevTools (diferencia de 0.00px con respecto al centro del contenedor) y versionado bajo la v1.2.1 del theme.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -45,6 +45,7 @@
 - [x] **T-28:** Actualización del texto biográfico en la sección Karin Pardo (`section-karin.php`): integración del copy extendido sobre barreras burocráticas y demoras en el sistema de salud, con calibración tipográfica y verificación responsiva.
 - [x] **T-29:** Lanzamiento y sincronización de versión 1.2.0 del theme: actualización de metadatos en `style.css`, constante `LA_OTRA_LUCHA_VERSION` en `functions.php`, `readme.txt` (Stable tag y changelog), catálogo Gettext `.pot`, `AGENTS.md` y `docs/08_CHANGELOG.md`.
 - [x] **T-30:** Implementación de suite de seguridad y hardening integral para WordPress conforme a `.agents/rules/cms.md` y `security.md`: claves/salts únicos en `wp-config.php`, headers de protección y bloqueo de inyecciones/enumeración en `.htaccess`, y supresión de fingerprinting/REST API users en `functions.php`.
+- [x] **T-31:** Centrado de logos institucionales en la cabecera superior (`.site-header__top`): alineación horizontal en el centro de la pantalla tanto en desktop como en móvil mediante flexbox y posicionamiento flotante del botón hamburguesa, garantizando espaciado y balance visual simétrico.
 
 ---
 

@@ -2,6 +2,11 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.2.1] — 2026-10-19
+
+### Changed
+- **Centrado de Logos Institucionales en Cabecera:** Alineación simétrica al centro de la pantalla para el bloque de marcas (`.brand-logos`) dentro de `.site-header__top` mediante flexbox y posicionamiento flotante relativo para el menú hamburguesa móvil, garantizando distribución visual armónica y preservando accesibilidad táctil.
+
 ## [1.2.0] — 2026-10-19
 
 ### Changed
