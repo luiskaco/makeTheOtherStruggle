@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,11 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.2.0 =
+* Actualización de titulares y copy biográfico en la sección testimonio de Karin Pardo con enfoque en la Ruta de la Paciente.
+* Máscara CSS de desvanecimiento en fotografía para garantizar contraste óptimo y legibilidad del texto en desktop y móvil.
+* Calibración de espaciados, alturas mínimas y jerarquía tipográfica responsiva.
+
 = 1.1.0 =
 * Implementación de suite de plantillas completas: page.php, 404.php, single.php, archive.php y search.php.
 * Suite oficial de favicons, browserconfig y Web App Manifest.

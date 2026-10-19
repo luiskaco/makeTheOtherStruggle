@@ -2,7 +2,7 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: La Otra Lucha 1.1.0\n"
+"Project-Id-Version: La Otra Lucha 1.2.0\n"
 "Report-Msgid-Bugs-To: https://porunperusincancer.com/\n"
 "POT-Creation-Date: 2026-10-18 16:30:00+00:00\n"
 "MIME-Version: 1.0\n"

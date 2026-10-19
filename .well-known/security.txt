@@ -1,0 +1,10 @@
+# security.txt conforme al estándar RFC 9116
+# Política de divulgación responsable de vulnerabilidades
+# Proyecto: La Otra Lucha — Por un Perú Sin Cáncer
+
+Contact: mailto:contacto@porunperusincancer.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: es, en
+Canonical: http://localhost/makeTheOtherStruggle/.well-known/security.txt
+Policy: http://localhost/makeTheOtherStruggle/#conoce-tus-derechos
+Acknowledgments: http://localhost/makeTheOtherStruggle/humans.txt

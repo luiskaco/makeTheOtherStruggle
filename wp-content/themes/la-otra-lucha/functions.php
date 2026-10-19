@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // 1. CONSTANTES DEL THEME
 // =============================================================================
 
-define( 'LA_OTRA_LUCHA_VERSION', '1.1.0' );
+define( 'LA_OTRA_LUCHA_VERSION', '1.2.0' );
 define( 'LA_OTRA_LUCHA_DIR', get_template_directory() );
 define( 'LA_OTRA_LUCHA_URI', get_template_directory_uri() );
 
@@ -264,15 +264,50 @@ function lol_get_field( $field_name, $fallback = '', $post_id = false ) {
 }
 
 // =============================================================================
-// 6. HARDENING DE SEGURIDAD (Reglas CMS WordPress)
+// 6. HARDENING DE SEGURIDAD (Reglas CMS WordPress & Security)
 // =============================================================================
 
-// Ocultar versión de WordPress en meta tags y feeds
+// Ocultar versión de WordPress en meta tags, feeds y generadores
 remove_action( 'wp_head', 'wp_generator' );
+add_filter( 'the_generator', '__return_empty_string' );
 
 // Remover enlaces WLW Manifest y RSD innecesarios
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'rsd_link' );
 
-// Deshabilitar pingbacks y XML-RPC si no son requeridos
+// Deshabilitar pingbacks y XML-RPC
 add_filter( 'xmlrpc_enabled', '__return_false' );
+add_filter( 'pings_open', '__return_false', 9999 );
+add_filter( 'wp_headers', function( $headers ) {
+    unset( $headers['X-Pingback'] );
+    return $headers;
+} );
+
+// Proteger contra enumeración de credenciales: no revelar si falló usuario o password
+add_filter( 'login_errors', function() {
+    return __( 'Credenciales de acceso incorrectas.', 'la-otra-lucha' );
+} );
+
+// Bloquear enumeración pública de usuarios vía REST API (/wp-json/wp/v2/users) para no autenticados
+add_filter( 'rest_endpoints', function( $endpoints ) {
+    if ( ! is_user_logged_in() ) {
+        if ( isset( $endpoints['/wp/v2/users'] ) ) {
+            unset( $endpoints['/wp/v2/users'] );
+        }
+        if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+            unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+        }
+    }
+    return $endpoints;
+} );
+
+// Remover parámetro de versión de WordPress en assets para dificultar fingerprinting
+function la_otra_lucha_remove_wp_version_strings( $src ) {
+    if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) ) {
+        $src = remove_query_arg( 'ver', $src );
+    }
+    return $src;
+}
+add_filter( 'style_loader_src', 'la_otra_lucha_remove_wp_version_strings', 9999 );
+add_filter( 'script_loader_src', 'la_otra_lucha_remove_wp_version_strings', 9999 );
+

@@ -1,0 +1,87 @@
+# BEGIN Security & Hardening
+# Deshabilitar listado de directorios
+Options -Indexes
+
+# Tipos MIME y codificación UTF-8 explícita
+<IfModule mod_mime.c>
+    AddDefaultCharset UTF-8
+    AddCharset UTF-8 .txt .html .xml .json .webmanifest
+    AddType application/manifest+json;charset=UTF-8 .webmanifest
+    AddType application/json;charset=UTF-8 .json
+    AddType text/plain;charset=UTF-8 .txt
+    AddType text/xml;charset=UTF-8 .xml
+</IfModule>
+
+# Headers de seguridad
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Bloquear inyecciones maliciosas comunes y escaneo de autores en Query Strings
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{QUERY_STRING} (eval\(|base64_encode|GLOBALS|CONFIG|_REQUEST) [NC,OR]
+    RewriteCond %{QUERY_STRING} (^|&)author=([0-9]+) [NC]
+    RewriteRule ^ - [F,L]
+</IfModule>
+
+# Bloquear ejecución directa en wp-includes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^wp-admin/includes/ - [F,L]
+    RewriteRule !^wp-includes/ - [S=3]
+    RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+    RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+    RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+
+# Bloquear acceso a archivos sensibles y respaldos
+<FilesMatch "(^\.git|^\.env|wp-config\.php|readme\.html|license\.txt|\.sql|\.log|\.bak|\.zip|\.tgz|\.tar\.gz|install\.php|wp-config-sample\.php)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Bloquear peticiones directas a XML-RPC
+<Files "xmlrpc.php">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+# END Security & Hardening
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /makeTheOtherStruggle/
+
+# START Rank Math Sitemap
+RewriteRule ^sitemap\.xml$ index.php?sitemap=1 [L]
+RewriteRule ^sitemap_index\.xml$ index.php?sitemap=1 [L]
+RewriteRule ^([^/]+?)-sitemap([0-9]+)?\.xml$ index.php?sitemap=$1&sitemap_n=$2 [L]
+RewriteRule ^([a-z]+)?-sitemap\.xsl$ index.php?xsl=$1 [L]
+# END Rank Math Sitemap
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /makeTheOtherStruggle/index.php [L]
+</IfModule>
+
+# END WordPress

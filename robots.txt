@@ -1,0 +1,29 @@
+# robots.txt para La Otra Lucha (Por un Perú Sin Cáncer)
+# Permite el rastreo de motores de búsqueda y crawlers de IA autorizados
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Sitemaps XML oficiales generados por Rank Math
+Sitemap: http://localhost/makeTheOtherStruggle/sitemap.xml
+Sitemap: http://localhost/makeTheOtherStruggle/sitemap_index.xml
+
+# LLM Context Files para motores de Inteligencia Artificial (https://llmstxt.org)
+# GPTBot, ClaudeBot, PerplexityBot, Gemini, Cursor
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Directivas estándar para contexto LLM
+# LLM-Summary: http://localhost/makeTheOtherStruggle/llms.txt
+# LLM-Full: http://localhost/makeTheOtherStruggle/llms-full.txt

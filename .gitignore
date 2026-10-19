@@ -27,6 +27,8 @@ index.php
 wp-content/uploads/
 wp-content/upgrade/
 wp-content/languages/
+wp-content/ai1wm-backups/
+*.wpress
 wp-content/plugins/*
 !wp-content/plugins/index.php
 wp-content/themes/twentytwenty*

@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Implementada navegación bidireccional y retorno dinámico a la página principal desde páginas interiores (`terminos-y-condiciones`, `politicas-de-privacidad`, etc.). El logo institucional en `header.php` y `footer.php` ahora evalúa `is_front_page()` para enlazar a `home_url('/')` en páginas internas y `#inicio` en la portada. Los 7 enlaces del menú y el CTA adoptan prefijos absolutos fuera de la portada para dirigir a las secciones del landing. Se añadieron botones de retorno accesibles tipo píldora (`.btn-back-home`) en la cabecera y pie de `page.php`, con estilos en `css/sections.css` y micro-animación en hover. Verificado en vivo en Chrome DevTools y sincronizado con GitHub.
+- **Dónde quedó:** Implementada la suite integral de seguridad y hardening para WordPress: generación de 8 claves criptográficas y salts únicos en `wp-config.php`, directivas de bloqueo de inyecciones maliciosas, escaneo de autores y ejecución en `wp-includes` en `.htaccess`, headers de seguridad (`Permissions-Policy`, `X-XSS-Protection`, etc.), y bloqueo de fingerprinting, XML-RPC, errores de login y enumeración de usuarios en REST API en `functions.php`.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -41,6 +41,10 @@
 - [x] **T-24:** Auditoría y certificación de codificación UTF-8 en archivos y metadatos SEO (`scripts/check-utf8-seo.py`): validación de integridad UTF-8 sin BOM en `llms.txt`, `llms-full.txt`, `robots.txt`, `humans.txt`, `site.webmanifest`, `manifest.json` y `header.php`; verificación de almacenamiento sin mojibake en MySQL (`wp_postmeta` de Rank Math en `utf8mb4`); y refuerzo de directivas `AddDefaultCharset UTF-8` y `AddCharset UTF-8` en `.htaccess` para entrega HTTP consistente.
 - [x] **T-25:** Creación y provisión de las páginas legales del footer: 'Términos y Condiciones' y 'Políticas de Privacidad' conforme a la Ley N° 29733 (Perú) y lineamientos de prelaunch-compliance-audit, auto-provisión en WordPress, actualización de enlaces dinámicos en `footer.php` y verificación de renderizado en Chrome DevTools.
 - [x] **T-26:** Implementación de navegación de retorno bidireccional desde páginas internas (`page.php`, `terminos-y-condiciones`, `politicas-de-privacidad`): lógica dinámica con `is_front_page()` en `header.php` y `footer.php` para apuntar el logo a `home_url('/')` y las opciones del menú/CTA a sus anclas absolutas, adición de componentes de miga de pan (`.btn-back-home`) y botón al pie del artículo en `page.php`, con estilos en `css/sections.css` y validación en Chrome DevTools.
+- [x] **T-27:** Actualización del titular de testimonio en la sección Karin Pardo (`section-karin.php`): sustitución del copy por 'EL CÁNCER NO PUEDE ESPERAR. LAS RESPUESTAS TAMPOCO', aplicando el estilo script de caligrafía (`Blackrush`) y vector de pincelada (`#brush-stroke`) a la palabra 'tampoco', con calibración tipográfica y responsiva.
+- [x] **T-28:** Actualización del texto biográfico en la sección Karin Pardo (`section-karin.php`): integración del copy extendido sobre barreras burocráticas y demoras en el sistema de salud, con calibración tipográfica y verificación responsiva.
+- [x] **T-29:** Lanzamiento y sincronización de versión 1.2.0 del theme: actualización de metadatos en `style.css`, constante `LA_OTRA_LUCHA_VERSION` en `functions.php`, `readme.txt` (Stable tag y changelog), catálogo Gettext `.pot`, `AGENTS.md` y `docs/08_CHANGELOG.md`.
+- [x] **T-30:** Implementación de suite de seguridad y hardening integral para WordPress conforme a `.agents/rules/cms.md` y `security.md`: claves/salts únicos en `wp-config.php`, headers de protección y bloqueo de inyecciones/enumeración en `.htaccess`, y supresión de fingerprinting/REST API users en `functions.php`.
 
 ---
 

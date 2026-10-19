@@ -36,8 +36,8 @@ erDiagram
 ### 2.2. `group_karin` (Sección 2: Testimonio de Karin Pardo)
 | Campo (`name`) | Tipo ACF | Valor por defecto en Fase 1 |
 |---|---|---|
-| `karin_quote` | `text` | `"LA DETENCIÓN TEMPRANA PUEDE CAMBIARLO` |
-| `karin_quote_script` | `text` | `todo"` |
+| `karin_quote` | `text` | `"EL CÁNCER NO PUEDE ESPERAR. LAS RESPUESTAS` |
+| `karin_quote_script` | `text` | `tampoco"` |
 | `karin_subtitle` | `text` | `KARIN PARDO: EL ROSTRO DE LA OTRA LUCHA` |
 | `karin_bio` | `textarea` | `Karin Pardo tenía 26 años cuando detectó un bulto en su mama...` |
 | `karin_photo` | `image` | `assets/img/karin-pardo.png` |

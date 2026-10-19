@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Fondo Squircle institucional con degradado elegante -->
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#341757" />
+      <stop offset="50%" stop-color="#553483" />
+      <stop offset="100%" stop-color="#8a2a60" />
+    </linearGradient>
+
+    <!-- Cinta Morada ("La Otra Lucha" / Leyes, citas y derechos) -->
+    <linearGradient id="ribbonPurple" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c4a3f8" />
+      <stop offset="45%" stop-color="#8460b8" />
+      <stop offset="100%" stop-color="#56387d" />
+    </linearGradient>
+
+    <!-- Cinta Rosada (Cáncer de mama / Karin Pardo) -->
+    <linearGradient id="ribbonPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffa6c2" />
+      <stop offset="45%" stop-color="#e46f94" />
+      <stop offset="100%" stop-color="#b83664" />
+    </linearGradient>
+
+    <!-- Sombra suave y realista para el cruce tridimensional -->
+    <filter id="crossGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-4" dy="10" stdDeviation="10" flood-color="#140424" flood-opacity="0.65" />
+    </filter>
+
+    <!-- Sombra general del lazo completo -->
+    <filter id="dropGeneral" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#130424" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <!-- 1. Base Squircle -->
+  <rect width="512" height="512" rx="116" fill="url(#favBg)" />
+  <rect x="8" y="8" width="496" height="496" rx="108" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.14" />
+
+  <!-- 2. Lazo Dual Bicolor (Cáncer de Mama + La Otra Lucha) -->
+  <g filter="url(#dropGeneral)">
+    <!-- Rama Derecha: Morada (Pasa por detrás en el cruce) -->
+    <path d="M 256,45
+             C 305,45 355,45 355,105
+             C 355,145 335,190 295,245
+             C 256,300 215,350 165,430"
+          fill="none"
+          stroke="url(#ribbonPurple)"
+          stroke-width="58"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- Rama Izquierda: Rosada (Cruza POR ENCIMA proyectando sombra realista) -->
+    <path filter="url(#crossGlow)"
+          d="M 256,45
+             C 207,45 157,45 157,105
+             C 157,145 177,190 217,245
+             C 256,300 297,350 347,430"
+          fill="none"
+          stroke="url(#ribbonPink)"
+          stroke-width="58"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- Destello central de esperanza en la cúspide -->
+    <circle cx="256" cy="45" r="9" fill="#ffffff" opacity="0.95" />
+  </g>
+</svg>

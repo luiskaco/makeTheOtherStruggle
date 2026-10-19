@@ -1,0 +1,16 @@
+/* TEAM */
+Iniciativa y Campaña: Asociación Por un Perú Sin Cáncer
+Portavoz Oficial: Karin Pardo Lopez (Exviceministra de Salud Pública)
+Diseño Visual y Conceptual: Equipo Creativo Por un Perú Sin Cáncer
+Desarrollo Web & Theme WordPress: Antigravity AI Engineering
+
+/* THANKS */
+A todas las pacientes oncológicas y familias del Perú que inspiran esta causa.
+
+/* SITE */
+Standards: HTML5, CSS3, ES Modules, Schema.org JSON-LD, RFC 9116, llmstxt.org
+Platform: WordPress (Theme modular "La Otra Lucha")
+Typography: Poppins, Oswald, Bebas Neue, Blackrush, Kaushan Script, Caveat
+Paleta: #ffffff, #646160, #e46f94, #e77fa0, #73589f
+URL: http://localhost/makeTheOtherStruggle/
+Location: Lima, Perú

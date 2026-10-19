@@ -31,11 +31,11 @@ if ( ! defined( 'ABSPATH' ) ) {
             </picture>
 
             <h2 class="karin-story__quote" data-acf-field="karin_quote">
-              <span class="karin-story__quote-line">“LA DETENCIÓN TEMPRANA</span>
+              <span class="karin-story__quote-line">“EL CÁNCER NO PUEDE ESPERAR.</span>
               <span class="karin-story__quote-line">
-                PUEDE CAMBIARLO
+                LAS RESPUESTAS
                 <span class="karin-story__script-wrap">
-                  <span class="karin-story__quote-script">todo</span>
+                  <span class="karin-story__quote-script">tampoco</span>
                   <svg class="karin-story__quote-stroke" aria-hidden="true">
                     <use href="#brush-stroke" />
                   </svg>
@@ -50,11 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             </p>
 
             <p class="karin-story__bio" data-acf-field="karin_bio">
-              <strong>Karin Pardo</strong> tenía 26 años cuando <strong>detectó un bulto en su mama.</strong> Lo
-              que debió conducirla oportunamente a un diagnóstico y a una ruta
-              de atención <strong>se convirtió en un recorrido marcado por dificultades
-              para conseguir citas, demoras</strong> en los exámenes y <strong>obstáculos</strong> para
-              <strong>acceder a especialistas.</strong>
+              <strong>Karin Pardo</strong>, paciente con cáncer de mama, quien evidencia cómo las <strong>fallas de articulación del sistema de salud</strong> pueden convertirse en <strong>barreras para acceder a un tratamiento oncológico.</strong> Su solicitud para que pueda acceder a un tratamiento que le salvará la vida, <strong>viene siendo evaluada casi dos años</strong> y continúa atrapada en un ciclo de consultas y devoluciones entre instituciones. Karin <strong>no ha recibido un rechazo: ha recibido demoras</strong>, mientras su necesidad de tratamiento sigue esperando una respuesta. Su historia expone las brechas que la <strong>Ruta de la Paciente con Cáncer de Mama</strong> busca visibilizar para impulsar cambios concretos en el sistema.
             </p>
 
             <div class="karin-story__cta">

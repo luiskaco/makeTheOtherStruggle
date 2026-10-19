@@ -2,6 +2,17 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.2.0] — 2026-10-19
+
+### Changed
+- **Titulares y Copy Testimonial de Karin Pardo:** Actualización del copy de cabecera a `"EL CÁNCER NO PUEDE ESPERAR. LAS RESPUESTAS TAMPOCO"` (con estilo manuscrito y trazo de pincelada en la palabra `tampoco`) e integración del testimonio extendido sobre barreras burocráticas del sistema de salud y la Ruta de la Paciente con Cáncer de Mama.
+- **Calibración de Legibilidad y Máscara de Contraste:** Incorporación de máscara de desvanecimiento CSS (`mask-image`) en la fotografía de Karin para difuminar suavemente el lazo rosado antes de la columna de texto, garantizando 100% de contraste sobre el fondo rosa pálido, elevación de altura mínima de tarjeta a `33rem` y ajuste de espaciado vertical (`9.75rem`) e interlineado (`1.62` a `54ch`).
+- **Suite Integral de Seguridad y Hardening WordPress:**
+  - Generación de 8 claves criptográficas únicas y salts de 64 caracteres en `wp-config.php` (reemplazando cadenas duplicadas).
+  - Supresión de visualización de errores y stack traces (`WP_DEBUG_DISPLAY = false`, `display_errors = 0`) y limitación de revisiones de post a 5.
+  - Refuerzo en `.htaccess` con directivas contra inyecciones maliciosas (`base64_encode`, `eval`, `GLOBALS`, `_REQUEST`), bloqueo de escaneo de autores (`?author=N`), bloqueo de ejecución directa en `wp-includes/`, protección de archivos de sistema/backups y cabeceras `Permissions-Policy` y `X-XSS-Protection`.
+  - Supresión de fingerprinting en `functions.php`: eliminación de números de versión de WordPress en URLs de assets, bloqueo de pingbacks (`X-Pingback`), ofuscación de mensajes de error en el login y desactivación de endpoints públicos de usuarios en la REST API (`/wp/v2/users`).
+
 ## [1.1.0] — 2026-10-18
 
 ### Added
@@ -38,6 +49,7 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
 
 
 ### Changed
+- **Titular de Testimonio en Sección Karin Pardo:** Actualización del copy de la cita destacada a `"EL CÁNCER NO PUEDE ESPERAR. LAS RESPUESTAS TAMPOCO"`, aplicando la fuente caligráfica script (`Blackrush`) y el vector de subrayado pincelado (`#brush-stroke`) a la palabra `tampoco`, manteniendo balance tipográfico tanto en desktop como en dispositivos móviles.
 - **Navegación de Retorno Bidireccional:** Integración de enlaces dinámicos en el header y footer para permitir retornar a la portada desde páginas interiores (`terminos-y-condiciones`, `politicas-de-privacidad`, `404.php`, etc.), botones de miga de pan superior (`.btn-back-home`) y botón al pie del artículo en `page.php` con micro-animaciones hover.
 - **Layout Responsivo Sección Karin Pardo:** Posicionado del titular rosa `.karin-story__quote` al costado derecho de la imagen de Karin en pantallas móviles (`< 62rem`), manteniendo la foto en tamaño completo sobre el fondo rosado y el texto biográfico fluyendo debajo con legibilidad óptima.
 
