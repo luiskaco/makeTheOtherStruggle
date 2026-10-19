@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Centrados los logos institucionales (*Por un Perú Sin Cáncer* y *La Otra Lucha*) en el medio exacto de la cabecera superior (`.site-header__top`) en desktop y móvil mediante flexbox y posicionamiento flotante relativo para el menú hamburguesa móvil, verificado visualmente al 100% con Chrome DevTools (diferencia de 0.00px con respecto al centro del contenedor) y versionado bajo la v1.2.1 del theme.
+- **Dónde quedó:** Calibrada la alineación responsiva de la cabecera superior (`.site-header__top`): en dispositivos móviles y tablets (< 1100px) los logos se mantienen alineados a la izquierda y el botón hamburguesa a la derecha (`space-between`), mientras que en pantallas desktop (>= 1100px) se mantienen centrados en el medio exacto. Verificado con Chrome DevTools en móvil (375px), tablet (768px) y desktop (1440px). Versión 1.2.2 sincronizada.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -46,6 +46,7 @@
 - [x] **T-29:** Lanzamiento y sincronización de versión 1.2.0 del theme: actualización de metadatos en `style.css`, constante `LA_OTRA_LUCHA_VERSION` en `functions.php`, `readme.txt` (Stable tag y changelog), catálogo Gettext `.pot`, `AGENTS.md` y `docs/08_CHANGELOG.md`.
 - [x] **T-30:** Implementación de suite de seguridad y hardening integral para WordPress conforme a `.agents/rules/cms.md` y `security.md`: claves/salts únicos en `wp-config.php`, headers de protección y bloqueo de inyecciones/enumeración en `.htaccess`, y supresión de fingerprinting/REST API users en `functions.php`.
 - [x] **T-31:** Centrado de logos institucionales en la cabecera superior (`.site-header__top`): alineación horizontal en el centro de la pantalla tanto en desktop como en móvil mediante flexbox y posicionamiento flotante del botón hamburguesa, garantizando espaciado y balance visual simétrico.
+- [x] **T-32:** Ajuste responsivo de alineación de logos en cabecera superior (`.site-header__top`): alineación a la izquierda (`space-between` con el botón menú) en móvil y tablet (< 1100px / 68.75rem), manteniendo el centrado simétrico exclusivamente en pantallas desktop (>= 1100px).
 
 ---
 

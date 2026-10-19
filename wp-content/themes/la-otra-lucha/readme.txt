@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.2.2 =
+* Calibración responsiva de cabecera: logos a la izquierda en móvil y tablet (< 1100px) con botón hamburguesa a la derecha, y centrado simétrico en desktop (>= 1100px).
+
 = 1.2.1 =
 * Centrado de logos institucionales en la cabecera superior (.site-header__top) con alineación simétrica y soporte responsivo móvil.
 

@@ -30,10 +30,9 @@
 }
 
 .site-header__top {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-block: 0.9rem;
   gap: 1rem;
 }
@@ -41,26 +40,21 @@
 .brand-logos {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: clamp(0.75rem, 2.5vw, 2.1rem);
+  gap: clamp(1.25rem, 2.5vw, 2.1rem);
 }
 
 .brand-logos__pupsc {
-  width: clamp(7rem, 11vw, 11rem);
+  width: clamp(8.5rem, 11vw, 11rem);
   height: auto;
 }
 
 .brand-logos__lucha {
-  width: clamp(5.5rem, 8.2vw, 8.2rem);
+  width: clamp(6.4rem, 8.2vw, 8.2rem);
   height: auto;
 }
 
 /* Botón Hamburguesa (visible en móvil/tablet) */
 .site-header__toggle {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -150,6 +144,10 @@
 
 /* Desktop Navigation (>= 1100px) */
 @media (min-width: 68.75rem) {
+  .site-header__top {
+    justify-content: center;
+  }
+
   .site-header__toggle {
     display: none;
   }

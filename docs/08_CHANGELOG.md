@@ -2,6 +2,11 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.2.2] — 2026-10-19
+
+### Changed
+- **Alineación Responsiva de Logos en Cabecera:** En móvil y tablet (< 1100px / 68.75rem), los logos institucionales se mantienen alineados a la izquierda (`justify-content: space-between`) junto al botón de menú hamburguesa a la derecha, mientras que en pantallas desktop (>= 1100px) se mantienen centrados simétricamente en el medio de la pantalla.
+
 ## [1.2.1] — 2026-10-19
 
 ### Changed
