@@ -2,6 +2,20 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.5.0] — 2026-10-20
+
+### Added
+- **Botón de Play interactivo en el Hero (`section-hero.php`):**
+  - Botón circular posicionado exactamente en el centro del grupo de las 5 mujeres sobre la figura central en el Hero.
+  - Efecto de pulso concéntrico animado (`hero-play-pulse`), anillo con degradado de campaña, microinteracción al hover (escala + sombra profunda) y soporte para `prefers-reduced-motion`.
+  - Atributos de accesibilidad completos: `aria-haspopup="dialog"`, `aria-controls="video-modal"`, `aria-label`.
+- **Modal de Video Accesible WAI-ARIA (`footer.php` & `js/modules/modal.js`):**
+  - Módulo nativo ES Modules para gestión de apertura, cierre, atrape de foco (`focus trap`), soporte para tecla `Escape` y bloqueo de scroll de fondo (`body overflow: hidden`).
+  - Overlay con desenfoque de fondo (`backdrop-filter: blur(8px)`), ventana flotante con ratio 16:9 y botón de cierre táctil accesible.
+  - Detención automática de reproducción y audio de video al cerrar el modal mediante limpieza del frame.
+  - Integración con helper `lol_get_field('hero_video_url')` para permitir configuración desde ACF o valor por defecto.
+  - Utilidades estándar `.sr-only` y `.screen-reader-text` en `css/components.css`.
+
 ## [1.4.0] — 2026-10-19
 
 ### Changed

@@ -84,9 +84,111 @@
   order: 2;
 }
 
-.hero__img {
+.hero__media-wrap {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
   width: min(100%, 48rem);
+}
+
+.hero__media-wrap .hero__img {
+  width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Botón de Play Central en el Hero */
+.hero__play-btn {
+  position: absolute;
+  top: 48%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(3.75rem, 7vw, 4.85rem);
+  height: clamp(3.75rem, 7vw, 4.85rem);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hero__play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.hero__play-btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.hero__play-pulse {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background-color: rgba(228, 111, 148, 0.4);
+  animation: hero-play-pulse 2.2s infinite ease-out;
+  pointer-events: none;
+}
+
+.hero__play-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2.5px solid rgba(228, 111, 148, 0.7);
+  box-shadow: 0 10px 25px -4px rgba(115, 88, 159, 0.45), 0 0 20px rgba(228, 111, 148, 0.35);
+  color: var(--color-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hero__play-btn:hover .hero__play-circle {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: #ffffff;
+  box-shadow: 0 14px 30px -4px rgba(115, 88, 159, 0.6), 0 0 24px rgba(228, 111, 148, 0.6);
+}
+
+.hero__play-icon {
+  width: 44%;
+  height: 44%;
+  margin-left: 8%; /* Compensación óptica de triángulo centrado */
+  transition: transform var(--transition-fast);
+}
+
+.hero__play-btn:hover .hero__play-icon {
+  transform: scale(1.1);
+}
+
+@keyframes hero-play-pulse {
+  0% {
+    transform: scale(0.88);
+    opacity: 0.95;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.58);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__play-pulse {
+    animation: none;
+    display: none;
+  }
 }
 
 @media (min-width: 62rem) {
@@ -110,11 +212,14 @@
     overflow: hidden;
   }
 
-  .hero__img {
+  .hero__media-wrap {
     width: 100%;
     max-width: 44rem;
-    height: auto;
     margin-bottom: -11.5rem;
+  }
+
+  .hero__media-wrap .hero__img {
+    margin-bottom: 0;
   }
 
   .hero__content {

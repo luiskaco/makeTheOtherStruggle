@@ -154,6 +154,34 @@ $nav_footer_prefix = $is_front ? '' : esc_url( $home_url );
     <span class="back-to-top__label">SUBIR</span>
   </button>
 
+  <!-- Modal de Video Accesible WAI-ARIA -->
+  <div id="video-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-video-title" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2 id="modal-video-title" class="sr-only"><?php esc_html_e( 'Video de la campaña La Otra Lucha', 'la-otra-lucha' ); ?></h2>
+        <button type="button" class="modal__close" data-modal-close aria-label="<?php esc_attr_e( 'Cerrar video', 'la-otra-lucha' ); ?>">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <div class="modal__video-wrapper">
+          <iframe
+            id="modal-video-iframe"
+            data-src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&rel=0"
+            title="<?php esc_attr_e( 'Video oficial de la campaña', 'la-otra-lucha' ); ?>"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <?php wp_footer(); ?>
 </body>
 </html>
