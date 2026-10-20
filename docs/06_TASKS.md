@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-55: Aplicación de fondo gris institucional (`--color-heading` / `#646160`) y tipografía blanca de alto contraste a la caja de texto en la sección Las Cuatro Luchas (`css/sections.css`, versión 1.7.1 de tema).
+- **Dónde quedó:** Completada T-56: Inclusión de titular 'RESULTADOS DEL ESTUDIO' sobre la tarjeta de estadísticas de la paciente (`template-parts/section-patient-study.php` y `css/sections.css`, versión 1.7.2 de tema).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -70,6 +70,7 @@
 - [x] **T-53:** Actualización de texto en botón CTA de la sección Estudio del Observatorio (`template-parts/section-patient-study.php` y `docs/04_DATA_MODEL.md`): sustitución del copy por 'ENCUENTRA EL INFORME COMPLETO AQUÍ', purga de caché y verificación en navegador.
 - [x] **T-54:** Reordenamiento de secciones en portada (`front-page.php`): reposicionamiento de `section-patient-study.php` (Estadísticas 59,5% y 60,6% del Observatorio) por encima de `section-quote-banner.php` ('ESCUCHAR A LAS PACIENTES ES EL PRIMER PASO PARA COMPRENDER QUÉ DEBE CAMBIAR').
 - [x] **T-55:** Aplicar fondo gris carbón oficial (`--color-heading` / `#646160`) y tipografía blanca a la caja de texto en la sección 'Las Cuatro Luchas' (`css/sections.css`): estilización de `.four-fights__callout` para mimetizar el tono del titular de campaña con sombra sutil y contraste de lectura óptimo.
+- [x] **T-56:** Incorporar encabezado de sección 'RESULTADOS DEL ESTUDIO' sobre la tarjeta de estadísticas del Observatorio (`template-parts/section-patient-study.php` y `css/sections.css`): titular en color guinda oficial (`#7d1538`), tipografía en mayúsculas con tracking y espaciado armónico, purga de caché y verificación en navegador.
 
 ---
 

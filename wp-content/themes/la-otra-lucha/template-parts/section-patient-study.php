@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $study_pill      = lol_get_field( 'study_pill', 'UN ESTUDIO PIONERO EN EL PERÚ' );
-$study_title     = lol_get_field( 'study_title', "LA RUTA DE LA PACIENTE\nCON CÁNCER DE MAMA" );
+$study_title     = lol_get_field( 'study_title', 'RESULTADOS DEL ESTUDIO' );
 $study_subtitle  = lol_get_field( 'study_subtitle', 'Un estudio de Por Un Perú Sin Cáncer, a través de su Observatorio Oncológico.' );
 $study_desc      = lol_get_field( 'study_desc', 'Por primera vez, una investigación recoge las experiencias de las pacientes para identificar las barreras y los tiempos de espera que enfrentan en su recorrido por el sistema de salud.' );
 $study_stat1_num = lol_get_field( 'study_stat1_num', '59,5%' );
@@ -26,6 +26,12 @@ $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer
 <section id="estudio-observatorio" class="patient-study" data-wp-part="section-patient-study" data-acf-group="group_patient_study">
   <div class="container patient-study__container">
     <div class="patient-study__content">
+
+      <?php if ( ! empty( $study_title ) ) : ?>
+        <h2 class="patient-study__title" data-acf-field="study_title">
+          <?php echo esc_html( $study_title ); ?>
+        </h2>
+      <?php endif; ?>
 
       <!-- Bloque de 2 Estadísticas con divisorio -->
       <div class="patient-study__stats">

@@ -72,7 +72,7 @@ erDiagram
 | Campo (`name`) | Tipo ACF | Valor por defecto |
 |---|---|---|
 | `study_pill` | `text` | `UN ESTUDIO PIONERO EN EL PERÚ` |
-| `study_title` | `textarea` | `LA RUTA DE LA PACIENTE CON CÁNCER DE MAMA` |
+| `study_title` | `text` | `RESULTADOS DEL ESTUDIO` |
 | `study_subtitle` | `text` | `Un estudio de Por Un Perú Sin Cáncer, a través de su Observatorio Oncológico.` |
 | `study_desc` | `textarea` | `Por primera vez, una investigación recoge las experiencias de las pacientes...` |
 | `study_stat1_num` | `text` | `59,5%` |

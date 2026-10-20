@@ -2,6 +2,14 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.2] — 2026-10-20
+
+### Added & Changed
+- **Titular de Sección Estudio del Observatorio (`section-patient-study.php` y `css/sections.css`):**
+  - Incorporación del titular "RESULTADOS DEL ESTUDIO" directamente sobre la tarjeta con las estadísticas 59,5% y 60,6%.
+  - Estilos tipográficos en color guinda oficial (`#7d1538`), mayúsculas y espaciado armónico que contextualizan el hallazgo del estudio.
+  - Sincronización del valor por defecto en `docs/04_DATA_MODEL.md`.
+
 ## [1.7.1] — 2026-10-20
 
 ### Changed

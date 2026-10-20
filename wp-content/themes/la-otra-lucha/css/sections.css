@@ -1130,13 +1130,13 @@
 
 .patient-study__title {
   color: #7d1538;
-  font-family: var(--font-body);
-  font-size: clamp(1.85rem, 3.8vw, 3.15rem);
-  font-weight: 800;
-  line-height: 1.12;
+  font-family: var(--font-title);
+  font-size: clamp(1.75rem, 3vw, 2.45rem);
+  font-weight: 700;
+  line-height: 1.15;
   text-transform: uppercase;
-  letter-spacing: 0.015em;
-  margin-bottom: clamp(0.75rem, 1.4vw, 1rem);
+  letter-spacing: 0.03em;
+  margin-bottom: clamp(1.5rem, 2.5vw, 2.25rem);
 }
 
 .patient-study__subtitle {
