@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Gráfico Oficial Recurso 19.svg con los 4 pasos perfectamente anclados a sus 4 círculos -->
         <div class="road-four reveal-on-scroll">
           <img
-            src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/road-4-luchas.svg' ); ?>"
+            src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/road-4-luchas.svg?v=' . filemtime( get_template_directory() . '/assets/svg/road-4-luchas.svg' ) ); ?>"
             alt=""
             class="road-four__graphic"
             width="1059"
