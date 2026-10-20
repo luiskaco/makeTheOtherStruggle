@@ -444,6 +444,17 @@
   font-weight: var(--fw-semibold);
 }
 
+.stat-card__source {
+  display: block;
+  font-family: var(--font-body);
+  font-size: clamp(0.58rem, 1.1vw, 0.68rem);
+  font-weight: var(--fw-normal);
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  margin-top: 0.35rem;
+  text-transform: none;
+}
+
 @media (min-width: 58rem) {
   .cancer-reality__grid {
     grid-template-columns: 1.08fr 0.92fr;

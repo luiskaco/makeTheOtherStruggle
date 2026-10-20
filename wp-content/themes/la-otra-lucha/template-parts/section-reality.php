@@ -48,23 +48,34 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="stats-grid reveal-on-scroll" data-acf-field="reality_stats">
           <article class="stat-card">
             <p class="stat-card__number" data-count-target="7797" data-count-comma="true">7,797</p>
-            <h3 class="stat-card__label">CASOS NUEVOS<br />EN <strong>MUJERES</strong></h3>
+            <h3 class="stat-card__label">
+              CASOS NUEVOS<br />EN <strong>MUJERES</strong> PERUANAS
+              <span class="stat-card__source">(GLOBOCAN 2024)</span>
+            </h3>
           </article>
 
           <article class="stat-card">
-            <span class="stat-card__top-label">MÁS</span>
-            <p class="stat-card__number" data-count-target="40" data-count-suffix="%">40%</p>
-            <h3 class="stat-card__label">CASOS DE CANCER</h3>
+            <p class="stat-card__number" data-count-target="21">21</p>
+            <h3 class="stat-card__label">
+              <strong>MUJERES</strong> SON<br />DIAGNOSTICADAS CADA DÍA
+              <span class="stat-card__source">(GLOBOCAN 2024)</span>
+            </h3>
           </article>
 
           <article class="stat-card">
-            <p class="stat-card__number" data-count-target="7685" data-count-comma="true">7,685</p>
-            <h3 class="stat-card__label"><strong>TELEMAMOGRAFÍAS</strong><br />PROCESADAS</h3>
+            <p class="stat-card__number" data-count-target="18" data-count-suffix="%">18%</p>
+            <h3 class="stat-card__label">
+              DE LOS CASOS DETECTADOS AL AÑO<br />CORRESPONDE A <strong>MUJERES MENORES DE 40 AÑOS</strong>
+              <span class="stat-card__source">(GLOBOCAN 2024)</span>
+            </h3>
           </article>
 
           <article class="stat-card">
-            <p class="stat-card__number" data-count-target="21945" data-count-comma="true">21,945</p>
-            <h3 class="stat-card__label">MUJERES <strong>RECIBÍAN<br />TRATAMIENTO</strong></h3>
+            <p class="stat-card__number" data-count-target="694000" data-count-comma="true">694,000</p>
+            <h3 class="stat-card__label">
+              <strong>MUERTES</strong> EN EL MUNDO
+              <span class="stat-card__source">(GLOBOCAN 2024)</span>
+            </h3>
           </article>
         </div>
       </div>

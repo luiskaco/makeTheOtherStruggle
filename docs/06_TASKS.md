@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Ocultados los 4 hitos completos (números 1, 2, 3 y 4 con sus textos en `section-four-fights.php` y los 4 círculos grises sobre la línea en `road-4-luchas.svg`). La línea serpenteante se mantiene limpia y conectada a la caja editorial.
+- **Dónde quedó:** Actualizadas las 4 tarjetas de estadísticas (`section-reality.php`) con las cifras y fuentes oficiales de GLOBOCAN 2024: (1) 7,797 casos nuevos en mujeres peruanas, (2) 21 mujeres son diagnosticadas cada día, (3) 18% de los casos detectados al año corresponde a mujeres menores de 40 años, (4) 694,000 muertes en el mundo.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -59,6 +59,7 @@
 - [x] **T-42:** Eliminar párrafo descriptivo superior en `template-parts/section-patient-study.php`.
 - [x] **T-43:** Ocultar hito 1 completo (número 1 + texto en `section-four-fights.php` y punto gris en `road-4-luchas.svg`) con checkpoint previo `checkpoint-antes-eliminar-hito1`.
 - [x] **T-44:** Ocultar hitos 2, 3 y 4 completos (números 2, 3 y 4 + textos en `section-four-fights.php` y sus 3 círculos grises correspondientes en `road-4-luchas.svg`).
+- [x] **T-45:** Actualizar indicadores de las 4 tarjetas de 'La Realidad del Cáncer de Mama' (`section-reality.php`) con datos de GLOBOCAN 2024: 7,797 casos nuevos en mujeres peruanas, 21 mujeres diagnosticadas cada día, 18% casos menores de 40 años y 694,000 muertes en el mundo.
 
 ---
 

@@ -2,14 +2,22 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
-## [1.3.1] — 2026-10-19
+## [1.4.0] — 2026-10-19
 
 ### Changed
+- **Actualización de Indicadores de Cáncer de Mama (GLOBOCAN 2024):**
+  - Renovación de las 4 tarjetas de estadísticas en `section-reality.php`:
+    - `7,797` — Casos nuevos en mujeres peruanas (`(GLOBOCAN 2024)`).
+    - `21` — Mujeres son diagnosticadas cada día (`(GLOBOCAN 2024)`).
+    - `18%` — De los casos detectados al año corresponde a mujeres menores de 40 años (`(GLOBOCAN 2024)`).
+    - `694,000` — Muertes en el mundo (`(GLOBOCAN 2024)`).
+  - Estilos tipográficos `.stat-card__source` en `css/sections.css` y animación de contadores numéricos calibrada en `animations.js`.
 - **Depuración y simplificación editorial de secciones:**
   - Ocultada la franja morada de 4 pilares (`.pillars-bar`) en `section-four-fights.php` (*Cada etapa importa / demora...*).
   - Ocultados los 4 hitos completos (números 1, 2, 3 y 4 con textos en `section-four-fights.php` y los 4 círculos grises en `road-4-luchas.svg`) con tag de restauración previo `checkpoint-antes-eliminar-hito1`.
-  - Removido el titular y subtítulo duplicados en `section-patient-study.php` para presentar de forma directa y limpia el bloque de estadísticas del Observatorio Oncológico.
-  - Actualizado el texto introductorio en el recuadro (`.outlined-callout`) de `section-patient-route.php` para sintetizar el objetivo de la investigación de la paciente.
+  - Cache-busting dinámico (`?v=timestamp`) en `section-four-fights.php` para recarga limpia de recursos SVG.
+  - Removido el titular y subtítulo duplicados en `section-patient-study.php` para presentar de forma directa el bloque de estadísticas del Observatorio Oncológico.
+  - Actualizado el texto introductorio en el recuadro (`.outlined-callout`) de `section-patient-route.php`.
 
 ## [1.3.0] — 2026-10-19
 

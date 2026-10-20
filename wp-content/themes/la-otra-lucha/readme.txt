@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,12 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.4.0 =
+* Actualización de indicadores estadísticos en "La Realidad del Cáncer de Mama" con datos de GLOBOCAN 2024 (7,797 casos nuevos en mujeres peruanas, 21 diagnósticos diarios, 18% casos menores de 40 años y 694,000 muertes mundiales).
+* Ocultación de los 4 hitos y círculos del camino serpenteante en "Las 4 Luchas", manteniendo el trazo continuo y limpio.
+* Depuración editorial de la sección Estudio del Observatorio y síntesis del recuadro explicativo de la ruta.
+* Cache-busting dinámico para recursos SVG con fecha de modificación.
+
 = 1.3.0 =
 * Nueva sección: Estudio del Observatorio Oncológico sobre la Ruta de la Paciente con Cáncer de Mama (tarjeta interactiva con estadísticas 59,5% y 60,6%, botón CTA oficial hacia observatoriodecancer.com).
 
