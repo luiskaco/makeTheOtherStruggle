@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // 1. CONSTANTES DEL THEME
 // =============================================================================
 
-define( 'LA_OTRA_LUCHA_VERSION', '1.7.8' );
+define( 'LA_OTRA_LUCHA_VERSION', '1.8.0' );
 define( 'LA_OTRA_LUCHA_DIR', get_template_directory() );
 define( 'LA_OTRA_LUCHA_URI', get_template_directory_uri() );
 
@@ -265,31 +265,98 @@ function lol_get_field( $field_name, $fallback = '', $post_id = false ) {
 }
 
 // =============================================================================
-// 6. HARDENING DE SEGURIDAD (Reglas CMS WordPress & Security)
+// 6. DESACTIVACIÓN TOTAL DE COMENTARIOS (Reglas CMS WordPress & Anti-Spam)
 // =============================================================================
 
-// Ocultar versión de WordPress en meta tags, feeds y generadores
+// 6.1. Cerrar comentarios y pings globalmente en el frontend
+add_filter( 'comments_open', '__return_false', 9999 );
+add_filter( 'pings_open', '__return_false', 9999 );
+
+// 6.2. Silenciar template de comentarios en cualquier plantilla que lo invoque
+add_filter( 'comments_template', function() {
+    return LA_OTRA_LUCHA_DIR . '/template-parts/empty.php';
+}, 9999 );
+
+// 6.3. Deshabilitar soporte de comentarios y trackbacks en tipos de contenido (post, page, etc.)
+add_action( 'init', function() {
+    $post_types = get_post_types();
+    foreach ( $post_types as $post_type ) {
+        if ( post_type_supports( $post_type, 'comments' ) ) {
+            remove_post_type_support( $post_type, 'comments' );
+            remove_post_type_support( $post_type, 'trackbacks' );
+        }
+    }
+} );
+
+// 6.4. Ocultar ítem de comentarios del menú de administración
+add_action( 'admin_menu', function() {
+    remove_menu_page( 'edit-comments.php' );
+} );
+
+// 6.5. Redirigir intentos de acceso directo al panel de comentarios
+add_action( 'admin_init', function() {
+    global $pagenow;
+    if ( 'edit-comments.php' === $pagenow ) {
+        wp_safe_redirect( admin_url() );
+        exit;
+    }
+} );
+
+// 6.6. Remover ítem de comentarios de la barra superior de administración
+add_action( 'wp_before_admin_bar_render', function() {
+    global $wp_admin_bar;
+    if ( is_admin_bar_showing() && is_object( $wp_admin_bar ) ) {
+        $wp_admin_bar->remove_node( 'comments' );
+    }
+} );
+
+// 6.7. Deshabilitar feeds de comentarios
+add_action( 'do_feed_rss2_comments', function() {
+    wp_die( esc_html__( 'Los comentarios están deshabilitados.', 'la-otra-lucha' ), '', array( 'response' => 403 ) );
+}, 1 );
+add_action( 'do_feed_atom_comments', function() {
+    wp_die( esc_html__( 'Los comentarios están deshabilitados.', 'la-otra-lucha' ), '', array( 'response' => 403 ) );
+}, 1 );
+
+// 6.8. Remover endpoints REST API de comentarios
+add_filter( 'rest_endpoints', function( $endpoints ) {
+    if ( isset( $endpoints['/wp/v2/comments'] ) ) {
+        unset( $endpoints['/wp/v2/comments'] );
+    }
+    if ( isset( $endpoints['/wp/v2/comments/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/comments/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
+} );
+
+// =============================================================================
+// 7. HARDENING DE SEGURIDAD (Reglas CMS WordPress & Security)
+// =============================================================================
+
+// 7.1. Ocultar versión de WordPress en meta tags, feeds y generadores
 remove_action( 'wp_head', 'wp_generator' );
 add_filter( 'the_generator', '__return_empty_string' );
 
-// Remover enlaces WLW Manifest y RSD innecesarios
+// 7.2. Remover enlaces WLW Manifest, RSD y oEmbed innecesarios
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 
-// Deshabilitar pingbacks y XML-RPC
+// 7.3. Deshabilitar pingbacks y XML-RPC
 add_filter( 'xmlrpc_enabled', '__return_false' );
-add_filter( 'pings_open', '__return_false', 9999 );
 add_filter( 'wp_headers', function( $headers ) {
     unset( $headers['X-Pingback'] );
+    unset( $headers['X-Powered-By'] );
     return $headers;
 } );
 
-// Proteger contra enumeración de credenciales: no revelar si falló usuario o password
+// 7.4. Proteger contra enumeración de credenciales en pantalla de login
 add_filter( 'login_errors', function() {
     return __( 'Credenciales de acceso incorrectas.', 'la-otra-lucha' );
 } );
 
-// Bloquear enumeración pública de usuarios vía REST API (/wp-json/wp/v2/users) para no autenticados
+// 7.5. Bloquear enumeración pública de usuarios vía REST API (/wp-json/wp/v2/users) para no autenticados
 add_filter( 'rest_endpoints', function( $endpoints ) {
     if ( ! is_user_logged_in() ) {
         if ( isset( $endpoints['/wp/v2/users'] ) ) {
@@ -302,7 +369,18 @@ add_filter( 'rest_endpoints', function( $endpoints ) {
     return $endpoints;
 } );
 
-// Remover parámetro de versión de WordPress en assets para dificultar fingerprinting
+// 7.6. Bloquear sondeo de usuarios por parámetro ?author=N o rutas /author/*
+add_action( 'template_redirect', function() {
+    if ( is_author() ) {
+        wp_safe_redirect( home_url(), 301 );
+        exit;
+    }
+} );
+
+// 7.7. Deshabilitar Application Passwords para mitigar creación de tokens de API no autorizados
+add_filter( 'wp_is_application_passwords_available', '__return_false' );
+
+// 7.8. Remover parámetro de versión de WordPress en assets para dificultar fingerprinting
 function la_otra_lucha_remove_wp_version_strings( $src ) {
     if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) ) {
         $src = remove_query_arg( 'ver', $src );
@@ -311,4 +389,5 @@ function la_otra_lucha_remove_wp_version_strings( $src ) {
 }
 add_filter( 'style_loader_src', 'la_otra_lucha_remove_wp_version_strings', 9999 );
 add_filter( 'script_loader_src', 'la_otra_lucha_remove_wp_version_strings', 9999 );
+
 

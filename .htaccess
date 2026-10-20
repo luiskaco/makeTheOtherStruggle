@@ -60,6 +60,17 @@ Options -Indexes
         Deny from all
     </IfModule>
 </Files>
+
+# Bloquear peticiones y envíos a wp-comments-post.php
+<Files "wp-comments-post.php">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
 # END Security & Hardening
 
 # BEGIN WordPress

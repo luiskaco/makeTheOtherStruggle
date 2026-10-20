@@ -2,6 +2,24 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.0] — 2026-10-20
+
+### Security & Hardening
+- **Desactivación Total del Sistema de Comentarios (`functions.php`, `.htaccess`, Base de Datos):**
+  - Desactivación de soporte de comentarios y trackbacks en todos los tipos de contenido (`post`, `page`).
+  - Filtros globales `comments_open` y `pings_open` forzados a `false` en todo el frontend.
+  - Bloqueo en servidor (`.htaccess`) de solicitudes directas y POST a `wp-comments-post.php` retornando `403 Forbidden`.
+  - Eliminación de accesos en el panel admin: ítem de menú `edit-comments.php` retirado, redirección de acceso directo a `/wp-admin/`, y nodo de comentarios suprimido de la barra superior.
+  - Supresión y bloqueo de endpoints REST API `/wp/v2/comments` (responde `404 Not Found`) y feeds RSS/Atom de comentarios (responde `403 Forbidden`).
+  - Silenciamiento preventivo de `comments_template()` mediante fallback a `template-parts/empty.php`.
+  - Purga completa de comentarios residuales en base de datos (`wp_comments` y `wp_commentmeta`), actualización de todas las publicaciones a `comment_status='closed'` y `ping_status='closed'`, y configuración de opciones de discusión a cerrado por defecto.
+- **Suite de Hardening de WordPress y Reglas CMS (`wp-config.php`, `functions.php`):**
+  - Activación de `DISALLOW_FILE_EDIT = true` en `wp-config.php` para bloquear la edición de código de plugins y temas desde el panel de control.
+  - Regeneración de claves y sales criptográficas con entropía independiente de 256 bits para `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, etc.
+  - Bloqueo de Application Passwords (`wp_is_application_passwords_available = false`) para prevenir la generación de tokens de API no autorizados.
+  - Supresión de cabeceras informativas `X-Powered-By` y enlaces oEmbed de descubrimiento (`wp_oembed_add_discovery_links`, `wp_oembed_add_host_js`).
+  - Bloqueo y redirección 301 de consultas de enumeración de autor (`is_author()`).
+
 ## [1.7.8] — 2026-10-20
 
 ### Changed & Colors
