@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Actualizadas las 4 tarjetas de estadísticas (`section-reality.php`) con las cifras y fuentes oficiales de GLOBOCAN 2024: (1) 7,797 casos nuevos en mujeres peruanas, (2) 21 mujeres son diagnosticadas cada día, (3) 18% de los casos detectados al año corresponde a mujeres menores de 40 años, (4) 694,000 muertes en el mundo.
+- **Dónde quedó:** Activada la indexación pública del sitio en WordPress (`blog_public = 1` y re-sembrado de directivas `index, follow` en Rank Math). Reducido el tamaño tipográfico de las descripciones en las 4 tarjetas de estadísticas (`section-reality.php`) y todo el repositorio sincronizado y al día en `origin/main`.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -60,6 +60,7 @@
 - [x] **T-43:** Ocultar hito 1 completo (número 1 + texto en `section-four-fights.php` y punto gris en `road-4-luchas.svg`) con checkpoint previo `checkpoint-antes-eliminar-hito1`.
 - [x] **T-44:** Ocultar hitos 2, 3 y 4 completos (números 2, 3 y 4 + textos en `section-four-fights.php` y sus 3 círculos grises correspondientes en `road-4-luchas.svg`).
 - [x] **T-45:** Actualizar indicadores de las 4 tarjetas de 'La Realidad del Cáncer de Mama' (`section-reality.php`) con datos de GLOBOCAN 2024: 7,797 casos nuevos en mujeres peruanas, 21 mujeres diagnosticadas cada día, 18% casos menores de 40 años y 694,000 muertes en el mundo.
+- [x] **T-46:** Calibrar escala tipográfica de textos descriptivos y fuentes en las tarjetas de estadísticas (`css/sections.css`) y activar indexación pública en WordPress (`blog_public = 1` y meta robots `index, follow` en Rank Math).
 
 ---
 
