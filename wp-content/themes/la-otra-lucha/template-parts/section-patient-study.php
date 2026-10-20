@@ -19,7 +19,7 @@ $study_stat1_txt = lol_get_field( 'study_stat1_text', 'reportó dificultades par
 $study_stat2_num = lol_get_field( 'study_stat2_num', '60,6%' );
 $study_stat2_txt = lol_get_field( 'study_stat2_text', 'reportó retrasos en el inicio del tratamiento.' );
 $study_tagline   = lol_get_field( 'study_tagline', 'La ruta hacia el tratamiento también importa.' );
-$study_cta_text  = lol_get_field( 'study_cta_text', 'CONOCE LOS RESULTADOS DEL ESTUDIO' );
+$study_cta_text  = lol_get_field( 'study_cta_text', 'ENCUENTRA EL INFORME COMPLETO AQUÍ' );
 $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer.com/resultado-la-ruta-del-paciente/' );
 ?>
 

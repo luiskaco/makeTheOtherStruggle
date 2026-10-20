@@ -80,7 +80,7 @@ erDiagram
 | `study_stat2_num` | `text` | `60,6%` |
 | `study_stat2_text` | `text` | `reportó retrasos en el inicio del tratamiento.` |
 | `study_tagline` | `text` | `La ruta hacia el tratamiento también importa.` |
-| `study_cta_text` | `text` | `CONOCE LOS RESULTADOS DEL ESTUDIO` |
+| `study_cta_text` | `text` | `ENCUENTRA EL INFORME COMPLETO AQUÍ` |
 | `study_cta_url` | `url` | `https://observatoriodecancer.com/resultado-la-ruta-del-paciente/` |
 
 ### 2.7. `group_quote_banner` (Sección 7: Banner Morado Observatorio)

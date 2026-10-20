@@ -10,6 +10,11 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
   - Calibración de escala contenida y elegante (`.patient-route__logo`, max-width ~160-185px) para asegurar una presencia equilibrada, sin saturar el diseño ni restarle protagonismo al titular.
   - Soporte de sobrescritura vía ACF con fallback dinámico (`lol_get_field('route_logo')`).
 
+### Changed
+- **Botón CTA de la Sección Estudio del Observatorio (`section-patient-study.php`):**
+  - Actualización del texto del botón a "ENCUENTRA EL INFORME COMPLETO AQUÍ", en mayúsculas, alineado con el nuevo enlace hacia el informe oficial.
+  - Sincronización del modelo de datos en `docs/04_DATA_MODEL.md`.
+
 ## [1.6.3] — 2026-10-20
 
 ### Fixed & Changed

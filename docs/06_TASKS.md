@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-52: Integración del isotipo oficial de 'Observatorio de Cáncer' encima del titular en la sección de la Ruta de la Paciente (`template-parts/section-patient-route.php` y `css/sections.css`, versión 1.7.0 de tema).
+- **Dónde quedó:** Completada T-53: Actualización del copy del botón CTA de la sección Estudio del Observatorio a 'ENCUENTRA EL INFORME COMPLETO AQUÍ' (`template-parts/section-patient-study.php` y `docs/04_DATA_MODEL.md`).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -67,6 +67,7 @@
 - [x] **T-50:** Desencapsular bloque introductorio de Karin Pardo (`css/sections.css`): eliminación de caja con fondo degradado y borde izquierdo (`.karin-story-page__hero-box`) para que el testimonio y la ficha de paciente fluyan de forma abierta y natural sobre la página.
 - [x] **T-51:** Corrección de colores internos y contraste tipográfico en la página de Karin (`css/sections.css`): texto `<strong>` en blanco luminoso dentro de la tarjeta de 57% (`.karin-stat-highlight`), número rosa pastel de alta legibilidad, acentos de color institucionales en tarjetas de hitos, petitorio y citas.
 - [x] **T-52:** Integrar logo del Observatorio de Cáncer en la cabecera de la sección 'La Ruta de la Paciente' (`template-parts/section-patient-route.php` y `css/sections.css`): importación de asset oficial `logo-observatorio-oncologico.png`, renderizado centrado y proporcionado (`.patient-route__logo`, max-width contenido y microinteracción hover).
+- [x] **T-53:** Actualización de texto en botón CTA de la sección Estudio del Observatorio (`template-parts/section-patient-study.php` y `docs/04_DATA_MODEL.md`): sustitución del copy por 'ENCUENTRA EL INFORME COMPLETO AQUÍ', purga de caché y verificación en navegador.
 
 ---
 
