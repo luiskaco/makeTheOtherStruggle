@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-59: Adaptación cromática de la sección 'Resultados del Estudio' a la paleta tipográfica oficial (`template-parts/section-patient-study.php` y `css/sections.css`, tema v1.7.5): titular en gris carbón (`--color-heading`), números e íconos en rosa de campaña (`--color-primary`), textos en gris de lectura (`--color-text`) y botón CTA en morado institucional (`--color-secondary`).
+- **Dónde quedó:** Completada T-60: Reposicionamiento de `section-quote-banner.php` al final de `front-page.php`, inmediatamente encima de la franja de cita del footer 'EL CÁNCER YA ES UNA LUCHA. LA DESIGUALDAD NO DEBERÍA SER OTRA.' (tema v1.7.6).
 - **Próximo paso:** Continuar según indicaciones del usuario (fondo de formas en Resultados del Estudio o P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -74,6 +74,7 @@
 - [x] **T-57:** Reversión de fondo gris en recuadro de 'Las Cuatro Luchas' (`css/sections.css`): eliminación de fondo gris carbón y texto blanco en `.four-fights__callout` para restaurar el diseño blanco original con borde sutil (`.outlined-callout`), purga de LiteSpeed Cache y verificación visual en navegador.
 - [x] **T-58:** Centrado horizontal del titular y caja en 'Las Cuatro Luchas' (`css/sections.css`): cambio de `margin-left: auto` a `margin-inline: auto` en `.four-fights__editorial` y ajuste de la conexión geométrica de la ruta (`.road-four` a `calc(50% + 16.7rem)`), purga de caché y verificación en navegador.
 - [x] **T-59:** Adaptación cromática integral en la sección 'Resultados del Estudio' (`template-parts/section-patient-study.php` y `css/sections.css`): reemplazo de tonos guindas por la paleta oficial del sitio — titular en gris carbón (`--color-heading` / `#646160`) con `Veneer TwoRegular`, porcentajes 59,5% y 60,6% e íconos en rosa de campaña (`--color-primary` / `#e46f94`), textos en gris (`--color-text`), y botón CTA en morado institucional (`--color-secondary` / `#73589f`), purga de caché y verificación en navegador.
+- [x] **T-60:** Reordenamiento de secciones en portada (`front-page.php`): reubicación de `section-quote-banner.php` (banner morado 'ESCUCHAR A LAS PACIENTES...') al final de la página, inmediatamente antes de `get_footer()` y por encima de la franja 'EL CÁNCER YA ES UNA LUCHA. LA DESIGUALDAD NO DEBERÍA SER OTRA.', purga de caché y verificación en navegador.
 
 ---
 

@@ -2,6 +2,12 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.6] — 2026-10-20
+
+### Changed & Layout
+- **Reubicación de Banner Cita Observatorio (`front-page.php`):**
+  - Desplazamiento de `section-quote-banner.php` (banner morado "ESCUCHAR A LAS PACIENTES ES EL PRIMER PASO PARA COMPRENDER QUÉ DEBE CAMBIAR") hacia el final de la portada, ubicándolo inmediatamente encima de la franja rosada del footer ("EL CÁNCER YA ES UNA LUCHA. LA DESIGUALDAD NO DEBERÍA SER OTRA.").
+
 ## [1.7.5] — 2026-10-20
 
 ### Changed & Colors
