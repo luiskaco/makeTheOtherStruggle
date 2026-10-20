@@ -2,8 +2,8 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-57: Reversión del fondo gris de la caja de texto en la sección 'Las Cuatro Luchas' (`.four-fights__callout` en `css/sections.css`), restaurando el fondo blanco institucional limpio (`.outlined-callout`) con texto oscuro y borde suave. Tema en v1.7.3.
-- **Próximo paso:** Definir aplicación de fondo con formas en la sección de Resultados del Estudio (lazos vectoriales vs tarjeta contenedora) o avanzar según requerimiento.
+- **Dónde quedó:** Completada T-58: Centrado horizontal simétrico del titular y caja en la sección 'Las Cuatro Luchas' (`.four-fights__editorial` y `.road-four` en `css/sections.css`, tema v1.7.4).
+- **Próximo paso:** Definir aplicación de fondo con formas en la sección de Resultados del Estudio (lazos vectoriales vs tarjeta contenedora) o continuar según requerimiento.
 - **Bloqueos:** Ninguno.
 
 ---
@@ -72,6 +72,7 @@
 - [x] **T-55:** Aplicar fondo gris carbón oficial (`--color-heading` / `#646160`) y tipografía blanca a la caja de texto en la sección 'Las Cuatro Luchas' (`css/sections.css`): estilización de `.four-fights__callout` para mimetizar el tono del titular de campaña con sombra sutil y contraste de lectura óptimo.
 - [x] **T-56:** Incorporar encabezado de sección 'RESULTADOS DEL ESTUDIO' sobre la tarjeta de estadísticas del Observatorio (`template-parts/section-patient-study.php` y `css/sections.css`): titular en color guinda oficial (`#7d1538`), tipografía en mayúsculas con tracking y espaciado armónico, purga de caché y verificación en navegador.
 - [x] **T-57:** Reversión de fondo gris en recuadro de 'Las Cuatro Luchas' (`css/sections.css`): eliminación de fondo gris carbón y texto blanco en `.four-fights__callout` para restaurar el diseño blanco original con borde sutil (`.outlined-callout`), purga de LiteSpeed Cache y verificación visual en navegador.
+- [x] **T-58:** Centrado horizontal del titular y caja en 'Las Cuatro Luchas' (`css/sections.css`): cambio de `margin-left: auto` a `margin-inline: auto` en `.four-fights__editorial` y ajuste de la conexión geométrica de la ruta (`.road-four` a `calc(50% + 16.7rem)`), purga de caché y verificación en navegador.
 
 ---
 

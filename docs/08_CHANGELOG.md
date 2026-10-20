@@ -2,6 +2,13 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.4] — 2026-10-20
+
+### Changed & Layout
+- **Centrado de Titular y Bloque Editorial en 'Las Cuatro Luchas' (`css/sections.css`):**
+  - Sustitución de `margin-left: auto` por `margin-inline: auto` en `.four-fights__editorial`, centrando perfectamente el titular "LA OTRA LUCHA COMIENZA CUANDO EL CAMINO SE LLENA DE BARRERAS" y su recuadro informativo.
+  - Recalibración del anclaje geométrico de la ruta ilustrada (`.road-four` a `calc(50% + 16.7rem)`) para conectar suavemente con la caja centrada.
+
 ## [1.7.3] — 2026-10-20
 
 ### Reverted & Changed

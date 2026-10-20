@@ -680,25 +680,24 @@
   .four-fights__editorial {
     position: relative;
     z-index: 2;
-    width: 39.5rem;
-    margin-left: auto;
+    width: min(100%, 39.5rem);
+    margin-inline: auto;
     padding-top: 1rem;
   }
 
   .four-fights__callout {
     position: relative;
     z-index: 2;
-    width: 33.5rem;
+    width: min(100%, 33.5rem);
     margin-inline: auto;
   }
 
   /* Recurso 19.svg (viewBox 1058.91 x 618.24):
-     Su punta derecha (x=1058.91, y=609.1) llega exactamente al borde izquierdo
-     de .four-fights__callout justo encima de la curva inferior izquierda */
+     Su punta derecha llega exactamente al borde izquierdo de la caja centrada */
   .road-four {
     position: absolute;
     bottom: 2.15rem;
-    right: 36.45rem;
+    right: calc(50% + 16.7rem);
     width: 52.5rem;
     aspect-ratio: 1058.91 / 618.24;
     z-index: 1;
