@@ -2,6 +2,14 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.6.3] — 2026-10-20
+
+### Fixed & Changed
+- **Contraste y Colores Internos en la Página de Karin (`css/sections.css`):**
+  - Corrección de color para textos `<strong>` en la tarjeta morada de estadística del 57% (`.karin-stat-highlight`): sustituido el tono oscuro heredado por blanco luminoso con sombra sutil para contraste nítido y accesible.
+  - Calibración de color del número destacado a rosa pastel luminoso (`#ffd4e0`), eliminando el tono apagado previo.
+  - Refinamiento de jerarquía de color en tarjetas de hitos, bloque de petitorio formal y citas.
+
 ## [1.6.2] — 2026-10-20
 
 ### Changed

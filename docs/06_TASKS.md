@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-50: Eliminación del contenedor de caja (`.karin-story-page__hero-box`) en la página de historia de Karin para integración editorial fluida sin fondos ni marcos (versión 1.6.2 de tema).
+- **Dónde quedó:** Completada T-51: Optimización de colores internos y contraste tipográfico en la tarjeta estadística (57%) y bloques de la página de Karin Pardo (`css/sections.css`, versión 1.6.3 de tema).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -65,6 +65,7 @@
 - [x] **T-48:** Creación y provisión de la página dedicada 'La Historia de Karin Pardo' (`/historia-de-karin/`): plantilla editorial personalizada `page-historia-de-karin.php`, auto-provisión en WordPress con el testimonio íntegro de Karin (caso HR+/HER2−, 57% riesgo de recaída, barreras de acceso y solicitud a RENETSA/MINSA), conexión de botones CTA y estilos responsivos.
 - [x] **T-49:** Calibración de espaciado y escala tipográfica en cabecera de la historia de Karin (`page-historia-de-karin.php` y `css/sections.css`): compactación de márgenes verticales, eliminación de divisor innecesario y ampliación proporcional de la palabra script caligráfica "tampoco" con su trazo de brocha vector (`#brush-stroke`).
 - [x] **T-50:** Desencapsular bloque introductorio de Karin Pardo (`css/sections.css`): eliminación de caja con fondo degradado y borde izquierdo (`.karin-story-page__hero-box`) para que el testimonio y la ficha de paciente fluyan de forma abierta y natural sobre la página.
+- [x] **T-51:** Corrección de colores internos y contraste tipográfico en la página de Karin (`css/sections.css`): texto `<strong>` en blanco luminoso dentro de la tarjeta de 57% (`.karin-stat-highlight`), número rosa pastel de alta legibilidad, acentos de color institucionales en tarjetas de hitos, petitorio y citas.
 
 ---
 
