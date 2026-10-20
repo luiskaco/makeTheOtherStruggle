@@ -162,7 +162,7 @@
 .hero__play-icon {
   width: 44%;
   height: 44%;
-  margin-left: 8%; /* Compensación óptica de triángulo centrado */
+  margin-left: 1.5%; /* Compensación óptica equilibrada para triángulo */
   transition: transform var(--transition-fast);
 }
 

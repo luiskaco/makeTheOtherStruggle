@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-47: Botón de Play flotante sobre el grupo de mujeres en el Hero (`section-hero.php`) con efecto pulso, microinteracción hover y modal accesible WAI-ARIA (`js/modules/modal.js`) verificado en navegador.
+- **Dónde quedó:** Completada T-47 y calibrado óptico del icono de Play (`hero__play-icon`) en `section-hero.php` / `css/sections.css`, verificado con captura en navegador.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
