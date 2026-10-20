@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           </h1>
 
           <div class="hero__actions">
-            <a href="#historia-karin" class="btn btn--purple btn--hero" data-acf-field="hero_cta_primary">
+            <a href="<?php echo esc_url( home_url( '/historia-de-karin/' ) ); ?>" class="btn btn--purple btn--hero" data-acf-field="hero_cta_primary">
               CONOCE LA<br />HISTORIA DE<br />KARIN
             </a>
             <a href="#conoce-tus-derechos" class="btn btn--purple btn--hero" data-acf-field="hero_cta_secondary">

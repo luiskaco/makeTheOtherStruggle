@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-47 y calibrado óptico del icono de Play (`hero__play-icon`) en `section-hero.php` / `css/sections.css`, verificado con captura en navegador.
+- **Dónde quedó:** Completada T-48: Creación y provisión de la página dedicada 'La Historia de Karin Pardo' (`/historia-de-karin/`) con plantilla editorial `page-historia-de-karin.php`, testimonio íntegro sembrado en WordPress y botones de portada conectados con verificación en navegador.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -62,6 +62,7 @@
 - [x] **T-45:** Actualizar indicadores de las 4 tarjetas de 'La Realidad del Cáncer de Mama' (`section-reality.php`) con datos de GLOBOCAN 2024: 7,797 casos nuevos en mujeres peruanas, 21 mujeres diagnosticadas cada día, 18% casos menores de 40 años y 694,000 muertes en el mundo.
 - [x] **T-46:** Calibrar escala tipográfica de textos descriptivos y fuentes en las tarjetas de estadísticas (`css/sections.css`) y activar indexación pública en WordPress (`blog_public = 1` y meta robots `index, follow` en Rank Math).
 - [x] **T-47:** Implementar botón de Play flotante sobre el grupo de mujeres en el Hero (`section-hero.php`) y modal accesible con reproductor de video (`js/modules/modal.js`, WAI-ARIA `dialog`, focus trap, escape key y YouTube embed configurable con fallback).
+- [x] **T-48:** Creación y provisión de la página dedicada 'La Historia de Karin Pardo' (`/historia-de-karin/`): plantilla editorial personalizada `page-historia-de-karin.php`, auto-provisión en WordPress con el testimonio íntegro de Karin (caso HR+/HER2−, 57% riesgo de recaída, barreras de acceso y solicitud a RENETSA/MINSA), conexión de botones CTA y estilos responsivos.
 
 ---
 

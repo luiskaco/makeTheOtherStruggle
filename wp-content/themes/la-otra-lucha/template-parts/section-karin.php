@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             </p>
 
             <div class="karin-story__cta">
-              <a href="#las-cuatro-luchas" class="btn btn--purple" data-acf-field="karin_cta">
+              <a href="<?php echo esc_url( home_url( '/historia-de-karin/' ) ); ?>" class="btn btn--purple" data-acf-field="karin_cta">
                 CONOCE LA HISTORIA DE KARIN
               </a>
             </div>

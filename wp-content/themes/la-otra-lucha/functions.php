@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // 1. CONSTANTES DEL THEME
 // =============================================================================
 
-define( 'LA_OTRA_LUCHA_VERSION', '1.5.1' );
+define( 'LA_OTRA_LUCHA_VERSION', '1.6.0' );
 define( 'LA_OTRA_LUCHA_DIR', get_template_directory() );
 define( 'LA_OTRA_LUCHA_URI', get_template_directory_uri() );
 
@@ -137,6 +137,7 @@ function la_otra_lucha_provision_legal_pages() {
     $pages = array(
         'terminos-y-condiciones'  => 'Términos y Condiciones',
         'politicas-de-privacidad' => 'Políticas de Privacidad',
+        'historia-de-karin'       => 'La Historia de Karin Pardo',
     );
 
     foreach ( $pages as $slug => $title ) {

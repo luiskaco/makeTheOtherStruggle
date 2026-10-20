@@ -2,6 +2,16 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.6.0] — 2026-10-20
+
+### Added
+- **Página Especial 'La Historia de Karin Pardo' (`/historia-de-karin/`):**
+  - Plantilla personalizada `page-historia-de-karin.php` con encuadre fotográfico de Karin Pardo, subtítulo en script (`#brush-stroke`), miga de pan bidireccional y botones inferiores de retorno.
+  - Testimonio íntegro formateado con tarjetas de hitos temporales (Agosto 2023 - Junio 2024, Proceso de tratamiento), bloque de métrica destacada (57% de riesgo de recaída), llamado de atención sobre desigualdad en subtipo HR+/HER2− y petitorio formal ante RENETSA, INS y el MINSA.
+  - Script de provisión `scripts/seed-karin-story.php` e integración en el hook de setup en `functions.php` con metadatos SEO en Rank Math.
+  - Conexión directa desde el botón CTA del Hero y el botón de la sección Karin en la portada.
+  - Compatibilidad de reescritura en `.htaccess` y `wp-config.php` para funcionamiento simultáneo en Virtual Host (`maketheotherstruggle.test`) y subdirectorio (`localhost/makeTheOtherStruggle`).
+
 ## [1.5.0] — 2026-10-20
 
 ### Added
