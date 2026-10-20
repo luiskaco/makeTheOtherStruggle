@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Rediseñada e integrada de forma limpia y fluida la sección del Estudio del Observatorio (`section-patient-study.php`): se removieron los bordes rígidos y el contenedor de tarjeta flotante, se eliminó la burbuja 'UN ESTUDIO PIONERO EN EL PERÚ', se integraron formas suaves de fondo con degradados rosados sutiles acordes a la identidad editorial del sitio, y se habilitaron animaciones de revelado escalonado (`reveal-on-scroll`) con conteo numérico dinámico fluido en los porcentajes (`59,5%` y `60,6%`) mediante `animateCounter` en `animations.js`.
+- **Dónde quedó:** Actualizadas las páginas legales de Términos y Condiciones y Políticas de Privacidad con el correo oficial `institucional@porunperusincancer.com` para contacto general y ejercicio de Derechos ARCO conforme a la Ley N° 29733. Cambios sembrados en base de datos WordPress (IDs 11 y 12), reflejados en el script de provisión `scripts/seed-legal-pages.php` y en `.well-known/security.txt`. Verificado vía HTTP con 200 OK.
 - **Próximo paso:** Continuar según indicaciones del usuario (el backlog P-01 para exportar campos ACF a `acf-json/` permanece pendiente según lo solicitado).
 - **Bloqueos:** Ninguno.
 
@@ -51,6 +51,7 @@
 - [x] **T-34:** Creación de nueva sección 'La Ruta de la Paciente con Cáncer de Mama - Estudio del Observatorio' (`template-parts/section-patient-study.php`): tarjeta con degradado e iconografía estadística (59,5% en exámenes y 60,6% en inicio de tratamiento), botón CTA con enlace al informe oficial del Observatorio Oncológico, posicionamiento encima de `section-quote-banner.php` y estilos responsivos en `css/sections.css`.
 - [x] **T-35:** Reubicación de la sección Estudio del Observatorio: mover `template-parts/section-patient-study.php` para posicionarse debajo del banner morado (`section-quote-banner.php`) y antes de la Guía de Derechos (`section-rights.php`) en `front-page.php`.
 - [x] **T-36:** Rediseño e integración fluida de la sección Estudio del Observatorio: eliminar bordes de tarjeta rígida y contenedor encajonado, remover burbuja 'UN ESTUDIO PIONERO EN EL PERÚ', fusionar con el fondo editorial de la página, integrar cintas fluidas e incorporar animaciones de scroll y conteo dinámico para las estadísticas (59,5% y 60,6%).
+- [x] **T-37:** Actualizar correo de contacto y ejercicio de derechos ARCO a `institucional@porunperusincancer.com` en las Políticas de Privacidad y Términos y Condiciones en base de datos y script de provisión.
 
 ---
 

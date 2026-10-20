@@ -15,7 +15,7 @@ $legal_pages = array(
         'title'   => 'Términos y Condiciones',
         'content' => <<<HTML
 <h2>1. Información General y Objeto</h2>
-<p>El presente documento establece los Términos y Condiciones de uso del sitio web oficial de <strong>La Otra Lucha</strong> (en adelante, "el Sitio"), una iniciativa de concientización ciudadana, investigación e incidencia pública promovida por la asociación civil <strong>Por un Perú Sin Cáncer</strong> (en adelante, "la Organización"), domiciliada en Lima, República del Perú, con correo electrónico de contacto oficial <a href="mailto:contacto@porunperusincancer.com">contacto@porunperusincancer.com</a>.</p>
+<p>El presente documento establece los Términos y Condiciones de uso del sitio web oficial de <strong>La Otra Lucha</strong> (en adelante, "el Sitio"), una iniciativa de concientización ciudadana, investigación e incidencia pública promovida por la asociación civil <strong>Por un Perú Sin Cáncer</strong> (en adelante, "la Organización"), domiciliada en Lima, República del Perú, con correo electrónico de contacto oficial <a href="mailto:institucional@porunperusincancer.com">institucional@porunperusincancer.com</a>.</p>
 <p>El Sitio tiene como propósito visibilizar las barreras de acceso, diagnóstico y tratamiento que enfrentan las pacientes con cáncer de mama en el sistema de salud peruano, difundir el caso testimonial de Karin Pardo, y poner a disposición ciudadana la <strong>Guía de Derechos</strong> y los hallazgos del <strong>Observatorio Oncológico</strong>.</p>
 
 <h2>2. Descargo Fundamental de Responsabilidad Médica</h2>
@@ -48,15 +48,15 @@ $legal_pages = array(
 <p>Para la resolución de cualquier discrepancia, litigio o controversia que pudiera derivarse del uso del Sitio, las partes renuncian expresamente a cualquier otro fuero que pudiera corresponderles y se someten voluntariamente a la jurisdicción y competencia territorial de los Jueces y Tribunales del Distrito Judicial de <strong>Lima, Perú</strong>.</p>
 
 <h2>8. Contacto</h2>
-<p>Para formular consultas, sugerencias o comunicaciones relativas a estos Términos y Condiciones, puede dirigirse a: <a href="mailto:contacto@porunperusincancer.com">contacto@porunperusincancer.com</a>.</p>
-<p><em>Última actualización y entrada en vigencia: 18 de octubre de 2026.</em></p>
+<p>Para formular consultas, sugerencias o comunicaciones relativas a estos Términos y Condiciones, puede dirigirse a: <a href="mailto:institucional@porunperusincancer.com">institucional@porunperusincancer.com</a>.</p>
+<p><em>Última actualización y entrada en vigencia: 19 de octubre de 2026.</em></p>
 HTML
     ),
     'politicas-de-privacidad' => array(
         'title'   => 'Políticas de Privacidad',
         'content' => <<<HTML
 <h2>1. Compromiso y Responsable del Tratamiento de Datos</h2>
-<p>La asociación civil <strong>Por un Perú Sin Cáncer</strong> (en adelante, "la Organización" o "el Responsable"), domiciliada en Lima, República del Perú, con correo electrónico oficial de contacto <a href="mailto:contacto@porunperusincancer.com">contacto@porunperusincancer.com</a>, asume el más firme compromiso con la protección, confidencialidad y tratamiento ético de los datos personales de los usuarios que navegan por la plataforma web de la campaña <strong>La Otra Lucha</strong>.</p>
+<p>La asociación civil <strong>Por un Perú Sin Cáncer</strong> (en adelante, "la Organización" o "el Responsable"), domiciliada en Lima, República del Perú, con correo electrónico oficial de contacto <a href="mailto:institucional@porunperusincancer.com">institucional@porunperusincancer.com</a>, asume el más firme compromiso con la protección, confidencialidad y tratamiento ético de los datos personales de los usuarios que navegan por la plataforma web de la campaña <strong>La Otra Lucha</strong>.</p>
 
 <h2>2. Marco Legal Aplicable</h2>
 <p>La presente Política de Privacidad ha sido elaborada en estricta conformidad con lo dispuesto en la <strong>Ley N° 29733 (Ley de Protección de Datos Personales del Perú)</strong>, su Reglamento aprobado mediante el <strong>Decreto Supremo N° 003-2013-JUS</strong>, y la Directiva de Seguridad de la Información emitida por la Autoridad Nacional de Protección de Datos Personales.</p>
@@ -101,7 +101,7 @@ HTML
 
 <h2>8. Ejercicio de los Derechos ARCO</h2>
 <p>De conformidad con la Ley N° 29733, todo titular de datos personales tiene derecho a acceder a su información registrada, rectificarla si es inexacta o errónea, cancelarla cuando considere que no es necesaria, y oponerse a su tratamiento (Derechos ARCO).</p>
-<p>Para ejercer cualquiera de estos derechos de forma gratuita, el titular deberá remitir una solicitud por correo electrónico a <a href="mailto:contacto@porunperusincancer.com">contacto@porunperusincancer.com</a> con el asunto <strong>"Ejercicio de Derechos ARCO - Datos Personales"</strong>, detallando:</p>
+<p>Para ejercer cualquiera de estos derechos de forma gratuita, el titular deberá remitir una solicitud por correo electrónico a <a href="mailto:institucional@porunperusincancer.com">institucional@porunperusincancer.com</a> con el asunto <strong>"Ejercicio de Derechos ARCO - Datos Personales"</strong>, detallando:</p>
 <ul>
   <li>Nombres, apellidos y copia legible de su Documento Nacional de Identidad (DNI), Carné de Extranjería o documento oficial de identidad del titular o representante legal.</li>
   <li>Petición concreta y fundamento de la solicitud (acceso, rectificación, cancelación u oposición).</li>
@@ -117,7 +117,7 @@ HTML
 
 <h2>11. Modificaciones a la Política</h2>
 <p>La Organización se reserva el derecho de actualizar periódicamente esta Política de Privacidad para adecuarla a modificaciones legislativas o mejoras técnicas. Cualquier cambio sustancial será debidamente publicado y fechado en esta misma página.</p>
-<p><em>Última actualización y entrada en vigencia: 18 de octubre de 2026.</em></p>
+<p><em>Última actualización y entrada en vigencia: 19 de octubre de 2026.</em></p>
 HTML
     ),
 );

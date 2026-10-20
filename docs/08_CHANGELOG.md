@@ -13,6 +13,9 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
   - Integración de animaciones de entrada progresiva (`reveal-on-scroll`) para todos los elementos del bloque.
   - Soporte para campos de Advanced Custom Fields (ACF) mediante el helper resiliente `lol_get_field()`.
 
+### Changed
+- **Páginas Legales y Divulgación de Seguridad:** Actualización del correo institucional de contacto general y ejercicio de Derechos ARCO (acceso, rectificación, cancelación y oposición de datos personales según Ley N° 29733) a `institucional@porunperusincancer.com` en 'Términos y Condiciones', 'Políticas de Privacidad', el script de provisión `scripts/seed-legal-pages.php` y el estándar RFC 9116 `.well-known/security.txt`.
+
 ## [1.2.3] — 2026-10-19
 
 ### Changed

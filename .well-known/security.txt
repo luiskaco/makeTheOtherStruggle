@@ -2,7 +2,7 @@
 # Política de divulgación responsable de vulnerabilidades
 # Proyecto: La Otra Lucha — Por un Perú Sin Cáncer
 
-Contact: mailto:contacto@porunperusincancer.com
+Contact: mailto:institucional@porunperusincancer.com
 Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: es, en
 Canonical: http://localhost/makeTheOtherStruggle/.well-known/security.txt
