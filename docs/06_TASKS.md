@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-54: Reubicación de la sección Estudio del Observatorio (`template-parts/section-patient-study.php`) por encima del banner morado de citas (`template-parts/section-quote-banner.php`) en `front-page.php`.
+- **Dónde quedó:** Completada T-55: Aplicación de fondo gris institucional (`--color-heading` / `#646160`) y tipografía blanca de alto contraste a la caja de texto en la sección Las Cuatro Luchas (`css/sections.css`, versión 1.7.1 de tema).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -69,6 +69,7 @@
 - [x] **T-52:** Integrar logo del Observatorio de Cáncer en la cabecera de la sección 'La Ruta de la Paciente' (`template-parts/section-patient-route.php` y `css/sections.css`): importación de asset oficial `logo-observatorio-oncologico.png`, renderizado centrado y proporcionado (`.patient-route__logo`, max-width contenido y microinteracción hover).
 - [x] **T-53:** Actualización de texto en botón CTA de la sección Estudio del Observatorio (`template-parts/section-patient-study.php` y `docs/04_DATA_MODEL.md`): sustitución del copy por 'ENCUENTRA EL INFORME COMPLETO AQUÍ', purga de caché y verificación en navegador.
 - [x] **T-54:** Reordenamiento de secciones en portada (`front-page.php`): reposicionamiento de `section-patient-study.php` (Estadísticas 59,5% y 60,6% del Observatorio) por encima de `section-quote-banner.php` ('ESCUCHAR A LAS PACIENTES ES EL PRIMER PASO PARA COMPRENDER QUÉ DEBE CAMBIAR').
+- [x] **T-55:** Aplicar fondo gris carbón oficial (`--color-heading` / `#646160`) y tipografía blanca a la caja de texto en la sección 'Las Cuatro Luchas' (`css/sections.css`): estilización de `.four-fights__callout` para mimetizar el tono del titular de campaña con sombra sutil y contraste de lectura óptimo.
 
 ---
 

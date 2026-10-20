@@ -2,6 +2,13 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.1] — 2026-10-20
+
+### Changed
+- **Caja de Texto en Las Cuatro Luchas (`css/sections.css`):**
+  - Aplicación de fondo gris carbón oficial (`--color-heading` / `#646160`) a `.four-fights__callout`, igualando el color del titular principal.
+  - Tipografía interior ajustada a blanco de alto contraste (`#ffffff`), con palabras clave en negrita definida y sombra sutil de profundidad.
+
 ## [1.7.0] — 2026-10-20
 
 ### Added
