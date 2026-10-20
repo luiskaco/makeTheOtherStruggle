@@ -95,9 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
     </section>
 
-    <!-- ======================================================================
-         SECCIÓN 5: FRANJA MORADA DE 4 PILARES (Fiel a diseno/5.png)
-         ====================================================================== -->
+    <!-- SECCIÓN 5: FRANJA MORADA DE 4 PILARES (Oculta según requerimiento)
     <div class="pillars-bar" aria-label="Principios de la ruta de atención">
       <div class="container">
         <ul class="pillars-bar__list" data-acf-field="fights_pillars">
@@ -108,3 +106,5 @@ if ( ! defined( 'ABSPATH' ) ) {
         </ul>
       </div>
     </div>
+    -->
+

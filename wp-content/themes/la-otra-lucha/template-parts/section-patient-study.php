@@ -27,21 +27,6 @@ $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer
   <div class="container patient-study__container">
     <div class="patient-study__content">
 
-      <!-- Título principal -->
-      <h2 class="patient-study__title" data-acf-field="study_title">
-        <?php echo nl2br( esc_html( $study_title ) ); ?>
-      </h2>
-
-      <!-- Subtítulo institucional -->
-      <p class="patient-study__subtitle" data-acf-field="study_subtitle">
-        <strong><?php echo esc_html( $study_subtitle ); ?></strong>
-      </p>
-
-      <!-- Descripción -->
-      <p class="patient-study__desc" data-acf-field="study_desc">
-        <?php echo esc_html( $study_desc ); ?>
-      </p>
-
       <!-- Bloque de 2 Estadísticas con divisorio -->
       <div class="patient-study__stats">
         <!-- Stat 1: Exámenes -->

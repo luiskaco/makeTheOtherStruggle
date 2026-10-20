@@ -2,6 +2,14 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.3.1] — 2026-10-19
+
+### Changed
+- **Depuración y simplificación editorial de secciones:**
+  - Ocultada la franja morada de 4 pilares (`.pillars-bar`) en `section-four-fights.php` (*Cada etapa importa / demora...*).
+  - Removido el titular y subtítulo duplicados en `section-patient-study.php` para presentar de forma directa y limpia el bloque de estadísticas del Observatorio Oncológico.
+  - Actualizado el texto introductorio en el recuadro (`.outlined-callout`) de `section-patient-route.php` para sintetizar el objetivo de la investigación de la paciente.
+
 ## [1.3.0] — 2026-10-19
 
 ### Added

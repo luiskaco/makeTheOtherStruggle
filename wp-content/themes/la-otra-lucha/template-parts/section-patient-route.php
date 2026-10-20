@@ -27,10 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
           <div class="outlined-callout" data-acf-field="route_intro_box">
             <p>
-              No queremos saber únicamente si una paciente consiguió
-              atención. Queremos comprender <strong>cuánto tiempo</strong> tuvo que
-              esperar, qué <strong>obstáculos encontró</strong> y cómo esas <strong>dificultades
-              afectaron</strong> su experiencia.
+              Por primera vez, una investigación recoge las experiencias de las pacientes para identificar las barreras y los tiempos de espera que enfrentan en su recorrido por el sistema de salud.
             </p>
           </div>
         </div>
