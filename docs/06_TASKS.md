@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-64: Auditoría y optimización integral del sistema de animaciones en todo el sitio (`animations.js`, `css/sections.css`) con cobertura total para portada y páginas internas en tema v1.8.2.
+- **Dónde quedó:** Completada T-65: Integración del snippet oficial de Google Tag (gtag.js / Google Analytics 4 ID: `G-YMHXSQNHRP`) en la cabecera del tema (`header.php`) en tema v1.8.3, verificado en ejecución en Chrome DevTools.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos ajustes).
 - **Bloqueos:** Ninguno.
 
@@ -79,6 +79,7 @@
 - [x] **T-62:** Deshabilitación total del sistema de comentarios y suite de hardening de seguridad para WordPress: desactivación global de comentarios en core, post types, feeds, REST API y templates; redirección y ocultamiento de menús admin; bloqueo de `wp-comments-post.php` en `.htaccess`; activación de `DISALLOW_FILE_EDIT` y generación de sales criptográficas únicas en `wp-config.php`; deshabilitación de Application Passwords y purga de comentarios en base de datos.
 - [x] **T-63:** Estilización sin fondo con elementos en rosa oficial en la cita del Observatorio (`section-quote-banner.php`, `css/sections.css`, assets SVG): eliminación de fondos de bloque y degradados (fondo transparente integrado a la página), tipografía de cita en rosa de campaña oficial (`--color-primary` / `#e46f94`), creación de comillas vectoriales en rosa (`quote-open-pink.svg` y `quote-close-pink.svg`), y botón CTA en rosa oficial (`.btn--pink`), purga de caché y verificación visual en navegador.
 - [x] **T-64:** Auditoría y optimización integral del sistema de animaciones en todo el sitio: inclusión del logo del Observatorio, tarjetas de estadísticas y cita del Observatorio en los grupos de retraso escalonado (`animations.js`), soporte para páginas dedicadas e internas, calibración de umbrales del `IntersectionObserver` y microinteracciones hover (`css/sections.css`).
+- [x] **T-65:** Integrar snippet oficial de Google Tag (gtag.js / Google Analytics 4 ID: `G-YMHXSQNHRP`) en `header.php`, purgar caché LiteSpeed y verificar inyección y disponibilidad de `window.dataLayer` y `window.gtag` en navegador.
 
 ---
 

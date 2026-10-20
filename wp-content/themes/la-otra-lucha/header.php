@@ -14,6 +14,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMHXSQNHRP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YMHXSQNHRP');
+  </script>
   <link rel="icon" href="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/img/favicon.svg' ); ?>" type="image/svg+xml" />
   <link rel="icon" href="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/img/favicon-32x32.png' ); ?>" sizes="32x32" type="image/png" />
   <link rel="icon" href="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/img/favicon-16x16.png' ); ?>" sizes="16x16" type="image/png" />

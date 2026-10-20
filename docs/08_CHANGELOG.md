@@ -2,6 +2,14 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.3] — 2026-10-20
+
+### Added & Analytics
+- **Integración Oficial de Google Tag / GA4 (`header.php`):**
+  - Inserción del script asíncrono `gtag.js` con identificador de flujo de Google Analytics 4 `G-YMHXSQNHRP`.
+  - Inicialización estándar de `window.dataLayer` y configuración inicial `gtag('config', 'G-YMHXSQNHRP')`.
+  - Verificado en tiempo de ejecución en Chrome DevTools (`hasGtag: true`, eventos en `dataLayer`).
+
 ## [1.8.2] — 2026-10-20
 
 ### Enhanced & Animations
