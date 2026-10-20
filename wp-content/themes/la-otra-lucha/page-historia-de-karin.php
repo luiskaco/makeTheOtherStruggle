@@ -28,19 +28,6 @@ get_header();
     <?php while ( have_posts() ) : the_post(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class( 'page-article karin-article' ); ?>>
         <header class="page-article__header karin-article__header">
-          <div class="karin-article__photo-wrap">
-            <picture>
-              <source srcset="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/img/foto-karin.webp' ); ?>" type="image/webp" />
-              <img
-                src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/img/foto-karin.png' ); ?>"
-                alt="Karin Pardo, paciente y testimonio de La Otra Lucha"
-                class="karin-article__photo"
-                width="800"
-                height="304"
-                fetchpriority="high"
-              />
-            </picture>
-          </div>
 
           <h1 class="page-article__title karin-article__title"><?php the_title(); ?></h1>
           <p class="karin-article__tagline">
