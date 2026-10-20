@@ -2,6 +2,13 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.3] — 2026-10-20
+
+### Reverted & Changed
+- **Reversión de Fondo Gris en 'Las Cuatro Luchas' (`css/sections.css`):**
+  - Eliminación del fondo gris carbón y tipografía blanca en `.four-fights__callout`.
+  - Restauración de la apariencia blanca institucional original (`.outlined-callout`), con borde gris fino y texto oscuro.
+
 ## [1.7.2] — 2026-10-20
 
 ### Added & Changed

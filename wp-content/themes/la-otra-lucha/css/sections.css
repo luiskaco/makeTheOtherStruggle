@@ -663,17 +663,7 @@
   display: block;
 }
 
-.four-fights__callout {
-  background-color: var(--color-heading);
-  border-color: var(--color-heading);
-  color: #ffffff;
-  box-shadow: 0 10px 28px rgba(100, 97, 96, 0.18);
-}
 
-.four-fights__callout strong {
-  color: #ffffff;
-  font-weight: var(--fw-semibold, 600);
-}
 
 @media (min-width: 68rem) {
   .four-fights {
