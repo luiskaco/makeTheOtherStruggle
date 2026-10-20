@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-66: Actualización de URLs en los botones de Observatorio Oncológico hacia `https://observatoriodecancer.com/` (`section-quote-banner.php` y `section-action-trio.php`), verificado en ejecución en Chrome DevTools.
+- **Dónde quedó:** Completada T-68: Subida de versión del theme WordPress a `1.8.4` sincronizando `style.css`, constante `LA_OTRA_LUCHA_VERSION` en `functions.php`, `readme.txt` (`Stable tag` y changelog), `AGENTS.md` y `docs/08_CHANGELOG.md`.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos ajustes).
 - **Bloqueos:** Ninguno.
 
@@ -81,6 +81,8 @@
 - [x] **T-64:** Auditoría y optimización integral del sistema de animaciones en todo el sitio: inclusión del logo del Observatorio, tarjetas de estadísticas y cita del Observatorio en los grupos de retraso escalonado (`animations.js`), soporte para páginas dedicadas e internas, calibración de umbrales del `IntersectionObserver` y microinteracciones hover (`css/sections.css`).
 - [x] **T-65:** Integrar snippet oficial de Google Tag (gtag.js / Google Analytics 4 ID: `G-YMHXSQNHRP`) en `header.php`, purgar caché LiteSpeed y verificar inyección y disponibilidad de `window.dataLayer` y `window.gtag` en navegador.
 - [x] **T-66:** Actualizar botones de 'Observatorio Oncológico' ('CONOCE EL OBSERVATORIO ONCOLÓGICO' en `section-quote-banner.php` y 'VISITA EL OBSERVATORIO ONCOLÓGICO' en `section-action-trio.php`) para apuntar al enlace oficial `https://observatoriodecancer.com/` con apertura en pestaña nueva (`target='_blank'`, `rel='noopener noreferrer'`).
+- [x] **T-67:** Integrar Google Tag Manager (`GTM-N7PP8WWT`): snippet en `<head>` y `<noscript>` inmediatamente después de `<body>` en `header.php`, respetando Google Analytics previo y verificando en navegador.
+- [x] **T-68:** Incrementar versión del theme WordPress a `1.8.4`: actualizar `style.css`, constante `LA_OTRA_LUCHA_VERSION` en `functions.php`, `readme.txt` (`Stable tag` y changelog) y verificar consistencia de versionado.
 
 ---
 

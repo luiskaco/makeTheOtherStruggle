@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.8.3
+Stable tag: 1.8.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.8.4 =
+* Integración oficial de Google Tag Manager (GTM ID: GTM-N7PP8WWT) con script en <head> y contenedor alternativo <noscript> en <body>.
+* Actualización de enlaces directos a la plataforma oficial del Observatorio Oncológico (https://observatoriodecancer.com/).
+
 = 1.8.3 =
 * Integración del snippet oficial de Google Tag (gtag.js / Google Analytics 4 ID: G-YMHXSQNHRP) en la cabecera del tema (header.php).
 * Sincronización de analítica web para monitoreo y métricas de campaña.

@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.4] — 2026-10-20
+
+### Added & Analytics
+- **Integración Oficial de Google Tag Manager (`header.php`):**
+  - Inserción del script de contenedor Google Tag Manager con ID `GTM-N7PP8WWT` en la cabecera `<head>`.
+  - Inserción del snippet alternativo `<noscript>` con iframe de seguimiento inmediatamente tras la apertura del tag `<body>`.
+  - Coexistencia fluida con el flujo previo de GA4 (`G-YMHXSQNHRP`).
+  - Verificado en tiempo de ejecución en Chrome DevTools (`hasGtmScript: true`, `hasGtmObject: true`, dataLayer inicializado y noscript presente).
+
 ## [1.8.3] — 2026-10-20
 
 ### Added & Analytics
