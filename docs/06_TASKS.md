@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Ocultado el hito 1 completo (número 1 rosa + texto *"LA LUCHA POR CONSEGUIR ATENCIÓN"* en `section-four-fights.php` y el primer punto gris de la ruta en `road-4-luchas.svg`). Se guardó previamente el punto de restauración con tag `checkpoint-antes-eliminar-hito1` (commit `320368b`).
+- **Dónde quedó:** Ocultados los 4 hitos completos (números 1, 2, 3 y 4 con sus textos en `section-four-fights.php` y los 4 círculos grises sobre la línea en `road-4-luchas.svg`). La línea serpenteante se mantiene limpia y conectada a la caja editorial.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -58,6 +58,7 @@
 - [x] **T-41:** Reemplazar copy del recuadro (.outlined-callout) en `template-parts/section-patient-route.php`.
 - [x] **T-42:** Eliminar párrafo descriptivo superior en `template-parts/section-patient-study.php`.
 - [x] **T-43:** Ocultar hito 1 completo (número 1 + texto en `section-four-fights.php` y punto gris en `road-4-luchas.svg`) con checkpoint previo `checkpoint-antes-eliminar-hito1`.
+- [x] **T-44:** Ocultar hitos 2, 3 y 4 completos (números 2, 3 y 4 + textos en `section-four-fights.php` y sus 3 círculos grises correspondientes en `road-4-luchas.svg`).
 
 ---
 
