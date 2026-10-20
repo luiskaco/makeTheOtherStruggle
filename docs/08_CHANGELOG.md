@@ -2,6 +2,17 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.2] — 2026-10-20
+
+### Enhanced & Animations
+- **Auditoría y Optimización Integral de Animaciones (`animations.js`, `css/sections.css`):**
+  - Inclusión del logo oficial del Observatorio (`.patient-route__logo`) en la secuencia escalonada de la sección Ruta de la Paciente.
+  - Activación de animaciones de escala y retraso progresivo para las tarjetas de estadísticas del Observatorio (`.patient-study__stat-item`).
+  - Animación secuencial en la cita del Observatorio (`.quote-banner`): comillas, texto central y botón rosa en cascada armónica.
+  - Soporte de conteo dinámico para el indicador 57% en la plantilla dedicada de Karin Pardo (`.karin-stat-highlight__num`) y revelación progresiva de sus bloques.
+  - Microinteracciones de elevación al hover (`translateY`) en tarjetas de acción y estadísticas del estudio.
+  - Calibración de umbrales del `IntersectionObserver` (`threshold: 0.08` y margen inferior adaptativo) para un disparo fluido e inmediato en scroll móvil y desktop.
+
 ## [1.8.1] — 2026-10-20
 
 ### Changed & Colors

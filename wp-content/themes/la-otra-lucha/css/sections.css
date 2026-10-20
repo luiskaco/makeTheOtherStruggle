@@ -1167,6 +1167,11 @@
   gap: clamp(0.85rem, 1.8vw, 1.25rem);
   flex: 1;
   justify-content: center;
+  transition: transform var(--transition-fast, 180ms ease);
+}
+
+.patient-study__stat-item:hover {
+  transform: translateY(-2px);
 }
 
 .patient-study__stat-icon-wrap {
@@ -1452,6 +1457,12 @@
   justify-content: space-between;
   text-align: center;
   gap: 1.5rem;
+  transition: transform var(--transition-fast, 180ms ease), box-shadow var(--transition-fast, 180ms ease);
+}
+
+.action-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
 }
 
 .action-card--pink {

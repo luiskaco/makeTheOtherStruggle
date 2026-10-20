@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // 1. CONSTANTES DEL THEME
 // =============================================================================
 
-define( 'LA_OTRA_LUCHA_VERSION', '1.8.1' );
+define( 'LA_OTRA_LUCHA_VERSION', '1.8.2' );
 define( 'LA_OTRA_LUCHA_DIR', get_template_directory() );
 define( 'LA_OTRA_LUCHA_URI', get_template_directory_uri() );
 

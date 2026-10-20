@@ -1,8 +1,9 @@
 /**
  * Módulo de Animaciones:
- * - Revelación progresiva de bloques al hacer scroll
- * - Conteo animado de los 4 indicadores estadísticos de cáncer de mama
- * - Respeta prefers-reduced-motion: reduce
+ * - Revelación progresiva y escalonada de bloques al hacer scroll (Reveal on Scroll)
+ * - Conteo animado de indicadores estadísticos (GLOBOCAN, Estudio Observatorio, Karin)
+ * - Microinteracciones y transiciones fluidas en tarjetas e interactivos
+ * - Respeta estrictamente prefers-reduced-motion: reduce
  */
 
 function formatStatNumber(value, useComma, decimals = 0) {
@@ -28,7 +29,7 @@ function animateCounter(element) {
   const step = (now) => {
     const elapsed = now - startTime;
     const progress = Math.min(elapsed / durationMs, 1);
-    // Ease-out cubic
+    // Ease-out cubic para desaceleración natural
     const eased = 1 - Math.pow(1 - progress, 3);
     const currentValue = target * eased;
     element.textContent = `${formatStatNumber(currentValue, useComma, decimals)}${suffix}`;
@@ -46,24 +47,46 @@ function animateCounter(element) {
 export function initAnimations() {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Auto-activación de conteo para la estadística del 57% en la historia de Karin si está presente
+  const karinStatNum = document.querySelector('.karin-stat-highlight__num');
+  if (karinStatNum && !karinStatNum.dataset.countTarget) {
+    karinStatNum.dataset.countTarget = '57';
+    karinStatNum.dataset.countSuffix = '%';
+  }
+
   // Grupos con retraso escalonado (stagger) entre sus ítems hijos
   const staggeredGroups = [
+    // 1. Hero
     { selector: '.hero__title-line, .hero__script-wrap, .hero__actions .btn', stepMs: 90 },
+    // 2. Karin Story
     { selector: '.karin-story__quote, .karin-story__subtitle, .karin-story__bio, .karin-story__cta', stepMs: 90 },
+    // 3. Realidad del Cáncer
     { selector: '.cancer-reality__eyebrow, .cancer-reality__title, .cancer-reality__cta', stepMs: 90 },
     { selector: '.stats-grid .stat-card', stepMs: 110, variant: 'reveal-on-scroll--scale' },
+    // 4. Las Cuatro Luchas
     { selector: '.four-fights__title, .four-fights__callout', stepMs: 110 },
     { selector: '.road-four__item', stepMs: 110 },
     { selector: '.pillars-bar__item', stepMs: 95 },
-    { selector: '.patient-route__title, .patient-route__subtitle, .patient-route__header .outlined-callout', stepMs: 95 },
+    // 5. La Ruta de la Paciente (Incluye logo del Observatorio)
+    { selector: '.patient-route__logo, .patient-route__title, .patient-route__subtitle, .patient-route__header .outlined-callout', stepMs: 95 },
     { selector: '.road-eight__item', stepMs: 75 },
-    { selector: '.quote-banner .quote-showcase__row, .quote-banner .btn', stepMs: 110 },
-    { selector: '.patient-study__title, .patient-study__subtitle, .patient-study__desc, .patient-study__stats, .patient-study__tagline, .patient-study__cta-wrap', stepMs: 100 },
+    // 6. Estudio del Observatorio (Resultados)
+    { selector: '.patient-study__title, .patient-study__tagline, .patient-study__cta-wrap', stepMs: 95 },
+    { selector: '.patient-study__stat-item', stepMs: 120, variant: 'reveal-on-scroll--scale' },
+    // 7. Cita del Observatorio (Comillas, texto y botón en rosa)
+    { selector: '.quote-banner .quote-showcase__mark-img, .quote-banner .quote-showcase__text, .quote-banner .btn', stepMs: 95 },
+    // 8. Conoce tus Derechos
     { selector: '.rights-guide__eyebrow, .rights-guide__title', stepMs: 90 },
     { selector: '.rights-cards .rights-card', stepMs: 95, variant: 'reveal-on-scroll--scale' },
-    { selector: '.action-trio .action-card', stepMs: 120 },
+    // 9. Acción Trío
+    { selector: '.action-trio .action-card', stepMs: 120, variant: 'reveal-on-scroll--scale' },
+    // 10. Footer Institucional
     { selector: '.site-footer__quote-band .quote-showcase', stepMs: 0 },
     { selector: '.site-footer__brands, .site-footer__nav, .site-footer__legal, .site-footer__social', stepMs: 95 },
+    // 11. Página dedicada: Historia de Karin
+    { selector: '.karin-article__header, .karin-stat-highlight, .karin-timeline__step, .karin-petition-box, .karin-quote-box, .karin-article__footer-nav', stepMs: 95 },
+    // 12. Páginas Legales y estándar
+    { selector: '.page-standard__breadcrumb, .page-article__header, .page-article__content, .page-article__footer-nav', stepMs: 85 },
   ];
 
   staggeredGroups.forEach(({ selector, stepMs, variant }) => {
@@ -79,7 +102,7 @@ export function initAnimations() {
     });
   });
 
-  // Elementos individuales adicionales (imágenes, gráficos de ruta y contenedores)
+  // Elementos individuales y contenedores clave
   const standaloneSelectors = [
     { selector: '.hero__media', variant: 'reveal-on-scroll--left' },
     { selector: '.hero__content', variant: 'reveal-on-scroll--right' },
@@ -87,6 +110,8 @@ export function initAnimations() {
     { selector: '.road-four__graphic', variant: 'reveal-on-scroll--scale' },
     { selector: '.road-eight__graphic', variant: 'reveal-on-scroll--scale' },
     { selector: '.rights-guide__box', variant: 'reveal-on-scroll--scale' },
+    { selector: '.patient-study__container', variant: 'reveal-on-scroll' },
+    { selector: '.quote-banner .quote-showcase', variant: 'reveal-on-scroll' },
   ];
 
   standaloneSelectors.forEach(({ selector, variant }) => {
@@ -115,7 +140,7 @@ export function initAnimations() {
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
   );
 
   revealElements.forEach((el) => revealObserver.observe(el));
@@ -129,9 +154,8 @@ export function initAnimations() {
         }
       });
     },
-    { threshold: 0.4 }
+    { threshold: 0.15 }
   );
 
   statCounters.forEach((counter) => counterObserver.observe(counter));
 }
-
