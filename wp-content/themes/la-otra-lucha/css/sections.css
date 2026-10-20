@@ -846,6 +846,22 @@
   gap: 1rem;
 }
 
+.patient-route__logo {
+  display: block;
+  width: auto;
+  max-width: clamp(140px, 15vw, 185px);
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;
+  margin-bottom: 0.25rem;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.05));
+  transition: transform var(--transition-fast, 0.2s ease);
+}
+
+.patient-route__logo:hover {
+  transform: translateY(-2px);
+}
+
 .patient-route__title {
   font-size: clamp(2.35rem, 3.7vw + 1rem, 3.9rem);
   line-height: 1.03;

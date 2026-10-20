@@ -2,6 +2,14 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.0] — 2026-10-20
+
+### Added
+- **Logo del Observatorio de Cáncer en la Ruta de la Paciente (`section-patient-route.php`):**
+  - Incorporación del imagotipo oficial `logo-observatorio-oncologico.png` directamente encima del titular "LA RUTA DE LA PACIENTE CON CÁNCER DE MAMA".
+  - Calibración de escala contenida y elegante (`.patient-route__logo`, max-width ~160-185px) para asegurar una presencia equilibrada, sin saturar el diseño ni restarle protagonismo al titular.
+  - Soporte de sobrescritura vía ACF con fallback dinámico (`lol_get_field('route_logo')`).
+
 ## [1.6.3] — 2026-10-20
 
 ### Fixed & Changed

@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-51: Optimización de colores internos y contraste tipográfico en la tarjeta estadística (57%) y bloques de la página de Karin Pardo (`css/sections.css`, versión 1.6.3 de tema).
+- **Dónde quedó:** Completada T-52: Integración del isotipo oficial de 'Observatorio de Cáncer' encima del titular en la sección de la Ruta de la Paciente (`template-parts/section-patient-route.php` y `css/sections.css`, versión 1.7.0 de tema).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -66,6 +66,7 @@
 - [x] **T-49:** Calibración de espaciado y escala tipográfica en cabecera de la historia de Karin (`page-historia-de-karin.php` y `css/sections.css`): compactación de márgenes verticales, eliminación de divisor innecesario y ampliación proporcional de la palabra script caligráfica "tampoco" con su trazo de brocha vector (`#brush-stroke`).
 - [x] **T-50:** Desencapsular bloque introductorio de Karin Pardo (`css/sections.css`): eliminación de caja con fondo degradado y borde izquierdo (`.karin-story-page__hero-box`) para que el testimonio y la ficha de paciente fluyan de forma abierta y natural sobre la página.
 - [x] **T-51:** Corrección de colores internos y contraste tipográfico en la página de Karin (`css/sections.css`): texto `<strong>` en blanco luminoso dentro de la tarjeta de 57% (`.karin-stat-highlight`), número rosa pastel de alta legibilidad, acentos de color institucionales en tarjetas de hitos, petitorio y citas.
+- [x] **T-52:** Integrar logo del Observatorio de Cáncer en la cabecera de la sección 'La Ruta de la Paciente' (`template-parts/section-patient-route.php` y `css/sections.css`): importación de asset oficial `logo-observatorio-oncologico.png`, renderizado centrado y proporcionado (`.patient-route__logo`, max-width contenido y microinteracción hover).
 
 ---
 

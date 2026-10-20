@@ -9,6 +9,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+
+$route_logo = lol_get_field( 'route_logo', LA_OTRA_LUCHA_URI . '/assets/img/logo-observatorio-oncologico.png' );
+$route_logo_url = is_array( $route_logo ) ? ( $route_logo['url'] ?? '' ) : $route_logo;
+if ( ! $route_logo_url ) {
+    $route_logo_url = LA_OTRA_LUCHA_URI . '/assets/img/logo-observatorio-oncologico.png';
+}
 ?>
 <!-- ======================================================================
          SECCIÓN 6: LA RUTA DE LA PACIENTE — 8 DIMENSIONES (Fiel a diseno/6.png con Recurso 5.svg)
@@ -16,6 +22,15 @@ if ( ! defined( 'ABSPATH' ) ) {
     <section id="la-investigacion" class="patient-route" data-wp-part="section-patient-route" data-acf-group="group_patient_route">
       <div class="container patient-route__layout">
         <div class="patient-route__header reveal-on-scroll">
+          <img
+            src="<?php echo esc_url( $route_logo_url ); ?>"
+            alt="<?php esc_attr_e( 'Observatorio de Cáncer', 'la-otra-lucha' ); ?>"
+            class="patient-route__logo"
+            width="200"
+            height="56"
+            loading="lazy"
+            decoding="async"
+          />
           <h2 class="patient-route__title" data-acf-field="route_heading">
             <span class="patient-route__title-line">LA RUTA DE LA</span>
             <span class="patient-route__title-line"><span class="text-pink">PACIENTE</span> CON</span>
