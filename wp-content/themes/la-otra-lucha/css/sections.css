@@ -1269,31 +1269,29 @@
 }
 
 /* --------------------------------------------------------------------------
-   7. Banner Rosa Observatorio (.quote-banner)
+   7. Cita Observatorio (.quote-banner — Sin fondo, texto y botón en rosa oficial)
    -------------------------------------------------------------------------- */
 .quote-banner {
   position: relative;
-  background-color: var(--color-primary);
-  background-image: url('../assets/svg/bg-quote-banner.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--color-white);
+  background: transparent;
+  color: var(--color-primary);
   padding-block: clamp(2.5rem, 5vw, 4rem);
   overflow: hidden;
 }
 
 .quote-banner .quote-showcase__text {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .quote-banner .quote-showcase__text em {
   font-style: italic;
   font-weight: var(--fw-semibold);
+  color: var(--color-primary);
 }
 
 .quote-banner .quote-showcase__text strong {
   font-weight: var(--fw-bold);
+  color: var(--color-primary);
 }
 
 .quote-banner .quote-showcase__mark-img {

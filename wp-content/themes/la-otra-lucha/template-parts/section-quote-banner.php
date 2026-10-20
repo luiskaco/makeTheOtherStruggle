@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       <div class="container quote-showcase reveal-on-scroll">
         <div class="quote-showcase__row">
           <img
-            src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/quote-open.svg' ); ?>"
+            src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/quote-open-pink.svg' ); ?>"
             alt=""
             class="quote-showcase__mark-img"
             width="95"
@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           </p>
 
           <img
-            src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/quote-close.svg' ); ?>"
+            src="<?php echo esc_url( LA_OTRA_LUCHA_URI . '/assets/svg/quote-close-pink.svg' ); ?>"
             alt=""
             class="quote-showcase__mark-img"
             width="95"
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           />
         </div>
 
-        <a href="#evidencia-a-la-accion" class="btn btn--white" data-acf-field="observatory_cta">
+        <a href="#evidencia-a-la-accion" class="btn btn--pink" data-acf-field="observatory_cta">
           CONOCE EL OBSERVATORIO ONCOLÓGICO
         </a>
       </div>

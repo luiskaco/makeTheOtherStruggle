@@ -2,8 +2,8 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-62: Deshabilitación integral del sistema de comentarios (core, post types, feeds, REST API, templates, admin menu, .htaccess) y suite de hardening de seguridad para WordPress (DISALLOW_FILE_EDIT, sales criptográficas únicas de 256 bits, bloqueo de Application Passwords y purga en BD) en tema v1.8.0.
-- **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos requerimientos).
+- **Dónde quedó:** Completada T-63: Eliminación de fondo en `section-quote-banner.php` (transparente e integrado a la página), tipografía y comillas en rosa oficial de campaña (`--color-primary` / `#e46f94`) y botón CTA en rosa institucional (`.btn--pink`) en tema v1.8.1.
+- **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos ajustes).
 - **Bloqueos:** Ninguno.
 
 ---
@@ -77,6 +77,7 @@
 - [x] **T-60:** Reordenamiento de secciones en portada (`front-page.php`): reubicación de `section-quote-banner.php` (banner morado 'ESCUCHAR A LAS PACIENTES...') al final de la página, inmediatamente antes de `get_footer()` y por encima de la franja 'EL CÁNCER YA ES UNA LUCHA. LA DESIGUALDAD NO DEBERÍA SER OTRA.', purga de caché y verificación en navegador.
 - [x] **T-61:** Reubicación y estilización en rosa de la sección de cita del Observatorio (`section-quote-banner.php`, `front-page.php` y `css/sections.css`): posicionamiento inmediatamente debajo de los Resultados del Estudio (`section-patient-study.php`), aplicación del fondo rosa oficial de campaña (`--color-primary` / `#e46f94`) con lazos vectoriales, tipografía y comillas en blanco luminoso, y botón CTA blanco con texto morado (`.btn--white`), purga de caché y verificación visual en navegador.
 - [x] **T-62:** Deshabilitación total del sistema de comentarios y suite de hardening de seguridad para WordPress: desactivación global de comentarios en core, post types, feeds, REST API y templates; redirección y ocultamiento de menús admin; bloqueo de `wp-comments-post.php` en `.htaccess`; activación de `DISALLOW_FILE_EDIT` y generación de sales criptográficas únicas en `wp-config.php`; deshabilitación de Application Passwords y purga de comentarios en base de datos.
+- [x] **T-63:** Estilización sin fondo con elementos en rosa oficial en la cita del Observatorio (`section-quote-banner.php`, `css/sections.css`, assets SVG): eliminación de fondos de bloque y degradados (fondo transparente integrado a la página), tipografía de cita en rosa de campaña oficial (`--color-primary` / `#e46f94`), creación de comillas vectoriales en rosa (`quote-open-pink.svg` y `quote-close-pink.svg`), y botón CTA en rosa oficial (`.btn--pink`), purga de caché y verificación visual en navegador.
 
 ---
 

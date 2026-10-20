@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.1] — 2026-10-20
+
+### Changed & Colors
+- **Cita del Observatorio sin Fondo y con Elementos en Rosa Oficial (`section-quote-banner.php`, `css/sections.css`, SVG):**
+  - Eliminación de cualquier fondo de bloque o textura en la sección (`background: transparent`), integrándola de forma limpia al lienzo editorial de la página.
+  - Tipografía de cita ("ESCUCHAR A LAS PACIENTES ES EL PRIMER PASO PARA COMPRENDER QUÉ DEBE CAMBIAR") adaptada al color rosa oficial de campaña (`--color-primary` / `#e46f94`).
+  - Creación de versiones vectoriales de comillas en rosa institucional (`quote-open-pink.svg` y `quote-close-pink.svg`).
+  - Botón CTA configurado con fondo rosa de campaña y texto en blanco (`.btn--pink`).
+
 ## [1.8.0] — 2026-10-20
 
 ### Security & Hardening
