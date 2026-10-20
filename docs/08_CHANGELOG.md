@@ -2,6 +2,12 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.6.2] — 2026-10-20
+
+### Changed
+- **Página de Karin Pardo (`css/sections.css`):**
+  - Desencapsulación del bloque inicial de testimonio: eliminación de la caja contenedora (`.karin-story-page__hero-box`), fondo degradado y borde izquierdo para lograr una lectura limpia y editorial integrada directamente en la página.
+
 ## [1.6.1] — 2026-10-20
 
 ### Changed

@@ -1897,36 +1897,37 @@
 }
 
 .karin-story-page__hero-box {
-  background: linear-gradient(135deg, rgba(228, 111, 148, 0.12) 0%, rgba(115, 88, 159, 0.15) 100%);
-  border-left: 5px solid var(--color-primary);
-  border-radius: 1rem;
-  padding: 1.25rem 1.6rem;
-  margin-bottom: 1.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 1.75rem;
 }
 
 .karin-story-page__badge {
+  display: inline-block;
   font-family: var(--font-display);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--color-primary);
   text-transform: uppercase;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 .karin-story-page__headline {
   font-family: var(--font-title);
-  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
   color: var(--color-secondary);
-  line-height: 1.2;
-  margin: 0.35rem 0 0.45rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem 0;
 }
 
 .karin-story-page__subheadline {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #646160;
   margin: 0;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .karin-story-page__lead {
