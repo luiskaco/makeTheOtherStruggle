@@ -11,6 +11,8 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
   - Soporte de sobrescritura vía ACF con fallback dinámico (`lol_get_field('route_logo')`).
 
 ### Changed
+- **Reordenamiento de Secciones en Portada (`front-page.php`):**
+  - Reposicionamiento de la sección de Estudio del Observatorio (`section-patient-study.php`) para anteceder al banner morado de citas (`section-quote-banner.php`).
 - **Botón CTA de la Sección Estudio del Observatorio (`section-patient-study.php`):**
   - Actualización del texto del botón a "ENCUENTRA EL INFORME COMPLETO AQUÍ", en mayúsculas, alineado con el nuevo enlace hacia el informe oficial.
   - Sincronización del modelo de datos en `docs/04_DATA_MODEL.md`.

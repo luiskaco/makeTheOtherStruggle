@@ -18,8 +18,8 @@ get_template_part( 'template-parts/section', 'karin' );
 get_template_part( 'template-parts/section', 'reality' );
 get_template_part( 'template-parts/section', 'four-fights' );
 get_template_part( 'template-parts/section', 'patient-route' );
-get_template_part( 'template-parts/section', 'quote-banner' );
 get_template_part( 'template-parts/section', 'patient-study' );
+get_template_part( 'template-parts/section', 'quote-banner' );
 get_template_part( 'template-parts/section', 'rights' );
 get_template_part( 'template-parts/section', 'action-trio' );
 
