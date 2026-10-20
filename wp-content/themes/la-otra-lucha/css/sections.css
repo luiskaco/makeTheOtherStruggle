@@ -433,11 +433,13 @@
 
 .stat-card__label {
   font-family: var(--font-body);
-  font-size: clamp(0.68rem, 1.4vw, 0.84rem);
+  font-size: clamp(0.60rem, 1.1vw, 0.72rem);
   font-weight: var(--fw-light);
-  line-height: 1.22;
+  line-height: 1.25;
   text-transform: uppercase;
   color: var(--color-white);
+  max-width: 22ch;
+  margin-inline: auto;
 }
 
 .stat-card__label strong {
@@ -447,11 +449,11 @@
 .stat-card__source {
   display: block;
   font-family: var(--font-body);
-  font-size: clamp(0.58rem, 1.1vw, 0.68rem);
+  font-size: clamp(0.52rem, 0.9vw, 0.60rem);
   font-weight: var(--fw-normal);
   letter-spacing: 0.04em;
   opacity: 0.85;
-  margin-top: 0.35rem;
+  margin-top: 0.25rem;
   text-transform: none;
 }
 

@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           <article class="stat-card">
             <p class="stat-card__number" data-count-target="18" data-count-suffix="%">18%</p>
             <h3 class="stat-card__label">
-              DE LOS CASOS DETECTADOS AL AÑO<br />CORRESPONDE A <strong>MUJERES MENORES DE 40 AÑOS</strong>
+              DE LOS CASOS DETECTADOS AL AÑO<br />CORRESPONDE A <strong>MUJERES<br />MENORES DE 40 AÑOS</strong>
               <span class="stat-card__source">(GLOBOCAN 2024)</span>
             </h3>
           </article>
