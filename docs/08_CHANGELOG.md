@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.5] — 2026-10-20
+
+### Changed & Colors
+- **Adaptación Cromática Integral de 'Resultados del Estudio' (`section-patient-study.php` y `css/sections.css`):**
+  - Titular "RESULTADOS DEL ESTUDIO" alineado al color gris carbón oficial (`--color-heading` / `#646160`) y tipografía de display `Veneer TwoRegular`.
+  - Cifras estadísticas (59,5% y 60,6%) e íconos adaptados al rosa de campaña oficial (`--color-primary` / `#e46f94`), armonizando con los nodos de la ruta.
+  - Textos descriptivos en gris de lectura oficial (`--color-text`).
+  - Botón CTA "ENCUENTRA EL INFORME COMPLETO AQUÍ" transformado a morado institucional (`--color-secondary` / `#73589f`) con hover oficial, alineado con los botones de acción del resto del sitio.
+
 ## [1.7.4] — 2026-10-20
 
 ### Changed & Layout

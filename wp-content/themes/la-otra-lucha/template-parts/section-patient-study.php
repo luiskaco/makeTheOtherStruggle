@@ -39,12 +39,12 @@ $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer
         <div class="patient-study__stat-item">
           <div class="patient-study__stat-icon-wrap" aria-hidden="true">
             <svg class="patient-study__stat-icon" viewBox="0 0 44 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="5" y="8" width="34" height="36" rx="6" stroke="#7d1538" stroke-width="2.6" fill="#ffffff" fill-opacity="0.6" />
-              <path d="M15 8V5C15 3.89543 15.8954 3 17 3H27C28.1046 3 29 3.89543 29 5V8" stroke="#7d1538" stroke-width="2.6" stroke-linecap="round" />
+              <rect x="5" y="8" width="34" height="36" rx="6" stroke="currentColor" stroke-width="2.6" fill="#ffffff" fill-opacity="0.6" />
+              <path d="M15 8V5C15 3.89543 15.8954 3 17 3H27C28.1046 3 29 3.89543 29 5V8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" />
               <!-- Cruz médica -->
-              <path d="M22 17V27M17 22H27" stroke="#7d1538" stroke-width="2.6" stroke-linecap="round" />
+              <path d="M22 17V27M17 22H27" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" />
               <!-- Líneas de reporte -->
-              <path d="M14 33H30M14 38H24" stroke="#7d1538" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M14 33H30M14 38H24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
             </svg>
           </div>
           <div class="patient-study__stat-data">
@@ -65,13 +65,13 @@ $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer
           <div class="patient-study__stat-icon-wrap" aria-hidden="true">
             <svg class="patient-study__stat-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- Anillas -->
-              <path d="M14 3V8M34 3V8" stroke="#7d1538" stroke-width="2.6" stroke-linecap="round" />
+              <path d="M14 3V8M34 3V8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" />
               <!-- Cuerpo calendario -->
-              <rect x="5" y="6" width="38" height="36" rx="6" stroke="#7d1538" stroke-width="2.6" fill="#ffffff" fill-opacity="0.6" />
-              <path d="M5 15H43" stroke="#7d1538" stroke-width="2.4" />
+              <rect x="5" y="6" width="38" height="36" rx="6" stroke="currentColor" stroke-width="2.6" fill="#ffffff" fill-opacity="0.6" />
+              <path d="M5 15H43" stroke="currentColor" stroke-width="2.4" />
               <!-- Círculo reloj en esquina inferior derecha -->
-              <circle cx="33" cy="33" r="10" fill="#fae8ef" stroke="#7d1538" stroke-width="2.4" />
-              <path d="M33 28V33L36.5 35" stroke="#7d1538" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="33" cy="33" r="10" fill="#fdebf1" stroke="currentColor" stroke-width="2.4" />
+              <path d="M33 28V33L36.5 35" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
           <div class="patient-study__stat-data">
