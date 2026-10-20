@@ -1827,29 +1827,62 @@
   font-weight: 600;
 }
 
-.karin-article__photo-wrap {
-  width: 100%;
-  max-width: 38rem;
-  margin: 0 auto 1.75rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  box-shadow: 0 12px 32px rgba(115, 88, 159, 0.18);
-  border: 2px solid rgba(228, 111, 148, 0.35);
+.karin-page-wrapper {
+  padding-top: 1.25rem;
 }
 
-.karin-article__photo {
-  width: 100%;
-  height: auto;
-  display: block;
+.karin-article__header {
+  margin-bottom: 1.25rem;
+}
+
+.karin-article__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.05;
+  margin: 0 0 0.35rem 0;
 }
 
 .karin-article__tagline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   font-family: var(--font-title);
   color: var(--color-secondary);
-  font-size: clamp(1rem, 2.2vw, 1.3rem);
-  letter-spacing: 0.04em;
-  margin: 0.85rem 0 1.5rem;
-  line-height: 1.4;
+  font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.35;
+}
+
+.karin-article__tagline .karin-story__script-wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 0.45rem;
+}
+
+.karin-article__tagline .karin-story__quote-script {
+  display: inline-block;
+  font-family: var(--font-script);
+  font-size: 2.25em; /* Tamaño destacado y legible */
+  text-transform: lowercase;
+  line-height: 0.45;
+  color: var(--color-secondary);
+}
+
+.karin-article__tagline .karin-story__quote-stroke {
+  position: absolute;
+  left: -4%;
+  bottom: 0.1em;
+  width: 108%;
+  height: 0.42rem;
+  color: var(--color-primary);
+  transform: rotate(-1.2deg);
+  pointer-events: none;
 }
 
 .karin-article__footer-nav {
@@ -1858,8 +1891,8 @@
   gap: 1.25rem;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
   border-top: 1px solid rgba(100, 97, 96, 0.15);
 }
 
@@ -1867,8 +1900,8 @@
   background: linear-gradient(135deg, rgba(228, 111, 148, 0.12) 0%, rgba(115, 88, 159, 0.15) 100%);
   border-left: 5px solid var(--color-primary);
   border-radius: 1rem;
-  padding: 1.75rem;
-  margin-bottom: 2.25rem;
+  padding: 1.25rem 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .karin-story-page__badge {
@@ -1878,32 +1911,32 @@
   letter-spacing: 0.08em;
   color: var(--color-primary);
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .karin-story-page__headline {
   font-family: var(--font-title);
-  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
   color: var(--color-secondary);
-  line-height: 1.25;
-  margin: 0.5rem 0;
+  line-height: 1.2;
+  margin: 0.35rem 0 0.45rem;
 }
 
 .karin-story-page__subheadline {
   font-size: 0.95rem;
   color: #646160;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .karin-story-page__lead {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 1.65;
   color: #22201e;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(100, 97, 96, 0.18);
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(100, 97, 96, 0.15);
+  padding-bottom: 1.25rem;
 }
 
 .karin-story-page__grid {

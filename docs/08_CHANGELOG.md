@@ -2,6 +2,14 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.6.1] — 2026-10-20
+
+### Changed
+- **Cabecera de la Página de Karin Pardo (`page-historia-de-karin.php`):**
+  - Calibración de espaciado vertical: compactación de márgenes en título, subtítulo y primer bloque de testimonio (`.karin-story-page__hero-box`).
+  - Eliminación de la línea divisoria morada estándar (`.page-article__divider`) para evitar separación artificial excesiva.
+  - Ajuste de jerarquía y escala en la palabra script "tampoco": uso de `.karin-story__quote-script` y trazo de brocha vector (`#brush-stroke`), escalado a 2.25em para óptima legibilidad e impacto visual.
+
 ## [1.6.0] — 2026-10-20
 
 ### Added

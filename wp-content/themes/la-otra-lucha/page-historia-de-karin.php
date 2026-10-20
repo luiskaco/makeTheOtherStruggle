@@ -32,14 +32,13 @@ get_header();
           <h1 class="page-article__title karin-article__title"><?php the_title(); ?></h1>
           <p class="karin-article__tagline">
             EL CÁNCER NO PUEDE ESPERAR. LAS RESPUESTAS
-            <span class="script-inline">
-              <span class="script-inline__text">tampoco</span>
-              <svg class="script-inline__stroke" aria-hidden="true">
+            <span class="karin-story__script-wrap">
+              <span class="karin-story__quote-script">tampoco</span>
+              <svg class="karin-story__quote-stroke" aria-hidden="true">
                 <use href="#brush-stroke" />
               </svg>
             </span>
           </p>
-          <div class="page-article__divider" aria-hidden="true"></div>
         </header>
 
         <div class="page-article__content entry-content">
