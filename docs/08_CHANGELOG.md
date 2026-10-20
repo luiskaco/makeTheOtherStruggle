@@ -7,6 +7,7 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
 ### Changed
 - **Depuración y simplificación editorial de secciones:**
   - Ocultada la franja morada de 4 pilares (`.pillars-bar`) en `section-four-fights.php` (*Cada etapa importa / demora...*).
+  - Ocultado el hito 1 completo (número 1 + texto en `section-four-fights.php` y punto gris en `road-4-luchas.svg`) con tag de restauración `checkpoint-antes-eliminar-hito1`.
   - Removido el titular y subtítulo duplicados en `section-patient-study.php` para presentar de forma directa y limpia el bloque de estadísticas del Observatorio Oncológico.
   - Actualizado el texto introductorio en el recuadro (`.outlined-callout`) de `section-patient-route.php` para sintetizar el objetivo de la investigación de la paciente.
 

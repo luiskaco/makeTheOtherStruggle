@@ -47,6 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           />
 
           <ol class="road-four__list" data-acf-field="fights_steps">
+            <!-- Hito 1 oculto según solicitud:
             <li class="road-four__item road-four__item--1">
               <span class="road-four__num" aria-hidden="true">1</span>
               <span class="road-four__text">
@@ -57,6 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </svg>
               </span>
             </li>
+            -->
 
             <li class="road-four__item road-four__item--2">
               <span class="road-four__num" aria-hidden="true">2</span>

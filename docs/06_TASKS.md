@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Eliminado el texto explicativo superior (*"Por primera vez, una investigación recoge las experiencias de las pacientes..."*) en `template-parts/section-patient-study.php`. La sección pasa directamente a mostrar la tarjeta de estadísticas del Observatorio Oncológico.
+- **Dónde quedó:** Ocultado el hito 1 completo (número 1 rosa + texto *"LA LUCHA POR CONSEGUIR ATENCIÓN"* en `section-four-fights.php` y el primer punto gris de la ruta en `road-4-luchas.svg`). Se guardó previamente el punto de restauración con tag `checkpoint-antes-eliminar-hito1` (commit `320368b`).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente).
 - **Bloqueos:** Ninguno.
 
@@ -57,6 +57,7 @@
 - [x] **T-40:** Eliminar titular grande ('LA RUTA DE LA PACIENTE CON CÁNCER DE MAMA') en `template-parts/section-patient-study.php`.
 - [x] **T-41:** Reemplazar copy del recuadro (.outlined-callout) en `template-parts/section-patient-route.php`.
 - [x] **T-42:** Eliminar párrafo descriptivo superior en `template-parts/section-patient-study.php`.
+- [x] **T-43:** Ocultar hito 1 completo (número 1 + texto en `section-four-fights.php` y punto gris en `road-4-luchas.svg`) con checkpoint previo `checkpoint-antes-eliminar-hito1`.
 
 ---
 
