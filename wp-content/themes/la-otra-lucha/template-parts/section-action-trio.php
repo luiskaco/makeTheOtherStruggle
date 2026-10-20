@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             del cáncer en el Perú.
           </p>
 
-          <a href="https://porunperusincancer.com" target="_blank" rel="noopener noreferrer" class="btn btn--white">
+          <a href="<?php echo esc_url( lol_get_field( 'observatory_action_url', 'https://observatoriodecancer.com/' ) ); ?>" target="_blank" rel="noopener noreferrer" class="btn btn--white" data-acf-field="card_evidence_cta">
             VISITA EL OBSERVATORIO ONCOLÓGICO
           </a>
         </article>

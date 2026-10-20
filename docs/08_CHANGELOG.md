@@ -10,6 +10,12 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
   - Inicialización estándar de `window.dataLayer` y configuración inicial `gtag('config', 'G-YMHXSQNHRP')`.
   - Verificado en tiempo de ejecución en Chrome DevTools (`hasGtag: true`, eventos en `dataLayer`).
 
+### Changed & Links
+- **Enlaces Directos al Observatorio Oncológico (`section-quote-banner.php`, `section-action-trio.php`):**
+  - Botón 'CONOCE EL OBSERVATORIO ONCOLÓGICO' actualizado para apuntar a `https://observatoriodecancer.com/` con `target="_blank"` y `rel="noopener noreferrer"`.
+  - Botón 'VISITA EL OBSERVATORIO ONCOLÓGICO' en la tarjeta de Evidencia actualizado a `https://observatoriodecancer.com/` con `target="_blank"` y `rel="noopener noreferrer"`.
+  - Conexión con `lol_get_field()` para permitir sobreescritura dinámica desde ACF.
+
 ## [1.8.2] — 2026-10-20
 
 ### Enhanced & Animations

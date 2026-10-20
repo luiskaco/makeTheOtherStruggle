@@ -9,6 +9,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
+
+$observatory_cta_url = lol_get_field( 'observatory_cta_url', 'https://observatoriodecancer.com/' );
 ?>
 <!-- ======================================================================
          SECCIÓN 7: BANNER CITA OBSERVATORIO (Fiel a diseno/7.png con Recurso 7, 20 y 21)
@@ -40,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
           />
         </div>
 
-        <a href="#evidencia-a-la-accion" class="btn btn--pink" data-acf-field="observatory_cta">
+        <a href="<?php echo esc_url( $observatory_cta_url ); ?>" target="_blank" rel="noopener noreferrer" class="btn btn--pink" data-acf-field="observatory_cta">
           CONOCE EL OBSERVATORIO ONCOLÓGICO
         </a>
       </div>
