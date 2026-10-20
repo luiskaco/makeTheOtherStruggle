@@ -1269,18 +1269,36 @@
 }
 
 /* --------------------------------------------------------------------------
-   7. Banner Morado Observatorio (.quote-banner — Fiel a diseno/7.png con Recurso 7)
+   7. Banner Rosa Observatorio (.quote-banner)
    -------------------------------------------------------------------------- */
 .quote-banner {
   position: relative;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   background-image: url('../assets/svg/bg-quote-banner.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-white);
-  padding-block: var(--space-xl);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
   overflow: hidden;
+}
+
+.quote-banner .quote-showcase__text {
+  color: var(--color-white);
+}
+
+.quote-banner .quote-showcase__text em {
+  font-style: italic;
+  font-weight: var(--fw-semibold);
+}
+
+.quote-banner .quote-showcase__text strong {
+  font-weight: var(--fw-bold);
+}
+
+.quote-banner .quote-showcase__mark-img {
+  opacity: 1;
+  filter: none;
 }
 
 /* --------------------------------------------------------------------------

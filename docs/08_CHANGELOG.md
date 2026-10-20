@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.7.8] — 2026-10-20
+
+### Changed & Colors
+- **Estilización en Rosa Oficial y Reubicación de la Sección de Cita (`section-quote-banner.php`, `front-page.php` y `css/sections.css`):**
+  - Posicionamiento inmediato debajo de los Resultados del Estudio (`section-patient-study.php`) y antes de la Guía de Derechos.
+  - Aplicación del fondo rosa oficial de campaña (`--color-primary` / `#e46f94`) con patrón de lazos vectoriales `bg-quote-banner.svg`.
+  - Tipografía ("ESCUCHAR A LAS PACIENTES ES EL PRIMER PASO PARA COMPRENDER QUÉ DEBE CAMBIAR") y comillas vectoriales ajustadas a blanco puro (`#ffffff`) para máximo contraste.
+  - Botón CTA configurado en blanco sólido con texto en morado institucional (`.btn.btn--white`), logrando un contraste nítido y accesible.
+
 ## [1.7.6] — 2026-10-20
 
 ### Changed & Layout
