@@ -17,7 +17,6 @@ $content = <<<HTML
 <div class="karin-story-page">
   <div class="karin-story-page__hero-box">
     <div class="karin-story-page__badge">TESTIMONIO OFICIAL — LA OTRA LUCHA</div>
-    <h2 class="karin-story-page__headline">“El cáncer no puede esperar. Las respuestas tampoco.”</h2>
     <p class="karin-story-page__subheadline">Karin Pardo, 29 años, administradora y paciente con cáncer de mama HR+/HER2− de alto riesgo en Lima, Perú.</p>
   </div>
 
@@ -29,13 +28,13 @@ $content = <<<HTML
     <div class="karin-milestone-card">
       <div class="karin-milestone-card__time">Agosto 2023 – Junio 2024</div>
       <h3 class="karin-milestone-card__title">Un año para un diagnóstico que exigía urgencia</h3>
-      <p>En agosto de 2023 encontré un bulto en el seno izquierdo durante un chequeo ginecológico. Dos veces me dijeron que era <em>algo benigno</em>. Conseguir una <strong>ecografía</strong> me tomó cerca de un mes, y fue posible porque mi madre, que tiene más de 60 años, hizo la cola por mí. La <strong>biopsia</strong> que confirmó el cáncer llegó recién en junio de 2024, casi un año después. El diagnóstico: <strong>cáncer de mama en estadio III</strong>, subtipo HR+/HER2−, con alto riesgo de recaída.</p>
+      <p>En agosto de 2023 encontré un bulto en el seno izquierdo durante un chequeo ginecológico. Dos veces me dijeron que era <a href="https://www.infobae.com/peru/2026/08/05/cancer-de-mama-en-peru-el-pais-necesitaria-mas-de-tres-decadas-para-hacer-mamografias-a-todas-las-mujeres-que-las-requieren" target="_blank" rel="noopener noreferrer"><em>algo benigno</em></a>. Conseguir una <strong>ecografía</strong> me tomó cerca de un mes, y fue posible porque mi madre, que tiene más de 60 años, hizo la cola por mí. La <strong>biopsia</strong> que confirmó el cáncer llegó recién en junio de 2024, casi un año después. El diagnóstico: <strong>cáncer de mama en estadio III</strong>, subtipo HR+/HER2−, con alto riesgo de recaída.</p>
     </div>
 
     <div class="karin-milestone-card">
       <div class="karin-milestone-card__time">El Proceso de Tratamiento</div>
       <h3 class="karin-milestone-card__title">Mastectomía radical y menopausia antes de los 30</h3>
-      <p>Desde entonces pasé por <strong>quimioterapia</strong>, una <strong>mastectomía radical</strong> con extracción de ganglios, la extirpación de trompas y ovarios, que me llevó a una menopausia quirúrgica definitiva antes de cumplir 30, y <strong>radioterapia</strong>, que tuve que pagar de forma particular porque en mi centro de salud no había citas disponibles.</p>
+      <p>Desde entonces pasé por <strong>quimioterapia</strong>, una <a href="https://www.infobae.com/peru/2026/10/06/sofia-bogani-actriz-de-asi-es-la-vida-habla-de-su-diagnostico-de-cancer-de-mama-cuando-me-entere-senti-confusion" target="_blank" rel="noopener noreferrer"><strong><em>mastectomía radical</em></strong></a> con extracción de ganglios, la extirpación de trompas y ovarios, que me llevó a una menopausia quirúrgica definitiva antes de cumplir 30, y <strong>radioterapia</strong>, que tuve que pagar de forma particular porque en mi centro de salud no había citas disponibles.</p>
     </div>
   </div>
 
@@ -46,14 +45,14 @@ $content = <<<HTML
   <div class="karin-stat-highlight">
     <div class="karin-stat-highlight__num">57%</div>
     <div class="karin-stat-highlight__text">
-      <strong>Probabilidad de que la enfermedad regrese</strong> en casos de alto riesgo como el mío, muchas veces convertida en metástasis. Vivir con esa cifra no es sobrevivir tranquila: es contar los días, hacerse cada control con miedo y postergar planes sin saber si habrá tiempo para cumplirlos.
+      <strong>Probabilidad de que la enfermedad regrese</strong> en casos de alto riesgo como el mío, muchas veces convertida en <a href="https://www.infobae.com/teleshow/2026/07/25/el-conmovedor-relato-de-la-la-influencer-caro-trippar-tengo-cancer-ese-es-mi-diagnostico" target="_blank" rel="noopener noreferrer"><strong><em>metástasis</em></strong></a>. Vivir con esa cifra no es sobrevivir tranquila: es contar los días, hacerse cada control con miedo y postergar planes sin saber si habrá tiempo para cumplirlos.
     </div>
   </div>
 
   <div class="karin-story-page__section">
     <h3>La terapia que reduce el riesgo y la barrera del costo</h3>
     <p>Mi médico me explicó el riesgo de recaída, me comentó que existe una terapia que sumada al tratamiento hormonal, reduce significativamente este riesgo. Tiene respaldo científico internacional, ha sido evaluada por agencias como <strong>NICE</strong> en el Reino Unido y <strong>CADTH</strong> en Canadá, y forma parte de los sistemas públicos de salud de <strong>Colombia, México, Brasil, Argentina, Uruguay y Costa Rica</strong>.</p>
-    <p>En el Perú, solo el Hospital Militar la cubre. En el sector privado lo cubre y el precio es aproximadamente de <strong>14 mil soles al mes</strong>, durante dos años. Para la mayoría de familias peruanas, es simplemente inalcanzable.</p>
+    <p>En el Perú, solo el Hospital Militar la cubre. En el sector privado lo cubre y el precio es aproximadamente de <strong>14 mil soles al mes</strong>, durante dos años. Para la mayoría de familias peruanas, es <a href="https://www.infobae.com/mexico/2026/10/08/mexico-suma-mas-de-20-mil-casos-de-cancer-de-mama-en-2026-pacientes-viven-entre-depresion-e-incertidumbre-por-abasto-de-medicinas" target="_blank" rel="noopener noreferrer"><em>simplemente inalcanzable</em></a>.</p>
   </div>
 
   <div class="karin-inequality-banner">

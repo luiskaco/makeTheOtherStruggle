@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
               data-acf-field="hero_image"
             />
             <?php
-            $hero_video_url = lol_get_field( 'hero_video_url', 'https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&rel=0' );
+            $hero_video_url = lol_get_field( 'hero_video_url', 'https://www.youtube-nocookie.com/embed/gmZVwGiNzJM?autoplay=1&rel=0' );
             ?>
             <button
               type="button"

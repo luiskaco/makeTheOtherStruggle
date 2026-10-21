@@ -19,7 +19,7 @@ wp-trackback.php
 xmlrpc.php
 license.txt
 readme.html
-index.php
+/index.php
 
 # =============================================================================
 # WordPress Dynamic Content & Default Themes

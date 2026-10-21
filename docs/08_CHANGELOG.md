@@ -2,6 +2,24 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.5] — 2026-10-21
+
+### Added & WordPress Theme Standards
+- **Plantilla Estándar Obligatoria (`index.php`):**
+  - Implementación del archivo `index.php` en el theme `wp-content/themes/la-otra-lucha/` para cumplir con las directrices de temas de WordPress y resolver el estado de plantilla faltante.
+  - Ajuste en `.gitignore` para delimitar la exclusión a `/index.php` en la raíz del CMS.
+  - Corrección del error de WordPress reportando `Errors: NONE`.
+
+### Changed & Video Integration
+- **Integración del Video Oficial de Campaña (`section-hero.php`):**
+  - Actualización del video ID en el botón de reproducción del Hero a `gmZVwGiNzJM` usando dominio seguro `youtube-nocookie.com`.
+  - Integración fluida con el modal interactivo accesible (`modal.js`).
+
+### Content & Testimony
+- **Actualización de la Historia de Karin Pardo (`scripts/seed-karin-story.php`):**
+  - Sincronización del texto oficial con enlaces contextuales a fuentes periodísticas (`target="_blank"`, `rel="noopener noreferrer"`).
+  - Eliminación de encabezados redundantes dentro del cuerpo de la página `/historia-de-karin/`.
+
 ## [1.8.4] — 2026-10-20
 
 ### Added & Analytics

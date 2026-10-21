@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.8.4
+Stable tag: 1.8.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,12 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.8.5 =
+* Incorporación de la plantilla de fallback estándar obligatoria index.php para resolver advertencias de WordPress.
+* Integración del video oficial de YouTube (gmZVwGiNzJM) en el botón de reproducción del Hero con modal accesible.
+* Actualización del testimonio de Karin Pardo (/historia-de-karin/) incorporando enlaces a fuentes periodísticas y eliminando titulares duplicados en el cuerpo.
+* Ajuste en .gitignore para restringir el ignorado a /index.php en la raíz del CMS.
+
 = 1.8.4 =
 * Integración oficial de Google Tag Manager (GTM ID: GTM-N7PP8WWT) con script en <head> y contenedor alternativo <noscript> en <body>.
 * Actualización de enlaces directos a la plataforma oficial del Observatorio Oncológico (https://observatoriodecancer.com/).
