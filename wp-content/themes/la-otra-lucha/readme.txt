@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.8.5
+Stable tag: 1.8.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,11 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+= 1.8.6 =
+* Implementación de dos botones CTA en sección de Resultados del Estudio: 'Consulta el estudio completo aquí' (enlace a Observatorio) y 'Descarga el resumen en PDF' (botón no enlazado con microinteracciones).
+* Portabilidad y autonomía total de contenidos del tema: creación de fallback estático content-karin-story.php para garantizar que la historia completa de Karin Pardo y todas las secciones carguen out-of-the-box sin depender de base de datos externa.
+* Normalización universal de URLs de YouTube en modal accesible y helper PHP.
+
 = 1.8.5 =
 * Incorporación de la plantilla de fallback estándar obligatoria index.php para resolver advertencias de WordPress.
 * Integración del video oficial de YouTube (gmZVwGiNzJM) en el botón de reproducción del Hero con modal accesible.

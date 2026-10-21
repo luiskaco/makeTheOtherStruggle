@@ -12,15 +12,28 @@ export function initVideoModal() {
   const closeElements = modal.querySelectorAll('[data-modal-close]');
   let lastActiveElement = null;
 
+  function normalizeYouTubeUrl(url) {
+    if (!url) return '';
+    try {
+      // Detección de video ID de 11 caracteres para youtu.be, watch?v=, embed, shorts
+      const match = url.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/i);
+      if (match && match[1]) {
+        return `https://www.youtube-nocookie.com/embed/${match[1]}?autoplay=1&rel=0`;
+      }
+      const parsedUrl = new URL(url, window.location.href);
+      parsedUrl.searchParams.set('autoplay', '1');
+      parsedUrl.searchParams.set('rel', '0');
+      return parsedUrl.toString();
+    } catch {
+      return url;
+    }
+  }
+
   function openModal(videoUrl) {
     lastActiveElement = document.activeElement;
 
     if (iframe && videoUrl) {
-      // Garantizar autoplay seguro en iframe
-      const parsedUrl = new URL(videoUrl, window.location.href);
-      parsedUrl.searchParams.set('autoplay', '1');
-      parsedUrl.searchParams.set('rel', '0');
-      iframe.src = parsedUrl.toString();
+      iframe.src = normalizeYouTubeUrl(videoUrl);
     }
 
     modal.classList.add('is-open');

@@ -42,7 +42,14 @@ get_header();
         </header>
 
         <div class="page-article__content entry-content">
-          <?php the_content(); ?>
+          <?php
+          $story_content = trim( get_the_content() );
+          if ( ! empty( $story_content ) ) {
+              the_content();
+          } else {
+              get_template_part( 'template-parts/content-karin-story' );
+          }
+          ?>
         </div>
 
         <footer class="page-article__footer-nav karin-article__footer-nav">

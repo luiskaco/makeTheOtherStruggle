@@ -20,6 +20,7 @@ xmlrpc.php
 license.txt
 readme.html
 /index.php
+/wp-content/index.php
 
 # =============================================================================
 # WordPress Dynamic Content & Default Themes

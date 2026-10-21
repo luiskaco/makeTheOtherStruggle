@@ -1,7 +1,8 @@
 <?php
 /**
  * Script de provisión de la página: La Historia de Karin Pardo (/historia-de-karin/)
- * Formatea el testimonio íntegro de Karin Pardo para la campaña La Otra Lucha.
+ * Formatea el testimonio íntegro de Karin Pardo para la campaña La Otra Lucha,
+ * incorporando las citas periodísticas y enlaces de referencia oficiales.
  */
 
 require_once __DIR__ . '/../wp-load.php';
@@ -45,7 +46,7 @@ $content = <<<HTML
   <div class="karin-stat-highlight">
     <div class="karin-stat-highlight__num">57%</div>
     <div class="karin-stat-highlight__text">
-      <strong>Probabilidad de que la enfermedad regrese</strong> en casos de alto riesgo como el mío, muchas veces convertida en <a href="https://www.infobae.com/teleshow/2026/07/25/el-conmovedor-relato-de-la-la-influencer-caro-trippar-tengo-cancer-ese-es-mi-diagnostico" target="_blank" rel="noopener noreferrer"><strong><em>metástasis</em></strong></a>. Vivir con esa cifra no es sobrevivir tranquila: es contar los días, hacerse cada control con miedo y postergar planes sin saber si habrá tiempo para cumplirlos.
+      <strong>Probabilidad de que la enfermedad regrese</strong> en casos de alto riesgo como el mío, muchas veces convertida en <a href="https://www.infobae.com/teleshow/2026/07/25/el-conmovedor-relato-de-la-la-influencer-caro-trippar-tengo-cancer-ese-es-mi-diagnostico" target="_blank" rel="noopener noreferrer" class="karin-stat-highlight__link"><strong><em>metástasis</em></strong></a>. Vivir con esa cifra no es sobrevivir tranquila: es contar los días, hacerse cada control con miedo y postergar planes sin saber si habrá tiempo para cumplirlos.
     </div>
   </div>
 

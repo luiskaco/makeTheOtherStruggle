@@ -45,12 +45,17 @@ if ( ! defined( 'ABSPATH' ) ) {
           </div>
 
           <div class="karin-story__content reveal-on-scroll">
+            <?php
+            $karin_subtitle    = lol_get_field( 'karin_subtitle', 'KARIN PARDO: EL ROSTRO DE LA OTRA LUCHA' );
+            $karin_bio_default = '<strong>Karin Pardo</strong>, paciente con cáncer de mama, quien evidencia cómo las <strong>fallas de articulación del sistema de salud</strong> pueden convertirse en <strong>barreras para acceder a un tratamiento oncológico.</strong> Su solicitud para que pueda acceder a un tratamiento que le salvará la vida, <strong>viene siendo evaluada casi dos años</strong> y continúa atrapada en un ciclo de consultas y devoluciones entre instituciones. Karin <strong>no ha recibido un rechazo: ha recibido demoras</strong>, mientras su necesidad de tratamiento sigue esperando una respuesta. Su historia expone las brechas que la <strong>Ruta de la Paciente con Cáncer de Mama</strong> busca visibilizar para impulsar cambios concretos en el sistema.';
+            $karin_bio         = lol_get_field( 'karin_bio', $karin_bio_default );
+            ?>
             <p class="karin-story__subtitle" data-acf-field="karin_subtitle">
-              KARIN PARDO: EL ROSTRO DE LA OTRA LUCHA
+              <?php echo esc_html( $karin_subtitle ); ?>
             </p>
 
             <p class="karin-story__bio" data-acf-field="karin_bio">
-              <strong>Karin Pardo</strong>, paciente con cáncer de mama, quien evidencia cómo las <strong>fallas de articulación del sistema de salud</strong> pueden convertirse en <strong>barreras para acceder a un tratamiento oncológico.</strong> Su solicitud para que pueda acceder a un tratamiento que le salvará la vida, <strong>viene siendo evaluada casi dos años</strong> y continúa atrapada en un ciclo de consultas y devoluciones entre instituciones. Karin <strong>no ha recibido un rechazo: ha recibido demoras</strong>, mientras su necesidad de tratamiento sigue esperando una respuesta. Su historia expone las brechas que la <strong>Ruta de la Paciente con Cáncer de Mama</strong> busca visibilizar para impulsar cambios concretos en el sistema.
+              <?php echo wp_kses_post( $karin_bio ); ?>
             </p>
 
             <div class="karin-story__cta">

@@ -2,6 +2,20 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.6] — 2026-10-21
+
+### Added & Theme Portability
+- **Autonomía y Portabilidad Total del Tema (`page-historia-de-karin.php`, `template-parts/content-karin-story.php`):**
+  - Creación de template part estático autónomo `template-parts/content-karin-story.php` con el contenido íntegro y actualizado de la biografía de Karin Pardo.
+  - Implementación de condicional en `page-historia-de-karin.php` (`if ( ! empty( $story_content ) ) the_content(); else get_template_part(...)`) para que al subir únicamente la carpeta del tema a cualquier servidor o hosting limpio sin migración de base de datos, el 100% de la historia se muestre de inmediato sin depender de la base de datos local.
+
+### UI & Dual CTAs
+- **Par de Botones CTA en Resultados del Estudio (`section-patient-study.php`, `css/sections.css`):**
+  - Sustitución del botón único por dos botones de llamado a la acción independientes y responsivos (`.patient-study__cta-wrap`).
+  - **Botón 1 (Estudio Completo):** `.patient-study__btn--primary` con fondo morado sólido (`--color-secondary`), texto `CONSULTA EL ESTUDIO COMPLETO AQUÍ` y flecha derecha `→`, enlazado a la ruta del paciente en el Observatorio Oncológico.
+  - **Botón 2 (Resumen Descargable):** `.patient-study__btn--outline` implementado como elemento nativo `<button type="button">` sin hipervinculación a ninguna parte, con borde morado de 2px, fondo blanco, texto `DESCARGA EL RESUMEN EN PDF`, ícono de hoja PDF a la izquierda y flecha de descarga inferior `⤓`.
+  - Microinteracciones dinámicas en hover (`translateY(-2px)`, desplazamiento de flechas e iluminación cromática).
+
 ## [1.8.5] — 2026-10-21
 
 ### Added & WordPress Theme Standards
@@ -11,14 +25,16 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
   - Corrección del error de WordPress reportando `Errors: NONE`.
 
 ### Changed & Video Integration
-- **Integración del Video Oficial de Campaña (`section-hero.php`):**
+- **Integración y Normalización Universal del Video de Campaña (`section-hero.php`, `footer.php`, `functions.php`, `modal.js`):**
   - Actualización del video ID en el botón de reproducción del Hero a `gmZVwGiNzJM` usando dominio seguro `youtube-nocookie.com`.
-  - Integración fluida con el modal interactivo accesible (`modal.js`).
+  - Creación del helper `lol_get_youtube_embed_url()` en `functions.php` para normalizar automáticamente URLs de YouTube (`watch?v=`, `youtu.be/`, `shorts/`, `embed/`) tanto en PHP como en el modal JavaScript (`modal.js`), previniendo bloqueos de `X-Frame-Options`.
+  - Integración fluida con el modal interactivo accesible (`#video-modal`).
 
 ### Content & Testimony
-- **Actualización de la Historia de Karin Pardo (`scripts/seed-karin-story.php`):**
-  - Sincronización del texto oficial con enlaces contextuales a fuentes periodísticas (`target="_blank"`, `rel="noopener noreferrer"`).
-  - Eliminación de encabezados redundantes dentro del cuerpo de la página `/historia-de-karin/`.
+- **Actualización de la Historia de Karin Pardo (`scripts/seed-karin-story.php`, `css/sections.css`, `docs/2026_LOL_Hoja_de_Vida_Karin_Pardo.md`):**
+  - Sincronización del texto oficial desde la hoja de vida con enlaces contextuales a fuentes periodísticas de Infobae (`target="_blank"`, `rel="noopener noreferrer"`).
+  - Estilización BEM de enlaces editoriales con subrayado y microinteracciones hover (`.karin-story-page a` y `.karin-stat-highlight__link`).
+  - Eliminación de encabezados redundantes dentro del cuerpo de la página `/historia-de-karin/` y respaldo del documento fuente en `docs/`.
 
 ## [1.8.4] — 2026-10-20
 
@@ -28,6 +44,21 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
   - Inserción del snippet alternativo `<noscript>` con iframe de seguimiento inmediatamente tras la apertura del tag `<body>`.
   - Coexistencia fluida con el flujo previo de GA4 (`G-YMHXSQNHRP`).
   - Verificado en tiempo de ejecución en Chrome DevTools (`hasGtmScript: true`, `hasGtmObject: true`, dataLayer inicializado y noscript presente).
+
+### Changed & Media
+- **Nuevo Video Oficial de la Campaña (`section-hero.php`, `footer.php`, Base de Datos):**
+  - Actualización del video de YouTube a `https://youtu.be/gmZVwGiNzJM` (`gmZVwGiNzJM`) con modo de privacidad mejorada (`youtube-nocookie.com/embed/gmZVwGiNzJM?autoplay=1&rel=0`).
+  - Sincronización en el atributo `data-video-url` del botón de Play en el Hero y en el `data-src` del iframe en el modal accesible (`#video-modal`).
+  - Actualización de metadato `hero_video_url` en la base de datos de WordPress para la página frontal (ID 7).
+  - Verificado de extremo a extremo en navegador real (apertura, foco, inserción dinámica de `src` con autoplay y cierre limpio).
+
+### Updated & Content
+- **Historia de Karin Pardo (`/historia-de-karin/`):**
+  - Actualización integral del testimonio en `scripts/seed-karin-story.php` e inyección en base de datos (página ID 17).
+  - Incorporación de referencias y enlaces oficiales a reportajes de Infobae ("algo benigno", "mastectomía radical", "metástasis" y "simplemente inalcanzable").
+  - Estilización BEM de enlaces editoriales y hover en `.karin-story-page a` y `.karin-stat-highlight__link` (`css/sections.css`).
+  - Respaldo de la hoja de vida oficial en `docs/2026_LOL_Hoja_de_Vida_Karin_Pardo.md`.
+  - Verificado visual y funcionalmente en navegador.
 
 ## [1.8.3] — 2026-10-20
 

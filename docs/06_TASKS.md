@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-69: Subida de versión del theme WordPress a `1.8.5` (incorporación de `index.php` estándar de WP, integración de video YouTube oficial `gmZVwGiNzJM`, enlaces en historia de Karin y ajuste de .gitignore).
+- **Dónde quedó:** Completada T-71: Reemplazo del botón CTA del estudio por el par de botones oficiales en `section-patient-study.php` (Botón 1: "CONSULTA EL ESTUDIO COMPLETO AQUÍ" sólido morado con enlace al informe; Botón 2: "DESCARGA EL RESUMEN EN PDF" contorneado morado como elemento `<button type="button">` sin hipervinculación a ninguna parte), estilos responsivos y microinteracciones en `css/sections.css`, verificado interactivamente con subagente navegador.
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos ajustes).
 - **Bloqueos:** Ninguno.
 
@@ -83,7 +83,11 @@
 - [x] **T-66:** Actualizar botones de 'Observatorio Oncológico' ('CONOCE EL OBSERVATORIO ONCOLÓGICO' en `section-quote-banner.php` y 'VISITA EL OBSERVATORIO ONCOLÓGICO' en `section-action-trio.php`) para apuntar al enlace oficial `https://observatoriodecancer.com/` con apertura en pestaña nueva (`target='_blank'`, `rel='noopener noreferrer'`).
 - [x] **T-67:** Integrar Google Tag Manager (`GTM-N7PP8WWT`): snippet en `<head>` y `<noscript>` inmediatamente después de `<body>` en `header.php`, respetando Google Analytics previo y verificando en navegador.
 - [x] **T-68:** Incrementar versión del theme WordPress a `1.8.4`: actualizar `style.css`, constante `LA_OTRA_LUCHA_VERSION` en `functions.php`, `readme.txt` (`Stable tag` y changelog) y verificar consistencia de versionado.
-- [x] **T-69:** Incrementar versión del theme WordPress a `1.8.5`: agregar plantilla requerida `index.php`, ajustar `.gitignore`, integrar video oficial de YouTube `gmZVwGiNzJM` y actualizar fuentes periodísticas en `/historia-de-karin/`.
+- [x] **T-69:** Integración y normalización universal de URLs de YouTube (`gmZVwGiNzJM`): helper PHP `lol_get_youtube_embed_url()` y JavaScript `normalizeYouTubeUrl()` en `modal.js` para admitir enlaces `watch?v=`, `youtu.be/` o `embed/` sin bloqueos de `X-Frame-Options`.
+- [x] **T-70:** Subida a versión `1.8.5` e integración de plantilla obligatoria `index.php`: resolución de advertencias de templates de WordPress, actualización completa de la historia de Karin Pardo (`/historia-de-karin/`) con enlaces a Infobae, estilización BEM de links en `css/sections.css` y actualización en base de datos.
+- [x] **T-71:** Implementación de par de botones CTA en la sección de Resultados del Estudio (`template-parts/section-patient-study.php` y `css/sections.css`): sustitución del botón único por Botón 1 sólido morado ("CONSULTA EL ESTUDIO COMPLETO AQUÍ →") con enlace al Observatorio, y Botón 2 contorneado ("📄 DESCARGA EL RESUMEN EN PDF ⤓") configurado como elemento `<button type="button">` sin hipervinculación a ninguna parte, con íconos vectoriales SVG, flexbox responsivo y microinteracciones hover.
+- [x] **T-72:** Autonomía y portabilidad integral del contenido del tema para hosting (`page-historia-de-karin.php` y `template-parts/content-karin-story.php`): implementación de fallback PHP para que, al subir exclusivamente la carpeta del theme `wp-content/themes/la-otra-lucha/` a cualquier hosting o WordPress limpio sin base de datos local, el 100% del contenido (incluida la biografía completa de Karin Pardo, el video, los botones y estilos) se visualice intacto out-of-the-box.
+- [x] **T-73:** Subida de versión del theme a `1.8.6`: sincronización coordinada en `style.css`, `functions.php` (`LA_OTRA_LUCHA_VERSION`), `readme.txt` (`Stable tag`), `AGENTS.md`, `docs/06_TASKS.md` y `docs/08_CHANGELOG.md`; commit y push al repositorio remoto.
 
 ---
 

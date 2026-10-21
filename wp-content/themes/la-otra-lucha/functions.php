@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // 1. CONSTANTES DEL THEME
 // =============================================================================
 
-define( 'LA_OTRA_LUCHA_VERSION', '1.8.5' );
+define( 'LA_OTRA_LUCHA_VERSION', '1.8.6' );
 define( 'LA_OTRA_LUCHA_DIR', get_template_directory() );
 define( 'LA_OTRA_LUCHA_URI', get_template_directory_uri() );
 
@@ -262,6 +262,38 @@ function lol_get_field( $field_name, $fallback = '', $post_id = false ) {
         }
     }
     return $fallback;
+}
+
+/**
+ * Normaliza cualquier formato de URL de YouTube (watch?v=, youtu.be, shorts, embed)
+ * al estándar seguro de inserción con modo de privacidad mejorada (youtube-nocookie.com)
+ * y reproducción automática activa.
+ *
+ * @param string $url URL cruda de YouTube.
+ * @return string URL de inserción (embed) normalizada.
+ */
+function lol_get_youtube_embed_url( $url ) {
+    if ( empty( $url ) ) {
+        return '';
+    }
+
+    $video_id = '';
+
+    if ( preg_match( '#youtu\.be/([a-zA-Z0-9_-]{11})#i', $url, $matches ) ) {
+        $video_id = $matches[1];
+    } elseif ( preg_match( '#[?&]v=([a-zA-Z0-9_-]{11})#i', $url, $matches ) ) {
+        $video_id = $matches[1];
+    } elseif ( preg_match( '#youtube(?:-nocookie)?\.com/embed/([a-zA-Z0-9_-]{11})#i', $url, $matches ) ) {
+        $video_id = $matches[1];
+    } elseif ( preg_match( '#youtube\.com/shorts/([a-zA-Z0-9_-]{11})#i', $url, $matches ) ) {
+        $video_id = $matches[1];
+    }
+
+    if ( ! empty( $video_id ) ) {
+        return 'https://www.youtube-nocookie.com/embed/' . $video_id . '?autoplay=1&rel=0';
+    }
+
+    return $url;
 }
 
 // =============================================================================

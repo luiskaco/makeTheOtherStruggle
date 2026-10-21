@@ -169,9 +169,13 @@ $nav_footer_prefix = $is_front ? '' : esc_url( $home_url );
       </div>
       <div class="modal__body">
         <div class="modal__video-wrapper">
+          <?php
+          $modal_video_raw     = lol_get_field( 'hero_video_url', 'https://www.youtube.com/watch?v=gmZVwGiNzJM' );
+          $modal_video_default = lol_get_youtube_embed_url( $modal_video_raw );
+          ?>
           <iframe
             id="modal-video-iframe"
-            data-src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&rel=0"
+            data-src="<?php echo esc_url( $modal_video_default ); ?>"
             title="<?php esc_attr_e( 'Video oficial de la campaña', 'la-otra-lucha' ); ?>"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

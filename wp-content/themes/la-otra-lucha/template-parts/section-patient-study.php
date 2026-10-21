@@ -19,8 +19,10 @@ $study_stat1_txt = lol_get_field( 'study_stat1_text', 'reportó dificultades par
 $study_stat2_num = lol_get_field( 'study_stat2_num', '60,6%' );
 $study_stat2_txt = lol_get_field( 'study_stat2_text', 'reportó retrasos en el inicio del tratamiento.' );
 $study_tagline   = lol_get_field( 'study_tagline', 'La ruta hacia el tratamiento también importa.' );
-$study_cta_text  = lol_get_field( 'study_cta_text', 'ENCUENTRA EL INFORME COMPLETO AQUÍ' );
+$study_cta_text  = lol_get_field( 'study_cta_text', 'CONSULTA EL ESTUDIO COMPLETO AQUÍ' );
 $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer.com/resultado-la-ruta-del-paciente/' );
+$study_pdf_text  = lol_get_field( 'study_pdf_text', 'DESCARGA EL RESUMEN EN PDF' );
+$study_pdf_url   = lol_get_field( 'study_pdf_url', '' );
 ?>
 
 <section id="estudio-observatorio" class="patient-study" data-wp-part="section-patient-study" data-acf-group="group_patient_study">
@@ -90,20 +92,64 @@ $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer
         <?php echo esc_html( $study_tagline ); ?>
       </p>
 
-      <!-- Botón CTA que redirige a la web del observatorio -->
+      <!-- Botones CTA: Estudio Completo y Resumen Descargable -->
       <div class="patient-study__cta-wrap">
         <a
           href="<?php echo esc_url( $study_cta_url ); ?>"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn patient-study__btn"
+          class="btn patient-study__btn patient-study__btn--primary"
           data-acf-field="study_cta"
         >
           <span><?php echo esc_html( $study_cta_text ); ?></span>
           <svg class="patient-study__btn-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7" />
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </a>
+
+        <?php if ( ! empty( $study_pdf_url ) ) : ?>
+          <a
+            href="<?php echo esc_url( $study_pdf_url ); ?>"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn patient-study__btn patient-study__btn--outline"
+            data-acf-field="study_pdf"
+          >
+            <svg class="patient-study__btn-pdf-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <polyline points="9 15 12 18 15 15"></polyline>
+            </svg>
+            <span><?php echo esc_html( $study_pdf_text ); ?></span>
+            <svg class="patient-study__btn-icon-down" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="5" y1="20" x2="19" y2="20"></line>
+            </svg>
+          </a>
+        <?php else : ?>
+          <button
+            type="button"
+            class="btn patient-study__btn patient-study__btn--outline"
+            data-acf-field="study_pdf"
+            aria-label="<?php esc_attr_e( 'Descarga el resumen en PDF (Próximamente)', 'la-otra-lucha' ); ?>"
+          >
+            <svg class="patient-study__btn-pdf-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <polyline points="9 15 12 18 15 15"></polyline>
+            </svg>
+            <span><?php echo esc_html( $study_pdf_text ); ?></span>
+            <svg class="patient-study__btn-icon-down" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="5" y1="20" x2="19" y2="20"></line>
+            </svg>
+          </button>
+        <?php endif; ?>
       </div>
 
     </div><!-- /.patient-study__content -->
