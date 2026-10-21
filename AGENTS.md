@@ -166,7 +166,7 @@ archivos markdown planos.
 | Rules técnicas (§ 6, punto 2) | `.agents/rules/<regla>.md` — leer la que aplique antes de tocar esa área |
 | Skills | `.agents/skills/` — una carpeta por skill, con su `SKILL.md` |
 | Subagentes | `.agents/agents/<nombre>/agent.md` |
-| Comandos / workflows (§ 7) | `~/.gemini/antigravity/global_workflows/` — **fuera del repo**: si no los tenés, la tabla de § 7 resume cuándo usar cada uno |
+| Comandos / workflows (§ 7) | `.agents/skills/<comando>/SKILL.md` |
 | Estado del proyecto | `docs/` — ver "Continuar el trabajo" |
 
 ### Continuar el trabajo
