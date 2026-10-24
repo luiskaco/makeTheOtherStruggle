@@ -84,9 +84,9 @@ export function initAnimations() {
     { selector: '.site-footer__quote-band .quote-showcase', stepMs: 0 },
     { selector: '.site-footer__brands, .site-footer__nav, .site-footer__legal, .site-footer__social', stepMs: 95 },
     // 11. Página dedicada: Historia de Karin
-    { selector: '.karin-article__header, .karin-stat-highlight, .karin-timeline__step, .karin-petition-box, .karin-quote-box, .karin-article__footer-nav', stepMs: 95 },
+    { selector: '.karin-story-page__lead, .karin-milestone-card, .karin-stat-highlight, .karin-inequality-banner, .karin-petition-box, .karin-closing-callout, .karin-article__footer-nav', stepMs: 90 },
     // 12. Páginas Legales y estándar
-    { selector: '.page-standard__breadcrumb, .page-article__header, .page-article__content, .page-article__footer-nav', stepMs: 85 },
+    { selector: '.page-standard__breadcrumb, .page-article__footer-nav', stepMs: 85 },
   ];
 
   staggeredGroups.forEach(({ selector, stepMs, variant }) => {
@@ -134,13 +134,13 @@ export function initAnimations() {
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting || entry.intersectionRatio > 0) {
           entry.target.classList.add('reveal-on-scroll--visible');
           observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+    { threshold: 0.02, rootMargin: '0px 0px 50px 0px' }
   );
 
   revealElements.forEach((el) => revealObserver.observe(el));

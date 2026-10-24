@@ -5,6 +5,12 @@ Todos los cambios notables en este proyecto se documentan en este archivo siguie
 ## [1.8.7] — 2026-10-24
 
 ### Changed & Editorial
+### Fixed & Animations
+- **Visibilidad y Transición en Historia de Karin (`/historia-de-karin/`):**
+  - Desacople de la animación masiva que forzaba `opacity: 0` sobre todo el contenedor `.page-article__content`.
+  - Animación granular para los bloques individuales internos (`.karin-story-page__lead`, `.karin-milestone-card`, `.karin-stat-highlight`, etc.) con calibración de `rootMargin: '0px 0px 50px 0px'` y `threshold: 0.02`, permitiendo que el contenido superior se visualice inmediatamente al entrar sin necesidad de hacer scroll.
+  - Actualización de versión interna de caché de scripts en `main.js` (`?v=7`).
+
 - **Historia de Karin Pardo (`/historia-de-karin/`):**
   - Ocultada y removida la sección editorial `"La terapia que reduce el riesgo y la barrera del costo"` tanto en el template PHP de fallback (`template-parts/content-karin-story.php`) como en el script de provisión de base de datos (`scripts/seed-karin-story.php`), garantizando una lectura fluida entre el indicador de riesgo de recaída del 57% y la sección de desigualdad del sistema.
 
