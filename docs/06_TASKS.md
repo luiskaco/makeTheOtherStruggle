@@ -89,6 +89,7 @@
 - [x] **T-72:** Autonomía y portabilidad integral del contenido del tema para hosting (`page-historia-de-karin.php` y `template-parts/content-karin-story.php`): implementación de fallback PHP para que, al subir exclusivamente la carpeta del theme `wp-content/themes/la-otra-lucha/` a cualquier hosting o WordPress limpio sin base de datos local, el 100% del contenido (incluida la biografía completa de Karin Pardo, el video, los botones y estilos) se visualice intacto out-of-the-box.
 - [x] **T-73:** Subida de versión del theme a `1.8.6`: sincronización coordinada en `style.css`, `functions.php` (`LA_OTRA_LUCHA_VERSION`), `readme.txt` (`Stable tag`), `AGENTS.md`, `docs/06_TASKS.md` y `docs/08_CHANGELOG.md`; commit y push al repositorio remoto.
 - [x] **T-74:** Ocultar la sección "La terapia que reduce el riesgo y la barrera del costo" en la historia de Karin Pardo tanto en `content-karin-story.php` como en la base de datos de WordPress (`scripts/seed-karin-story.php`).
+- [x] **T-76:** Subida de version del theme a `1.8.7` para cache-busting y refresco automatico en hosting: actualizacion coordinada en `style.css`, `functions.php` (`LA_OTRA_LUCHA_VERSION`), `readme.txt` (`Stable tag`), `AGENTS.md`, `docs/06_TASKS.md` y `docs/08_CHANGELOG.md`; generacion de zip listo para produccion.
 - [x] **T-75:** fix: contenido de historia de Karin no visible above-the-fold sin hacer scroll — causa: `.page-article__content` completo marcado como `.reveal-on-scroll` con `rootMargin: -30px` queda con `opacity: 0`.
 
 ---

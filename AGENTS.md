@@ -192,7 +192,7 @@ archivos markdown planos.
 
 - **Qué es:** Theme oficial de WordPress para **La Otra Lucha** (*Por un Perú Sin Cáncer*), iniciativa para visibilizar las barreras en la ruta de atención de pacientes con cáncer de mama en el Perú, el caso de Karin Pardo, la Guía de Derechos y el Observatorio Oncológico.
 - **Stack real:**
-  - **Fase 2 (Activa):** WordPress 6.x + PHP 8.3 (Theme Clásico/Híbrido modular en `wp-content/themes/la-otra-lucha/` v1.8.6 con `template-parts/`, suite completa de jerarquía de plantillas incluyendo `index.php`, CSS puro, Vanilla JS ES Modules, auto-provisión de página frontal en `after_switch_theme`, suite PWA, favicons vectoriales y SEO para IA con `llms.txt`).
+  - **Fase 2 (Activa):** WordPress 6.x + PHP 8.3 (Theme Clásico/Híbrido modular en `wp-content/themes/la-otra-lucha/` v1.8.7 con `template-parts/`, suite completa de jerarquía de plantillas incluyendo `index.php`, CSS puro, Vanilla JS ES Modules, auto-provisión de página frontal en `after_switch_theme`, suite PWA, favicons vectoriales y SEO para IA con `llms.txt`).
 - **Comandos y Entorno:**
   - **Servidor local (Laragon):** `http://localhost/makeTheOtherStruggle/`
   - **Admin WordPress:** `http://localhost/makeTheOtherStruggle/wp-admin/`
@@ -200,7 +200,7 @@ archivos markdown planos.
   - **Generar screenshot del theme:** `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-screenshot.ps1`
   - **Sembrar SEO Rank Math en BD:** `php -f scripts/seed-rank-math-seo.php`
 - **Estructura del Theme (`wp-content/themes/la-otra-lucha/`):**
-  - `style.css` — Metadatos del theme (v1.8.6, Text Domain `la-otra-lucha`).
+  - `style.css` — Metadatos del theme (v1.8.7, Text Domain `la-otra-lucha`).
   - `screenshot.png` — Miniatura oficial de 1200x900px con identidad gráfica del Hero.
   - `readme.txt` — Ficha de documentación oficial y changelog del tema WordPress.
   - `functions.php` — Setup, encolado de estilos y ES Modules, provisión automática de página y helper `lol_get_field()`.
