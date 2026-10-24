@@ -43,12 +43,9 @@ get_header();
 
         <div class="page-article__content entry-content">
           <?php
-          $story_content = trim( get_the_content() );
-          if ( ! empty( $story_content ) ) {
-              the_content();
-          } else {
-              get_template_part( 'template-parts/content-karin-story' );
-          }
+          // La plantilla content-karin-story gobierna el contenido oficial del theme
+          // garantizando que cualquier actualización en los archivos se refleje de inmediato.
+          get_template_part( 'template-parts/content-karin-story' );
           ?>
         </div>
 
