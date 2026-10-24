@@ -2,6 +2,12 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.7] — 2026-10-24
+
+### Changed & Editorial
+- **Historia de Karin Pardo (`/historia-de-karin/`):**
+  - Ocultada y removida la sección editorial `"La terapia que reduce el riesgo y la barrera del costo"` tanto en el template PHP de fallback (`template-parts/content-karin-story.php`) como en el script de provisión de base de datos (`scripts/seed-karin-story.php`), garantizando una lectura fluida entre el indicador de riesgo de recaída del 57% y la sección de desigualdad del sistema.
+
 ## [1.8.6] — 2026-10-21
 
 ### Added & Theme Portability

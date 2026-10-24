@@ -49,12 +49,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
   </div>
 
-  <div class="karin-story-page__section">
-    <h3>La terapia que reduce el riesgo y la barrera del costo</h3>
-    <p>Mi médico me explicó el riesgo de recaída, me comentó que existe una terapia que sumada al tratamiento hormonal, reduce significativamente este riesgo. Tiene respaldo científico internacional, ha sido evaluada por agencias como <strong>NICE</strong> en el Reino Unido y <strong>CADTH</strong> en Canadá, y forma parte de los sistemas públicos de salud de <strong>Colombia, México, Brasil, Argentina, Uruguay y Costa Rica</strong>.</p>
-    <p>En el Perú, solo el Hospital Militar la cubre. En el sector privado lo cubre y el precio es aproximadamente de <strong>14 mil soles al mes</strong>, durante dos años. Para la mayoría de familias peruanas, es <a href="https://www.infobae.com/mexico/2026/10/08/mexico-suma-mas-de-20-mil-casos-de-cancer-de-mama-en-2026-pacientes-viven-entre-depresion-e-incertidumbre-por-abasto-de-medicinas" target="_blank" rel="noopener noreferrer"><em>simplemente inalcanzable</em></a>.</p>
-  </div>
-
   <div class="karin-inequality-banner">
     <h3>Una desigualdad que no es médica: es del sistema</h3>
     <p>Y aquí está lo que más me duele. Si mi tumor hubiera sido <strong>HER2 positivo</strong> o <strong>triple negativo</strong>, el sistema público me ofrecería un tratamiento para prevenir la recaída. Pero como mi cáncer es <strong>HR+/HER2−</strong>, el subtipo más frecuente (alrededor del 61% de los casos), no tengo alternativa.</p>

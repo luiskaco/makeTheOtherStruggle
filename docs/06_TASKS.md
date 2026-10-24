@@ -2,8 +2,8 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Completada T-71: Reemplazo del botón CTA del estudio por el par de botones oficiales en `section-patient-study.php` (Botón 1: "CONSULTA EL ESTUDIO COMPLETO AQUÍ" sólido morado con enlace al informe; Botón 2: "DESCARGA EL RESUMEN EN PDF" contorneado morado como elemento `<button type="button">` sin hipervinculación a ninguna parte), estilos responsivos y microinteracciones en `css/sections.css`, verificado interactivamente con subagente navegador.
-- **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos ajustes).
+- **Dónde quedó:** Ocultada y removida la sección "La terapia que reduce el riesgo y la barrera del costo" de la página 'La Historia de Karin Pardo' (`/historia-de-karin/`), tanto en el template autónomo del theme (`template-parts/content-karin-story.php`) como en la base de datos de WordPress mediante `scripts/seed-karin-story.php`. Verificado en el HTML renderizado localmente en Laragon (transición limpia entre el bloque de 57% de recaída y la tarjeta "Una desigualdad que no es médica: es del sistema").
+- **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos requerimientos).
 - **Bloqueos:** Ninguno.
 
 ---
@@ -88,6 +88,7 @@
 - [x] **T-71:** Implementación de par de botones CTA en la sección de Resultados del Estudio (`template-parts/section-patient-study.php` y `css/sections.css`): sustitución del botón único por Botón 1 sólido morado ("CONSULTA EL ESTUDIO COMPLETO AQUÍ →") con enlace al Observatorio, y Botón 2 contorneado ("📄 DESCARGA EL RESUMEN EN PDF ⤓") configurado como elemento `<button type="button">` sin hipervinculación a ninguna parte, con íconos vectoriales SVG, flexbox responsivo y microinteracciones hover.
 - [x] **T-72:** Autonomía y portabilidad integral del contenido del tema para hosting (`page-historia-de-karin.php` y `template-parts/content-karin-story.php`): implementación de fallback PHP para que, al subir exclusivamente la carpeta del theme `wp-content/themes/la-otra-lucha/` a cualquier hosting o WordPress limpio sin base de datos local, el 100% del contenido (incluida la biografía completa de Karin Pardo, el video, los botones y estilos) se visualice intacto out-of-the-box.
 - [x] **T-73:** Subida de versión del theme a `1.8.6`: sincronización coordinada en `style.css`, `functions.php` (`LA_OTRA_LUCHA_VERSION`), `readme.txt` (`Stable tag`), `AGENTS.md`, `docs/06_TASKS.md` y `docs/08_CHANGELOG.md`; commit y push al repositorio remoto.
+- [x] **T-74:** Ocultar la sección "La terapia que reduce el riesgo y la barrera del costo" en la historia de Karin Pardo tanto en `content-karin-story.php` como en la base de datos de WordPress (`scripts/seed-karin-story.php`).
 
 ---
 
