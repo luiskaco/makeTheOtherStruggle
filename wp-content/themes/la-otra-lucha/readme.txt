@@ -4,7 +4,7 @@ Tags: one-page, health, custom-colors, custom-menu, featured-images, responsive-
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.8.7
+Stable tag: 1.8.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ Desarrollado bajo los más altos estándares de rendimiento, accesibilidad WCAG 
 No. El tema cuenta con fallbacks dinámicos para funcionar de inmediato sin requerir plugins adicionales obligatorios.
 
 == Changelog ==
+
+= 1.8.8 - 2026-10-29 =
+* Integraci?n del PDF oficial del Estudio de la Paciente en assets/pdf/estudio-la-ruta-de-la-paciente-con-cancer-de-mama.pdf.
+* Enlace de descarga directa en el bot?n de la secci?n de Resultados del Estudio.
 
 = 1.8.7 =
 * Ocultada seccion de terapia y barrera del costo en la historia de Karin Pardo (/historia-de-karin/).

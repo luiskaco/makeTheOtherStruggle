@@ -2,6 +2,13 @@
 
 Todos los cambios notables en este proyecto se documentan en este archivo siguiendo [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y [Semantic Versioning](https://semver.org/lang/es/).
 
+## [1.8.8] - 2026-10-29
+
+### Added
+- **Descarga de PDF del Estudio del Observatorio:**
+  - Integración del documento oficial estudio-la-ruta-de-la-paciente-con-cancer-de-mama.pdf en ssets/pdf/ dentro del theme.
+  - Enlace dinámico directo en el botón 'DESCARGA EL RESUMEN EN PDF' de la sección Resultados del Estudio (section-patient-study.php) mediante fallback automático a LA_OTRA_LUCHA_URI.
+
 ## [1.8.7] — 2026-10-24
 
 ### Changed & Editorial

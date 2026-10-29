@@ -22,7 +22,7 @@ $study_tagline   = lol_get_field( 'study_tagline', 'La ruta hacia el tratamiento
 $study_cta_text  = lol_get_field( 'study_cta_text', 'CONSULTA EL ESTUDIO COMPLETO AQUÍ' );
 $study_cta_url   = lol_get_field( 'study_cta_url', 'https://observatoriodecancer.com/resultado-la-ruta-del-paciente/' );
 $study_pdf_text  = lol_get_field( 'study_pdf_text', 'DESCARGA EL RESUMEN EN PDF' );
-$study_pdf_url   = lol_get_field( 'study_pdf_url', '' );
+$study_pdf_url   = lol_get_field( 'study_pdf_url', LA_OTRA_LUCHA_URI . '/assets/pdf/estudio-la-ruta-de-la-paciente-con-cancer-de-mama.pdf' );
 ?>
 
 <section id="estudio-observatorio" class="patient-study" data-wp-part="section-patient-study" data-acf-group="group_patient_study">

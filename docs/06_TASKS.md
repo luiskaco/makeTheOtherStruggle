@@ -2,7 +2,7 @@
 
 ## Estado de traspaso
 
-- **Dónde quedó:** Corregida la animación de transición en la página de Karin Pardo (`/historia-de-karin/`): se eliminó la animación masiva que ocultaba todo el contenedor `.page-article__content` y bloqueaba la visualización inicial de la historia; ahora el texto y tarjetas above-the-fold son visibles de inmediato al cargar la página sin forzar scroll, y sus bloques internos se revelan de forma suave y escalonada.
+- **Dónde quedó:** Integrado el PDF oficial del Estudio de la Paciente (estudio-la-ruta-de-la-paciente-con-cancer-de-mama.pdf) en ssets/pdf/ del theme y enlazado para descarga directa en el botón de la sección de Resultados del Estudio (section-patient-study.php).
 - **Próximo paso:** Continuar según indicaciones del usuario (P-01 pendiente o nuevos requerimientos).
 - **Bloqueos:** Ninguno.
 
@@ -96,4 +96,5 @@
 
 ## Backlog Pendiente (Por solicitud de usuario)
 
+- [x] **T-77:** Añadir el archivo PDF del Estudio de la Paciente en wp-content/themes/la-otra-lucha/assets/pdf/ y conectar la URL de descarga directa con fallback a LA_OTRA_LUCHA_URI en section-patient-study.php.
 - [ ] **P-01:** Exportación y sincronización de grupos de campos ACF en formato JSON (`acf-json/`) para facilitar la edición de textos desde el panel de WordPress.
